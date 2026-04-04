@@ -1,0 +1,19 @@
+# Jira Epic Template
+
+## Epic Name
+...
+
+## Business Goal
+...
+
+## Scope Summary
+...
+
+## Key Acceptance Criteria
+...
+
+## Related BRD Sections
+...
+
+## Notes
+...
