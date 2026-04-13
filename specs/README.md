@@ -1,14 +1,20 @@
 # Specs Folder
 
-This folder is intentionally generic.
+This folder is reserved for **project-specific specifications**.
 
-Put only the authoritative project specification for the system you want to build here.
+The starter kit itself stays generic. For each real project, add one or more authoritative spec files here, for example:
+- `specs/customer-portal.md`
+- `specs/inventory-management-system.md`
+- `specs/mobile-field-operations-app.md`
 
-Rules:
-- Keep one primary project spec as the source of truth.
-- Do not leave old project specs in this folder.
-- Use `templates/project-spec-template.md` and related templates to create your system-specific specs.
-- The starter kit should not assume any domain such as finance, mobility, border control, healthcare, retail, or education unless the project spec explicitly defines it.
+## Rules
+- Keep only **actual project specs** here.
+- Do **not** keep generic placeholder templates in this folder.
+- Put generic scaffolds in `templates/`.
+- Treat the chosen project spec as the single source of truth for that project.
 
-Recommended convention:
-- `specs/<system-name>-spec.md`
+## Typical workflow
+1. Add your project spec to `specs/`.
+2. Start with `commands/START-PROJECT.md`.
+3. Run the lifecycle through `SPEC`, `PLAN`, `BUILD`, `TEST`, `REVIEW`, and `SHIP`.
+4. Use `commands/RESCUE-PROJECT.md` for incomplete generated systems.

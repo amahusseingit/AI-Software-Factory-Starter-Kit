@@ -1,69 +1,75 @@
-# V7.6
-
-## Added
-- AppSec testing integration as a first-class lifecycle concern
-- Penetration testing readiness as part of release governance
-- New skills:
-  - `appsec-testing-and-remediation`
-  - `penetration-testing-readiness`
-- New packs:
-  - `appsec-testing-pack.md`
-  - `penetration-testing-pack.md`
-- New templates:
-  - `appsec-test-plan-template.md`
-  - `appsec-findings-tracker-template.md`
-  - `appsec-review-scorecard-template.md`
-  - `penetration-test-readiness-template.md`
-  - `penetration-test-findings-log-template.md`
-- New references:
-  - `appsec-testing-guidance.md`
-  - `penetration-testing-guidance.md`
-
-## Updated
-- `commands/PLAN.md`
-- `commands/TEST.md`
-- `commands/REVIEW.md`
-- `commands/SHIP.md`
-- `AGENTS.md`
-
-## Outcome
-The kit now includes AppSec testing and PT testing as governed parts of planning, testing, review, and release readiness.
-
-
-# V7.5
-
-- Added `skills/nfr-selection-and-hardening`
-- Added `skills/architecture-decisioning`
-- Added `skills/devops-and-deployment-readiness`
-- Added generic NFR packs under `packs/`
-- Added ADR packs under `adr-packs/`
-- Added DevOps packs under `devops-packs/`
-- Added templates for NFR selection, ADR decision log, deployment checklist, environment matrix, NFR review, and ops readiness
-- Added V7.5 docs and examples
-
 # Changelog
-
-## V7.4
-- added stronger rescue mode references and templates
-- added traceability governance skill
-- added test-strategy selection skill
-- added rescue gap taxonomy and salvage-vs-rebuild guidance
-- added traceability automation guidance
-- added business rule verification and requirement-to-test templates
-- added reusable test strategy packs
-- updated AGENTS.md and lifecycle commands to enforce test strategy and traceability earlier
-
-## V7.3
-- added readiness scoring
-- added spec quality analysis
-- added UI workflow and screenshot templates
-- added structured review scorecards
-
 
 ## V7.7
 
-- added assumption-and-ambiguity control skill
-- added surgical change control skill
-- added simplicity and change discipline reference
-- added assumptions, ambiguity, surgical change, and step-verification templates
-- strengthened AGENTS.md and PLAN/BUILD/RESCUE/REVIEW commands with implementation-discipline rules
+Adds stronger implementation discipline to the kit:
+- assumption and ambiguity control
+- simplicity and complexity control
+- surgical change control for rescue and maintenance work
+- verification attached to each major step or slice
+
+### Added
+- `skills/assumption-and-ambiguity-control/SKILL.md`
+- `skills/surgical-change-control/SKILL.md`
+- `references/simplicity-and-change-discipline.md`
+- `templates/assumptions-log-template.md`
+- `templates/ambiguity-register-template.md`
+- `templates/surgical-change-plan-template.md`
+- `templates/step-verification-plan-template.md`
+
+### Updated
+- `AGENTS.md`
+- `commands/PLAN.md`
+- `commands/BUILD.md`
+- `commands/RESCUE-PROJECT.md`
+- `commands/REVIEW.md`
+- planning, implementation, and rescue skills
+- `README.md`
+
+## V7.6
+
+Integrates Application Security (AppSec) testing and Penetration Testing (PT) readiness into the governed lifecycle.
+
+### Added
+- AppSec testing and remediation skill
+- PT readiness skill
+- AppSec and PT packs
+- AppSec/PT templates, trackers, and scorecards
+- AppSec/PT integration example
+
+### Lifecycle impact
+- `PLAN` includes security planning applicability
+- `TEST` includes AppSec execution and findings tracking
+- `REVIEW` includes security evidence and unresolved findings
+- `SHIP` includes AppSec/PT status in release readiness
+
+## V7.5
+
+Extends the generic kit with:
+- NFR packs under `packs/`
+- architecture decision packs under `adr-packs/`
+- DevOps and deployment packs under `devops-packs/`
+- supporting skills, templates, examples, and documentation
+
+## V7.4
+
+Adds the next reliability wave on top of V7.3:
+- stronger rescue mode
+- better traceability automation
+- test strategy packs
+
+### Added
+- rescue gap taxonomy and salvage-vs-rebuild guidance
+- recovery planning templates for incomplete generated projects
+- business rule verification matrix and requirement-to-test mapping
+- project-level test strategy selection using reusable packs
+- `skills/traceability-governance/`
+- `skills/test-strategy-selection/`
+
+## V7.3
+
+Adds stronger control and review capability:
+- readiness scoring
+- spec quality analysis
+- UI workflow and screenshot templates
+- structured review scorecards
