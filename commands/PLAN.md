@@ -30,3 +30,34 @@ Produce a build plan that is behaviorally explicit, traceable, and review-ready.
 - Select relevant NFR packs when applicable.
 - Identify required ADR decisions.
 - Add deployment and runtime planning needs when the project is expected to ship.
+
+
+## AppSec and PT Planning Additions
+
+
+Plan security testing as part of delivery, not after it.
+
+Minimum planning additions:
+- identify whether the system requires AppSec testing
+- identify whether the release requires PT
+- select applicable controls such as SAST, SCA, secrets scanning, DAST/API DAST
+- define severity-based release blockers
+- define remediation and retest expectations
+- create AppSec/PT artifacts using the relevant templates
+
+Relevant skills and packs:
+- `skills/appsec-testing-and-remediation/`
+- `skills/penetration-testing-readiness/`
+- `packs/appsec-testing-pack.md`
+- `packs/penetration-testing-pack.md`
+
+
+
+## V7.7 Additions
+
+Before finalizing the plan:
+- run assumption-and-ambiguity control
+- create or update an assumptions log when needed
+- attach a verification method to every major slice
+- avoid vague slice names and speculative future-proofing
+- apply simplicity-and-change-discipline checks to planned scope

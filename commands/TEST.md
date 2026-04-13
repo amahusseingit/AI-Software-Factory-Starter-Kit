@@ -38,3 +38,23 @@ Apply a risk-appropriate test strategy that proves business behavior, not just s
 - Do not default to a generic smoke-only approach.
 - Do not rely on UI snapshots as proof of business correctness.
 - Do not close rescue work without regression coverage.
+
+
+## AppSec and PT Testing Additions
+
+
+Testing must include security validation when the system risk profile requires it.
+
+Add to the test phase:
+- execute or plan AppSec activities appropriate for the system
+- capture findings in the AppSec findings tracker
+- perform PT readiness checks when PT is required
+- ensure retest is performed after security fixes
+- update requirement-to-test mapping and evidence to include security testing
+
+Use:
+- `templates/appsec-test-plan-template.md`
+- `templates/appsec-findings-tracker-template.md`
+- `templates/penetration-test-readiness-template.md`
+- `templates/penetration-test-findings-log-template.md`
+

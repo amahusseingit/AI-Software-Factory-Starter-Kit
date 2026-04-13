@@ -25,3 +25,31 @@ Use this command to evaluate whether the current scope is functionally complete,
 - Include NFR review when applicable.
 - Confirm required ADRs exist for major architecture decisions.
 - Confirm deployment, migration, rollback, and operational readiness artifacts exist before release recommendation.
+
+
+## AppSec and PT Review Additions
+
+
+The review phase must explicitly evaluate security testing status.
+
+Review must answer:
+- was AppSec testing scoped and executed appropriately?
+- are there unresolved Critical/High findings?
+- was PT required and, if so, was it completed?
+- were findings triaged, fixed, and retested?
+- does release readiness reflect the security state accurately?
+
+Use:
+- `templates/appsec-review-scorecard-template.md`
+- `templates/security-review-scorecard-template.md`
+
+
+
+## V7.7 Additions
+
+Reviewers should explicitly evaluate:
+- whether assumptions were recorded instead of silently guessed
+- whether the solution is proportionate to the request
+- whether speculative abstractions were introduced without justification
+- whether the diff scope stayed surgical where appropriate
+- whether each major step had a defined verification method and evidence

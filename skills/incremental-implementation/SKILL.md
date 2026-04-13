@@ -60,3 +60,8 @@ Use during BUILD for any feature, module, or integration slice.
 - working vertical slice
 - tests
 - evidence file
+
+
+## V7.7 Discipline
+
+Implementation should prefer the minimum code and structure needed for the current requirement. Avoid speculative abstractions, broad cleanup, and unrequested extensibility.
