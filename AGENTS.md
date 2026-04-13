@@ -151,3 +151,18 @@ The project is not done until:
 - When quality attributes are mentioned or implied, use `skills/nfr-selection-and-hardening`.
 - When major technical choices need explicit justification, use `skills/architecture-decisioning`.
 - When environments, CI/CD, deployment, migration, rollback, or operational readiness are in scope, use `skills/devops-and-deployment-readiness`.
+
+
+- include AppSec testing and PT planning for systems with external exposure, auth, sensitive data, admin features, file handling, or release governance requirements
+- do not call a release ready without checking AppSec and PT status when applicable
+
+
+## V7.7 Implementation Discipline Rules
+
+- Do not choose silently between multiple plausible interpretations. Record assumptions before implementation.
+- Use assumption-and-ambiguity control whenever the spec, workflow, or behavior is unclear.
+- Keep changes proportional to the request. Prefer the minimum solution that satisfies the requirement.
+- Do not add speculative flexibility, configuration, or abstractions without a current need traceable to the spec.
+- For rescue, bug-fix, and targeted enhancement work, apply surgical change control.
+- Every planned slice or major step must include a verification method and expected evidence artifact.
+- If implementation scope expands beyond the original request, record the reason explicitly.

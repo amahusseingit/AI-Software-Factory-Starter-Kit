@@ -43,3 +43,12 @@ Determine whether the current implementation should be salvaged, partially rebui
 - Do not accept narrative claims of completeness without behavioral proof.
 - Do not salvage blindly when architecture or contracts are fundamentally wrong.
 - Do not rescue without defining regression scope.
+
+
+## V7.7 Additions
+
+During rescue:
+- decide whether the change should be surgical or module-rebuild scoped
+- do not mix targeted repair with unrelated cleanup
+- document why any widened scope is necessary
+- use the surgical change plan template for focused repair paths

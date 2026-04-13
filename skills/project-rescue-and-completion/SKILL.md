@@ -62,3 +62,8 @@ This skill is for rescuing systems that look presentable but are not behaviorall
 - rescue slice plan
 - parity report
 - updated evidence and review reports
+
+
+## V7.7 Discipline
+
+Rescue work must explicitly decide between surgical repair and broader rebuild. Do not allow a targeted rescue to drift into an undocumented rewrite.

@@ -57,3 +57,14 @@ Use after the spec is normalized and before large implementation work begins.
 
 - `plans/<project>-slice-plan.md`
 - `plans/<project>-traceability-matrix.md`
+
+
+## V7.7 Discipline
+
+Each major task or slice should include:
+- explicit goal
+- relevant assumptions
+- verification method
+- intended evidence output
+
+Avoid speculative decomposition that introduces future-facing complexity without current value.
