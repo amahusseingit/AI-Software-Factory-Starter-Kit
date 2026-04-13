@@ -1,3 +1,0 @@
-# User Stories
-
-- US-001: As a <role>, I want ... so that ...
