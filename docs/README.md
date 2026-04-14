@@ -9,3 +9,5 @@ Start here:
 - `create-your-first-project.md`
 - `rescue-existing-project.md`
 - `open-source-maintainer-guide.md`
+
+- `docs/orchestration-guide.md` — explains how the orchestration layer chooses lifecycle entry, skills, and progression rules.
