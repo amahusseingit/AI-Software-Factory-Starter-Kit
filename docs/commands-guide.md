@@ -1,5 +1,7 @@
 # Commands Guide
 
+Before using a command, read `ORCHESTRATOR.md` to choose the correct lifecycle entry point.
+
 ## START-PROJECT
 Initiates the governed workflow for a new project.
 

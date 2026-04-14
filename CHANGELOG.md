@@ -1,5 +1,21 @@
 # Changelog
 
+## V7.8
+
+Consolidates the kit with an explicit orchestration layer.
+
+### Added
+- upgraded `ORCHESTRATOR.md` as the human-facing operating guide
+- `skills/orchestration-and-lifecycle-control/SKILL.md` as the AI-facing orchestration workflow
+- `docs/orchestration-guide.md`
+
+### Updated
+- `README.md`
+- `AGENTS.md`
+- `docs/README.md`
+- `docs/commands-guide.md`
+- `docs/skills-guide.md`
+
 ## V7.7
 
 Adds stronger implementation discipline to the kit:

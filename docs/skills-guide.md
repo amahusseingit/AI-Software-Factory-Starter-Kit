@@ -10,3 +10,8 @@ Each skill is a reusable workflow document with:
 - outputs
 
 Use the relevant skills based on the command phase and project context.
+
+
+## Orchestration skill
+
+Use `skills/orchestration-and-lifecycle-control/` to determine lifecycle entry, activate the right skills, and define artifact expectations before major work begins.
