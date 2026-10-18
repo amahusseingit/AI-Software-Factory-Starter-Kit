@@ -26,4 +26,15 @@ Validation results for the exact final candidate are delivered with the review p
 
 `python3 tools/validate_branch_record.py --record path/to/record.json` checks declared task naming, default task/release/hotfix/reconciliation paths, full SHA syntax, declared current-base/current-head approval bindings, current-target merge-evidence binding and required PASS checks bound to the declared tested merge SHA. `tools/test_factory_branches.py` supplies synthetic positive/negative cases. It does not inspect Git history, prove actual target freshness or ancestry, authenticate approval/independence, discover undeclared checks, enforce uniqueness, verify tag/artifact/deployment state, or install branch protection. Bootstrap/legacy exceptions and release snapshot paths deliberately remain unsupported/BLOCKED by this minimal evaluator and require separately approved manual review. See the [branch record](templates/branch-record-template.md) and [proposed enforcement checklist](governance/branch-enforcement-checklist.md).
 
-The proposed CI names are not installed check contexts. These local tests do not prove live GitHub enforcement, application behavior or deployment readiness.
+## GitHub Actions checks
+
+[Factory CI](.github/workflows/factory-ci.yml) defines two jobs on GitHub-hosted Ubuntu 24.04 with Python 3.12:
+
+- `factory-docs`: runs `python tools/validate_factory.py`.
+- `factory-gate-tests`: runs `python -m unittest discover -s tools -p 'test_factory*.py' -v`, covering both gate and branch-record evaluator tests.
+
+The workflow runs for pull requests targeting `main` or `develop`, and pushes to `main`, `develop`, `task/**` or `release/**`. There are no path filters or job-level skip conditions. Pull requests use checkout's default event revision (GitHub's synthetic merge commit), while pushes test the pushed revision. A later target change still requires fresh integration evidence before merge.
+
+Both official actions are pinned to full commit SHAs and use Node 24. Jobs have read-only `contents` permission, do not persist checkout credentials, and use no configured secrets, package installation, deployment steps or privileged pull-request trigger. Action pins must be reviewed when updated. Python's patch release and the hosted runner image can change; the job logs record the actual runtime.
+
+This is documentation and synthetic evaluator CI only. It does not implement `factory-branch-contract`, authenticate approval or independent review, enforce task uniqueness or branch naming on GitHub, or configure required checks/branch protection. The two check names must be observed successfully on a real PR before any separately approved protection setup. Local tests alone do not prove live GitHub enforcement, application behavior or deployment readiness.
