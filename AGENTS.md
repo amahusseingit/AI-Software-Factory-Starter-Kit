@@ -11,7 +11,7 @@ Follow explicit current user scope and applicable safety/security constraints. A
 - Every role, including QA, remediation, regression and closure coordinator, presents a scope/revision-bound plan and waits for explicit user approval before execution. No self-signoff or invented human approval.
 - Before approval, only read-only planning and one narrowly permitted append-only planning record are allowed; see the protocol for its exact boundary.
 - Unknown, failed, not-run, stale, missing-evidence and scope-mismatch states block. Template rows never count as evidence.
-- Use a new task-named branch per task. Record actual upstream base and head. No synthetic ancestry. See [branch-environment-policy.md](governance/branch-environment-policy.md).
+- Use a new `task/<unique-id>-<slug>` branch for every coding, configuration and documentation task; no direct main/develop writes. Record actual upstream base and head. No synthetic ancestry. See [branch-environment-policy.md](governance/branch-environment-policy.md).
 - Developer tests precede independent QA; QA precedes acceptance. Closure, merge and deployment are separately authorized actions.
 - No default stack or business rules. Select approved project profiles explicitly. Existing architecture is the baseline until a scoped change is approved.
 - Never claim application tests, security assessment, branch protection or deployment controls were verified by documentation validators.

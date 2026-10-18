@@ -65,3 +65,6 @@ Plan prepared. Waiting for approval before execution.
 
 ## Provenance
 Merged from `archive/july-prior/ai_software_factory_kit_problems_sla/factory/plan-template.md`, updated `archive/july-updated/ai_software_factory_kit_problems_sla/factory/agent-loop-protocol.md`, and the numbered reusable role prompts identified in [role source mapping](../roles/README.md#source-mapping).
+
+## Branch and promotion binding
+Use the [branch record](branch-record-template.md): repository, unique task ID, source branch, approved base ref/SHA, output head, intended target/observed SHA and tested integration result. Record bootstrap exceptions explicitly. Changes invalidate affected approvals/evidence; no direct main/develop writes. Publication, merge, release and deployment remain separate authorized actions.

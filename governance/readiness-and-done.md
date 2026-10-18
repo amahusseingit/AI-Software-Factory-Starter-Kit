@@ -13,7 +13,7 @@ A story is ready for development only when all applicable items have current, ap
 - Dependencies and sequencing.
 - Out-of-scope notes.
 - Approved architecture/contracts and traceability foundation.
-- New task-named branch with verified base, exact scope/plan hashes and candidate input revision.
+- New unique task-ID/slug branch with verified approved base/target and no direct main/develop writes, exact scope/plan hashes and candidate input revision.
 - G1/G2/G3 evidence and explicit current developer role-plan approval. No mandatory UNKNOWN, NOT_RUN, FAILED or SCOPE_MISMATCH state.
 
 ## Definition of Done

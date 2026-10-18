@@ -54,3 +54,6 @@ Keep planned/unexecuted commands clearly separate. Record the reason and impact 
 
 ## Provenance
 Merged from `archive/july-prior/ai_software_factory_kit_problems_sla/factory/handoff-checklist.md`, both versions' role completion/log requirements and reusable prompts' detailed handoffs; see [source mapping](../roles/README.md#source-mapping).
+
+## Branch and promotion binding
+Use the [branch record](branch-record-template.md): repository, unique task ID, source branch, approved base ref/SHA, output head, intended target/observed SHA and tested integration result. Record bootstrap exceptions explicitly. Changes invalidate affected approvals/evidence; no direct main/develop writes. Publication, merge, release and deployment remain separate authorized actions.
