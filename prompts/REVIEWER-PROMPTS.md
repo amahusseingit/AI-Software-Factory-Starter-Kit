@@ -1,3 +1,7 @@
+> Role adapter: first read [roles/independent-reviewer.md](../roles/independent-reviewer.md). The following detailed prompts are task-planning aids, not permission to execute. Present the selected role plan and stop for explicit user approval.
+
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
 # Reviewer Prompt Pack
 
 ## Generic Slice Review Prompt
@@ -6,7 +10,7 @@ Use @reviewer.
 
 Read:
 - relevant specs/*
-- relevant rules/*
+- relevant .windsurf/rules/*
 - changed files
 - docs/agent-timesheet.md
 - docs/agent-run-log.md
@@ -21,7 +25,7 @@ Output:
 - issues by severity
 - top 3 risks
 - exact recommendations
-- final recommendation: GO / GO WITH MINOR FIXES / REVISE
+- final recommendation: PASS / BLOCKED
 
 Before starting:
 - record start time

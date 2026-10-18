@@ -1,4 +1,14 @@
-# AI Software Factory Starter Kit V7.8
+# AI Software Factory unified-1.0.0-draft.1
+
+A new reviewable semantic unification, not recovered V9 and not production certification.
+
+Start with [AGENTS.md](AGENTS.md), [ORCHESTRATOR.md](ORCHESTRATOR.md) and [governance/protocol.md](governance/protocol.md). Generic technical skills remain useful; detailed roles are in [roles/](roles/); optional project examples are in [profiles/](profiles/). No profile or stack is implicitly selected.
+
+Sources and preserved bytes: [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json), [archive/](archive/). Validation and limitations: [VALIDATION.md](VALIDATION.md). Branch/environment policy is design only; no repository settings or deployment setup is implied.
+
+## Historical V7.8 overview (subordinate context)
+
+### V7.8 source summary
 
 A generic, governed AI delivery kit for building, rescuing, reviewing, testing, securing, and shipping software systems from a project-specific spec.
 

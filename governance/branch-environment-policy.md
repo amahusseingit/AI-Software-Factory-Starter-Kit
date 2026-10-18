@@ -1,0 +1,10 @@
+# Task branches and environment separation
+This is policy/design only. No branch rules, environments, credentials, triggers or deployments are configured by this documentation change.
+
+Every new task gets a new task-named branch, such as task/unify-factory-governance, from a verified, approved baseline in the correct repository. Never reuse a prior task branch for unrelated work. Record task ID, repository URL, actual upstream base SHA, branch/head SHA and intended integration target. Do not invent ancestry from reconstructed files. If no genuine checkout is available, deliver a provenance-pinned patch and declare that no branch exists.
+
+Before adopting integration/release topology, inspect actual branches, protections and deployment triggers. Suggested design: protected develop for integration, protected main for production release history, task PRs into develop, separately approved release PR from pinned develop to main. Do not assume develop exists or change an existing deployment mapping automatically. For this draft, the genuine task branch starts at the verified Factory main baseline; integration target remains a later explicit decision.
+
+Development and production need separate configuration, credentials, data and deployment permissions. Development jobs must not use production secrets/data. Prefer promote-the-same-built-artifact after candidate QA. Protected environments, least privilege, required checks, independent reviews, stale-review dismissal, CODEOWNERS and no direct protected-branch pushes are intended future setup requiring appropriate authorization and verification. Markdown does not enforce them.
+
+Hotfixes start on a new task-named branch from the pinned production baseline and receive the same approval/testing rules; later reconcile into integration explicitly. Task completion, remote publication, PR creation, merge and deployment are distinct authorizations. A green check is not approval for any of them. Branch deletion requires the authorized retention/recovery policy.

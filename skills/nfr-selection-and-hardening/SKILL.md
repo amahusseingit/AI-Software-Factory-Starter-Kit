@@ -13,6 +13,9 @@ triggers:
   - disaster recovery
 ---
 
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
+
 # Overview
 
 This skill prevents a project from being treated as complete based only on functional delivery. It selects the relevant non-functional requirement packs, tailors them to the project, and forces them into planning, testing, review, and release readiness.

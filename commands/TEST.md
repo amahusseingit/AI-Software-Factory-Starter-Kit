@@ -1,3 +1,5 @@
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
 # Command: TEST
 
 Use this command to select, plan, implement, and evaluate the right tests for the current project, slice, or recovery effort.
@@ -58,3 +60,6 @@ Use:
 - `templates/penetration-test-readiness-template.md`
 - `templates/penetration-test-findings-log-template.md`
 
+
+## Unified execution boundary
+Before execution, read governance/protocol.md and the selected role plan. Require explicit user approval bound to role, task, scope, plan and input revision. G3 must pass before BUILD. Use only PASS/BLOCKED progression decisions. Execution ends at evidence handoff and stop; no automatic next role or closure. Commands are subordinate methods, never authority to approve themselves.

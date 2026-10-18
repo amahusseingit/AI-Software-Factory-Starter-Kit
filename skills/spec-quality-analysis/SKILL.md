@@ -9,6 +9,9 @@ triggers:
   - review project spec
 ---
 
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
+
 # Overview
 
 This skill evaluates whether the project specification is strong enough to drive accurate planning and implementation. It is used before BUILD work begins and whenever the source requirements are incomplete, visual, fragmented, or potentially ambiguous.

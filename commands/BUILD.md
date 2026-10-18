@@ -1,3 +1,5 @@
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
 # BUILD
 
 Use this to implement one vertical slice completely.
@@ -33,3 +35,6 @@ During implementation:
 - if modifying existing code, use surgical change control
 - if assumptions affect behavior, keep them visible in implementation notes and evidence
 - ensure each major build step has a corresponding verification action
+
+## Unified execution boundary
+Before execution, read governance/protocol.md and the selected role plan. Require explicit user approval bound to role, task, scope, plan and input revision. G3 must pass before BUILD. Use only PASS/BLOCKED progression decisions. Execution ends at evidence handoff and stop; no automatic next role or closure. Commands are subordinate methods, never authority to approve themselves.

@@ -7,6 +7,9 @@ triggers:
   - web api
 ---
 
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
+
 # Overview
 
 This skill guides implementation of maintainable ASP.NET Core APIs with correct separation of concerns and testability.

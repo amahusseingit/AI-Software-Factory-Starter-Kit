@@ -1,20 +1,2 @@
-# Review Scorecard Guidance
-
-Use scorecards to structure review outcomes, not to replace reasoning.
-
-## Review result options
-- Go
-- Conditional Go
-- No-Go
-
-## Severity model
-- Critical
-- High
-- Medium
-- Low
-
-## Scorecard rules
-- Every failed critical item must block Go.
-- Conditional Go requires explicit owners and follow-up actions.
-- Evidence links or paths should be captured for load-bearing findings.
-- Scorecards should be stored under `reviews/`.
+# Review scorecards
+Score each relevant dimension with actual evidence and findings. Scores are diagnostic, never approval. The progression decision is PASS or BLOCKED under [protocol.md](../governance/protocol.md); every mandatory check must pass with valid scope/revision-bound evidence and user approval. Nonblocking findings need named owners and deadlines. No conditional decision bypasses a blocker. Examples are not evidence.

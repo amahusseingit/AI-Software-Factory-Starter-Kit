@@ -1,0 +1,2752 @@
+{
+  "version": "unified-1.0.0-draft.1",
+  "baseline": {
+    "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+    "commit": "cf3a9281569782ba2962850ba7c1db90a6533158",
+    "source_version": "V7.8",
+    "checkout": "genuine upstream git ancestry"
+  },
+  "historical_archives": [
+    {
+      "filename": "ai_software_factory_kit_problems_sla_updated.zip",
+      "sha256": "2f8b49a7d5a16376b44f3d1a0045c3c6bfbc589d254b09441b50b99808f1e44f"
+    },
+    {
+      "filename": "ai_software_factory_kit_problems_sla.zip",
+      "sha256": "3f55ee4a44e7001c31593edf3c4b17d6885a7c6aa7fc331ea2010a7b1cf9afbf"
+    }
+  ],
+  "excluded": [
+    "V1\u2013V5 not semantically imported",
+    "Conversation-described V8/V9 not claimed as recovered authoritative baseline",
+    "Current Problems SLA SRS not recovered from the placeholder"
+  ],
+  "reconciliation": {
+    "generic_methods": "V7.8 skills/packs/references retained with canonical controls taking precedence",
+    "role_depth": "Prior July PO/architect/developer/QA and story/plan detail adapted into roles and templates",
+    "loop": "Updated July loop/remediation/regression integrated, closure bypass corrected",
+    "domain": "Historical business scenarios retained only in non-authoritative profiles and archive",
+    "security": "One severity/exception policy supersedes older contradictory statements",
+    "duplicates": "Orchestration, traceability and role adapters point to maintained authorities"
+  },
+  "sources": [
+    {
+      "path": "archive/july-AGENTS.md",
+      "sha256": "9a199a562cf0f901eb40e2a8e6405504903d73785d8b5a496f93fc57b5e56513",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-prior/ai_software_factory_kit_problems_sla/README.md",
+      "sha256": "83b8b15a1529e0b4fe3caa165132e37576ebb742b617438043353bd0434df45c",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-prior/ai_software_factory_kit_problems_sla/factory/acceptance-traceability-matrix.md",
+      "sha256": "5c9822a4f0c67cdd1f21ad8e1ed1cebf4e988fa2f06d44027623932c39ee3553",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-prior/ai_software_factory_kit_problems_sla/factory/handoff-checklist.md",
+      "sha256": "8091120f30ce6489498085a9cd182521d41840cec63d888bab8fce89ed876f48",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-prior/ai_software_factory_kit_problems_sla/factory/plan-template.md",
+      "sha256": "b96747be97867c1104a4b652c60cace558b28c3f6b68fa895ca14da73600f542",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-prior/ai_software_factory_kit_problems_sla/factory/shared-log.md",
+      "sha256": "4dcece0d762f73bcb4246e88dcc56da505c5bcc4e8acedd47e1f60bb9335d672",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-prior/ai_software_factory_kit_problems_sla/factory/story-template.md",
+      "sha256": "bc967cfa74bb987ffa3a7fccb8707c55bfd9ae31cc8ad1219a82cd29c033af68",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-prior/ai_software_factory_kit_problems_sla/factory/workflow-protocol.md",
+      "sha256": "25fe27465e95905f2a19434bc25d915464e8ccb0a330b85b619a3f3ee0a568e3",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-prior/ai_software_factory_kit_problems_sla/skills/developer/skill.md",
+      "sha256": "4e5129f236ed73d0d115ab549776abd0334f5ba9343d5e2720d478e48016c416",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-prior/ai_software_factory_kit_problems_sla/skills/product-owner/skill.md",
+      "sha256": "ccd444951f9f9f60f25af1276c482b8b2b9dfce2b655959c26ecdd3db825c44b",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-prior/ai_software_factory_kit_problems_sla/skills/qa-static-analysis/skill.md",
+      "sha256": "03cd7ec17f992d08c30cdf9114075246d3d93aee27d37cd203477d8eb9946893",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-prior/ai_software_factory_kit_problems_sla/skills/solution-architect/skill.md",
+      "sha256": "b41834fc1d49253999ae953c84d271e06f472a8f9fd3a4d4b716bc6362e245a1",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-role-prompts.md",
+      "sha256": "e367162a36a851636f16edb2eec69ad2ce8609fa396742a7118b2ddbfaf86fd8",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-updated/AGENTS_APPEND_SECTION.md",
+      "sha256": "ff50533dba18657621ec8023104f09c1744a265990d6fd8c7b06b883498ca392",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-updated/ai_software_factory_kit_problems_sla/README.md",
+      "sha256": "ed36164f3ae17307632508eb49d703ce941e16dd69de8022dfefa13f015a8c49",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-updated/ai_software_factory_kit_problems_sla/factory/acceptance-traceability-matrix.md",
+      "sha256": "e837ea56827db200f4bd459a949ba18d5dd2a82b33b94479602cace68198a160",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-updated/ai_software_factory_kit_problems_sla/factory/agent-loop-protocol.md",
+      "sha256": "8cafb43948f46b7c7d1676bb7a12ae3e5cde9788d6f426b1e93f10b47d525317",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-updated/ai_software_factory_kit_problems_sla/factory/handoff-checklist.md",
+      "sha256": "39e6f12a696dee20e31cecb520e5a16bce45454e0f20a69e362872852cb4c654",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-updated/ai_software_factory_kit_problems_sla/factory/shared-log.md",
+      "sha256": "80090c444cc55adba40d1a259d5bde6e7d691235ab8587fe81f318bda5c04c76",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-updated/ai_software_factory_kit_problems_sla/factory/workflow-protocol.md",
+      "sha256": "46c36d1f65e60de8288d7e3e7c9a21a7d3ce112efe4a4dcb2c092ae4461834b4",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-updated/ai_software_factory_kit_problems_sla/prompts/ai_factory_reusable_role_prompts.md",
+      "sha256": "28b29f22b4ba28766e8fe7e316a6dde039299fd696caeab0850ac60559ffc811",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-updated/ai_software_factory_kit_problems_sla/skills/developer/skill.md",
+      "sha256": "75a29410fa73bea4be5cc4737cb7e32db7a357b47293422b5d9766d016db6a9c",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-updated/ai_software_factory_kit_problems_sla/skills/product-owner/skill.md",
+      "sha256": "3408acff3374c814d110417875a00d860402909196d1548079c6cdd61e75e940",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-updated/ai_software_factory_kit_problems_sla/skills/qa-static-analysis/skill.md",
+      "sha256": "cabe8c73b8c0c978421106102725f2966ac2d2662e886b33d7f58862838ca7bc",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-updated/ai_software_factory_kit_problems_sla/skills/solution-architect/skill.md",
+      "sha256": "560297f757d0037d7f99f2507f8230aa3a8365b0f153943cae8ab99f9d3f4eae",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-updated/problems_sla_dashboard_srs_PLACEHOLDER.md",
+      "sha256": "776f264d57eecaf7ed3c8d84e935f78db4f0cbc6fb3728cf922759ac62b39f4b",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/v7.8/.gitignore",
+      "sha256": "417fc3ac3779d1981a0af1dbed9856a53ee7e8d49d1f014a242dafcfea44f5e1",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": ".gitignore",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/.gitignore"
+    },
+    {
+      "path": "archive/v7.8/.windsurf/rules/coding-standards.md",
+      "sha256": "4e29a2b53d2b75461b63ae8606d62edda0a98f737d8148f90fd9e0daa42b5406",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": ".windsurf/rules/coding-standards.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/.windsurf/rules/coding-standards.md"
+    },
+    {
+      "path": "archive/v7.8/.windsurf/rules/review-standards.md",
+      "sha256": "0c9eb54b1aca6f42d29121e62c5627eb4600cc4ca90c9dd26b451b6016d8bb38",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": ".windsurf/rules/review-standards.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/.windsurf/rules/review-standards.md"
+    },
+    {
+      "path": "archive/v7.8/.windsurf/rules/testing-standards.md",
+      "sha256": "1f1f7c93ededfb1d2874cbd9b42d1989867cec16bca21b8563bfde29a36bd2b3",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": ".windsurf/rules/testing-standards.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/.windsurf/rules/testing-standards.md"
+    },
+    {
+      "path": "archive/v7.8/.windsurf/skills/analyst/SKILL.md",
+      "sha256": "e599869950b960f4c125588c6c3485a389b05d83571d5c1af260d7cebe037cfb",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": ".windsurf/skills/analyst/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/.windsurf/skills/analyst/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/.windsurf/skills/architect/SKILL.md",
+      "sha256": "a5976317d75aef90fa9d32de42abec8781fbc687e4d5c9bd15619095489aa5af",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": ".windsurf/skills/architect/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/.windsurf/skills/architect/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/.windsurf/skills/developer/SKILL.md",
+      "sha256": "f12ddf53c410a2fdb9c39fbfd358160c50a274fce2caee7bdd75fafbf407ba8d",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": ".windsurf/skills/developer/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/.windsurf/skills/developer/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/.windsurf/skills/orchestrator/SKILL.md",
+      "sha256": "838a85c6554da8fa10e107c3e751b07a74049fb1fc449270114668743869a012",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": ".windsurf/skills/orchestrator/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/.windsurf/skills/orchestrator/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/.windsurf/skills/reviewer/SKILL.md",
+      "sha256": "f199d0b1c0fc7e92c89aa26b5750204614ecffee794118a678f81fb1fdd3bd8f",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": ".windsurf/skills/reviewer/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/.windsurf/skills/reviewer/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/.windsurf/skills/tester/SKILL.md",
+      "sha256": "b52490228d16a5f391aeef3fc02e27ddfc051f37a2c7ac18e1c270fd0047ff17",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": ".windsurf/skills/tester/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/.windsurf/skills/tester/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/AGENTS.md",
+      "sha256": "6394a99ba00e6677b049dddeeb72b514153966d6a3d59b7306708434c48e6277",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "AGENTS.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/AGENTS.md"
+    },
+    {
+      "path": "archive/v7.8/CHANGELOG.md",
+      "sha256": "446b068f77f12abd9f4060cc6ea1c9ab08464e943656f30ec4ba23c7c5605555",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "CHANGELOG.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/CHANGELOG.md"
+    },
+    {
+      "path": "archive/v7.8/CODE_OF_CONDUCT.md",
+      "sha256": "501166bb96cb0e6768d9ce488f03928da1ba1f2dc966cbfa54a56da332c1420d",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "CODE_OF_CONDUCT.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/CODE_OF_CONDUCT.md"
+    },
+    {
+      "path": "archive/v7.8/CONTRIBUTING.md",
+      "sha256": "6bd9d9dfdec380ab87f6629d27514e942f6d03a76d3f0f50abad86358635582b",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "CONTRIBUTING.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/CONTRIBUTING.md"
+    },
+    {
+      "path": "archive/v7.8/FAQ.md",
+      "sha256": "bffd9d6584f7676fe0cd644d9f8539a483e6e4caf04d8bf3ceb853b83051b430",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "FAQ.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/FAQ.md"
+    },
+    {
+      "path": "archive/v7.8/LICENSE",
+      "sha256": "18f63da39ca5b060d50047ff44c34d0080fdf3dcd0b994aeee8e2494f561e155",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "LICENSE",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/LICENSE"
+    },
+    {
+      "path": "archive/v7.8/ORCHESTRATOR.md",
+      "sha256": "f594a3b0182db051ef231cb8a705952f87a6a9b3e1f054a8cd181aebaf402f69",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "ORCHESTRATOR.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/ORCHESTRATOR.md"
+    },
+    {
+      "path": "archive/v7.8/README.md",
+      "sha256": "6807cd1a27fb81ccd829868b7d33f39179d43ead78238cf09c1fef573b67ab92",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "README.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/README.md"
+    },
+    {
+      "path": "archive/v7.8/SECURITY.md",
+      "sha256": "ef5067be9577b54846c1877ce22d972637abe2cbe2be4bfb8a6650f84be459c6",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "SECURITY.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/SECURITY.md"
+    },
+    {
+      "path": "archive/v7.8/SUPPORT.md",
+      "sha256": "ad0999b6fdecabc07a6ffc7e9fd8e7079bec73ff7d2cb5f78a11c0983ad2b0ac",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "SUPPORT.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/SUPPORT.md"
+    },
+    {
+      "path": "archive/v7.8/acceptance-packs/README.md",
+      "sha256": "c4c33352a76af5ef8ed86b539b5fc4f6bee78b1f7fb6e504fdd0107fbb4b2890",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "acceptance-packs/README.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/acceptance-packs/README.md"
+    },
+    {
+      "path": "archive/v7.8/acceptance-packs/auth-local-jwt-refresh-federated-pack.md",
+      "sha256": "a13f744391b205a733a09ca04d670f1ccc11cf3203d78fc9e1ca030c1ef8f541",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "acceptance-packs/auth-local-jwt-refresh-federated-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/acceptance-packs/auth-local-jwt-refresh-federated-pack.md"
+    },
+    {
+      "path": "archive/v7.8/acceptance-packs/generic-entity-crud-pack.md",
+      "sha256": "b4fc48a0c75b8d40545d87fad96c4b4999293a4fcf9f6d898564c42c3cea46bc",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "acceptance-packs/generic-entity-crud-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/acceptance-packs/generic-entity-crud-pack.md"
+    },
+    {
+      "path": "archive/v7.8/acceptance-packs/mobile-ui-state-pack.md",
+      "sha256": "8ed501e0f864c6a7edde7f860118759ef73a26ed5906dcdc08af0caaca4b8433",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "acceptance-packs/mobile-ui-state-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/acceptance-packs/mobile-ui-state-pack.md"
+    },
+    {
+      "path": "archive/v7.8/acceptance-packs/parent-child-entity-pack.md",
+      "sha256": "a337d83bf034ec56f32e3ff2bb544eb9e0135d703e3b185857cb181cb488ad10",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "acceptance-packs/parent-child-entity-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/acceptance-packs/parent-child-entity-pack.md"
+    },
+    {
+      "path": "archive/v7.8/acceptance-packs/schedule-based-recurring-processing-pack.md",
+      "sha256": "6a31425dd0f95f806639afc06fcff286aac0e3c97559eb458c58fc04ee2a69de",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "acceptance-packs/schedule-based-recurring-processing-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/acceptance-packs/schedule-based-recurring-processing-pack.md"
+    },
+    {
+      "path": "archive/v7.8/acceptance-packs/transactional-mutation-integrity-pack.md",
+      "sha256": "24c82742cec95eb846d9aca82d12dce97f095fd521b9f235d06ef45fe3d0cfe2",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "acceptance-packs/transactional-mutation-integrity-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/acceptance-packs/transactional-mutation-integrity-pack.md"
+    },
+    {
+      "path": "archive/v7.8/acceptance-packs/web-ui-state-pack.md",
+      "sha256": "a1c87bdbb062f92859ba3b526c7942e2d077682c6c1646221e0bbc5064e3de15",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "acceptance-packs/web-ui-state-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/acceptance-packs/web-ui-state-pack.md"
+    },
+    {
+      "path": "archive/v7.8/adr-packs/README.md",
+      "sha256": "4cd2666c83c2d9ce61b00ce72096b42a75bbfd6e9c92aa868674e9075fd7915e",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "adr-packs/README.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/adr-packs/README.md"
+    },
+    {
+      "path": "archive/v7.8/adr-packs/api-versioning-pack.md",
+      "sha256": "2f984781bf8eb64772840c5a50bfadd3dc2b6217cc1e4bc0daa541f62b050e0f",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "adr-packs/api-versioning-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/adr-packs/api-versioning-pack.md"
+    },
+    {
+      "path": "archive/v7.8/adr-packs/architecture-style-pack.md",
+      "sha256": "5eaa5e0e011429820f754d91c60be19642ebe991adcbc4380ec8c595eb0dcd0c",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "adr-packs/architecture-style-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/adr-packs/architecture-style-pack.md"
+    },
+    {
+      "path": "archive/v7.8/adr-packs/auth-strategy-pack.md",
+      "sha256": "7e336d9de3e014ba80a64b79b8f1a552d490ec285f975bfd83e0eacaa52e00d6",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "adr-packs/auth-strategy-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/adr-packs/auth-strategy-pack.md"
+    },
+    {
+      "path": "archive/v7.8/adr-packs/background-jobs-pack.md",
+      "sha256": "e22c88800dfa15c9848e5ab75b0c70a18ae0729df85c9058860e229ed227cd73",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "adr-packs/background-jobs-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/adr-packs/background-jobs-pack.md"
+    },
+    {
+      "path": "archive/v7.8/adr-packs/caching-strategy-pack.md",
+      "sha256": "00ee0ea15560fc072be127b7a39308c749a5d8e1d53dc04f0ae44890a9bfde4a",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "adr-packs/caching-strategy-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/adr-packs/caching-strategy-pack.md"
+    },
+    {
+      "path": "archive/v7.8/adr-packs/database-boundary-pack.md",
+      "sha256": "e9c9ce0687410f5f8c5d4f8ea886fcb0aa7e47e6d276cffc8a16fd1173f29e5f",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "adr-packs/database-boundary-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/adr-packs/database-boundary-pack.md"
+    },
+    {
+      "path": "archive/v7.8/adr-packs/integration-orchestration-pack.md",
+      "sha256": "8561c010afd8885675478e57ab6758ec4b9ed6371c0d2c052b77ac58f0813fa6",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "adr-packs/integration-orchestration-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/adr-packs/integration-orchestration-pack.md"
+    },
+    {
+      "path": "archive/v7.8/adr-packs/offline-sync-pack.md",
+      "sha256": "592d687cb1878b04071b143b6e447da814975346e992daff5cdcc91d6c4680e1",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "adr-packs/offline-sync-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/adr-packs/offline-sync-pack.md"
+    },
+    {
+      "path": "archive/v7.8/adr-packs/tenancy-approach-pack.md",
+      "sha256": "1965405087a2b1c1e595a25dfc1625a82e3ecfba99f8413c1ada9f49c37d0573",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "adr-packs/tenancy-approach-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/adr-packs/tenancy-approach-pack.md"
+    },
+    {
+      "path": "archive/v7.8/adrs/README.md",
+      "sha256": "fdf3f8bd65de00201787df4f01b67db74259553c9cc4ec17c4632ac6bad4f266",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "adrs/README.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/adrs/README.md"
+    },
+    {
+      "path": "archive/v7.8/agents/architecture-reviewer.md",
+      "sha256": "1f0b0dc9f6f9d3e97a8c977f26a8ad543dbb75533311883b45c6dd796a94387a",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "agents/architecture-reviewer.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/agents/architecture-reviewer.md"
+    },
+    {
+      "path": "archive/v7.8/agents/release-readiness-reviewer.md",
+      "sha256": "7f09fc2ae9ab72ef4e959196cefdded7190bca206daf008ca5845ebd115346ab",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "agents/release-readiness-reviewer.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/agents/release-readiness-reviewer.md"
+    },
+    {
+      "path": "archive/v7.8/agents/security-auditor.md",
+      "sha256": "b367acdb9f0272eeb999d581cb7023efad5b6dc4e24e9524abb7d94b4db3da2b",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "agents/security-auditor.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/agents/security-auditor.md"
+    },
+    {
+      "path": "archive/v7.8/agents/test-engineer.md",
+      "sha256": "440537bf26486a37e5707787a2ffeab5e787f72b5c31f28d32383ba983d0a899",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "agents/test-engineer.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/agents/test-engineer.md"
+    },
+    {
+      "path": "archive/v7.8/agents/ui-quality-reviewer.md",
+      "sha256": "737760d3557ffbf9a591a8f809da9758de2fe4d5e6dcf34bcf92ab2806b46f5c",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "agents/ui-quality-reviewer.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/agents/ui-quality-reviewer.md"
+    },
+    {
+      "path": "archive/v7.8/commands/BUILD.md",
+      "sha256": "d14f9f2b89e0d1e8640a646ee8b8014a94f74bbb2c7ea0b0d76bd9709912d8d1",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "commands/BUILD.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/commands/BUILD.md"
+    },
+    {
+      "path": "archive/v7.8/commands/FIX.md",
+      "sha256": "01a816b93ad46ce486ae2f921592a04e36cfc5b7768602e2fd5682dc279524fd",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "commands/FIX.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/commands/FIX.md"
+    },
+    {
+      "path": "archive/v7.8/commands/PLAN.md",
+      "sha256": "3d7f1f8611a16c80f0668d56fc31809b4d918c44d6a450ea31a20e30134bb10c",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "commands/PLAN.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/commands/PLAN.md"
+    },
+    {
+      "path": "archive/v7.8/commands/RESCUE-PROJECT.md",
+      "sha256": "64c6db48aa513cfcdac9edbf26304f45cce9a588f5bd4bfc90a4319ca3ff65c7",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "commands/RESCUE-PROJECT.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/commands/RESCUE-PROJECT.md"
+    },
+    {
+      "path": "archive/v7.8/commands/REVIEW.md",
+      "sha256": "617b7db3afa06c95040372105b88498eb63aa46c163cc2b541b128665906774e",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "commands/REVIEW.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/commands/REVIEW.md"
+    },
+    {
+      "path": "archive/v7.8/commands/SHIP.md",
+      "sha256": "90cf710de1d1527b928eb4b4f95d622355559967296cb036d43d0366a66f934b",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "commands/SHIP.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/commands/SHIP.md"
+    },
+    {
+      "path": "archive/v7.8/commands/SPEC.md",
+      "sha256": "93bf6d77787ec76dc3967c46ee4eae697eaabb81ace436cb81e897fb920c2123",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "commands/SPEC.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/commands/SPEC.md"
+    },
+    {
+      "path": "archive/v7.8/commands/START-PROJECT.md",
+      "sha256": "8f3fb9775a5106f8946f711ec17df55c2ea8eeb4add46c31dc823314fa070a4d",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "commands/START-PROJECT.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/commands/START-PROJECT.md"
+    },
+    {
+      "path": "archive/v7.8/commands/TEST.md",
+      "sha256": "e18611b8199a0400b450d86ef77587500c4510a107c6394d6c8873ad0923c13f",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "commands/TEST.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/commands/TEST.md"
+    },
+    {
+      "path": "archive/v7.8/devops-packs/README.md",
+      "sha256": "85662a4b5030644294d3d475d658dd8d620204fcdeb8a92726d84566a450dd6a",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "devops-packs/README.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/devops-packs/README.md"
+    },
+    {
+      "path": "archive/v7.8/devops-packs/ci-cd-pipeline-pack.md",
+      "sha256": "0210c84c2e9a412a279f9ad20a87473d71cbcd3cc0c52518698079cb3d237d2f",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "devops-packs/ci-cd-pipeline-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/devops-packs/ci-cd-pipeline-pack.md"
+    },
+    {
+      "path": "archive/v7.8/devops-packs/database-migration-and-rollback-pack.md",
+      "sha256": "e8ff9b96f50103b256fafd007ec72e2b31d8fb9f96a7e66591090d8c9b3d842e",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "devops-packs/database-migration-and-rollback-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/devops-packs/database-migration-and-rollback-pack.md"
+    },
+    {
+      "path": "archive/v7.8/devops-packs/deployment-checklist-pack.md",
+      "sha256": "3278dae0002abd0b2451dde8e06717a1c3fd293df96c9ca44deca9672d5a316a",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "devops-packs/deployment-checklist-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/devops-packs/deployment-checklist-pack.md"
+    },
+    {
+      "path": "archive/v7.8/devops-packs/environment-matrix-pack.md",
+      "sha256": "48d49849cfbf541f4178efbd08b63e02288aae84b5b0946e5792853e3ad71477",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "devops-packs/environment-matrix-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/devops-packs/environment-matrix-pack.md"
+    },
+    {
+      "path": "archive/v7.8/devops-packs/local-development-environment-pack.md",
+      "sha256": "6c2c0d6f2d62ddbf2f10e598c67fbe20bca34db928ae7d7cce71122aecb561d0",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "devops-packs/local-development-environment-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/devops-packs/local-development-environment-pack.md"
+    },
+    {
+      "path": "archive/v7.8/devops-packs/monitoring-and-alerting-pack.md",
+      "sha256": "f506f71e34e8dc56cf4946a77092984d0a5342ecb4b0f639aa201eaa6aadbd8a",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "devops-packs/monitoring-and-alerting-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/devops-packs/monitoring-and-alerting-pack.md"
+    },
+    {
+      "path": "archive/v7.8/devops-packs/post-deployment-verification-pack.md",
+      "sha256": "09a138c0549945807d437927c0603cb95a054d120bf79acd6fd1b5d66d579ad7",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "devops-packs/post-deployment-verification-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/devops-packs/post-deployment-verification-pack.md"
+    },
+    {
+      "path": "archive/v7.8/devops-packs/secrets-and-configuration-pack.md",
+      "sha256": "1092dc92496b7fabc5f460d75f80a70999d5bb7f57ccc988c749ae2c79846671",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "devops-packs/secrets-and-configuration-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/devops-packs/secrets-and-configuration-pack.md"
+    },
+    {
+      "path": "archive/v7.8/devops-packs/smoke-testing-pack.md",
+      "sha256": "af27cf193596061b3004a831b3e79a82f803b6f8422a12731998c787670fed1a",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "devops-packs/smoke-testing-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/devops-packs/smoke-testing-pack.md"
+    },
+    {
+      "path": "archive/v7.8/docs/README.md",
+      "sha256": "9df6b83e60e9449155b1fb80f484f7ec2f5a75c7081d8b7bd9be1b6aa15d2e56",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/README.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/README.md"
+    },
+    {
+      "path": "archive/v7.8/docs/agent-run-log.md",
+      "sha256": "98e0cf12e8e2341e5714eec232358a5f2f5b4f13c61dba3b7927e084d251ef6f",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/agent-run-log.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/agent-run-log.md"
+    },
+    {
+      "path": "archive/v7.8/docs/agent-timesheet.md",
+      "sha256": "7cda924cc8085775296c5f72d35425de1d0f472aa1022c1332ee4d4381d2eaf5",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/agent-timesheet.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/agent-timesheet.md"
+    },
+    {
+      "path": "archive/v7.8/docs/choose-your-path.md",
+      "sha256": "7b1dd2bc126842a8c1e03c1b8621c24ee331d077d7244bd5923947c70ffd298c",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/choose-your-path.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/choose-your-path.md"
+    },
+    {
+      "path": "archive/v7.8/docs/commands-guide.md",
+      "sha256": "f6c54c25fc8fb71ea3456e9692cc61124eb1df7c5d8d6d5d27187cd197f75881",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/commands-guide.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/commands-guide.md"
+    },
+    {
+      "path": "archive/v7.8/docs/create-your-first-project.md",
+      "sha256": "dc7708b190f0c7c067b8adab84f713332970741693dba6d59830f547e81eba73",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/create-your-first-project.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/create-your-first-project.md"
+    },
+    {
+      "path": "archive/v7.8/docs/decision-log.md",
+      "sha256": "238884ca762970a95306f27c8131085e4acfdf5f9276439e0541baa2762a1573",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/decision-log.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/decision-log.md"
+    },
+    {
+      "path": "archive/v7.8/docs/defect-log.md",
+      "sha256": "f0510183f8ceec6151f58c2adaeb5272f28bbe0870bf47838d5be72aba77e6d2",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/defect-log.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/defect-log.md"
+    },
+    {
+      "path": "archive/v7.8/docs/evidence-model.md",
+      "sha256": "80244d9a7c887d66ed96e3b22495e92d40afd4b1a719b01667ae3611e5feead8",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/evidence-model.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/evidence-model.md"
+    },
+    {
+      "path": "archive/v7.8/docs/getting-started.md",
+      "sha256": "b1d535f2181a39873e3fa3a8f6283863de17f7b39a179751cb48f483f08e2f8e",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/getting-started.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/getting-started.md"
+    },
+    {
+      "path": "archive/v7.8/docs/how-v7-works.md",
+      "sha256": "ccae9c3521688c5d0f431a1f9071cc33b08cb05d874b4edf706fffd95952c008",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/how-v7-works.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/how-v7-works.md"
+    },
+    {
+      "path": "archive/v7.8/docs/integration-test-plan.md",
+      "sha256": "2f28defc781623f86bf3e06d84da3eaee30f3f81b220d847f5d27c98d87c6429",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/integration-test-plan.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/integration-test-plan.md"
+    },
+    {
+      "path": "archive/v7.8/docs/lifecycle.md",
+      "sha256": "f3a168812798a8fb911cdf5284a78a0923fd0936ccc661b08c1f22296e2372dd",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/lifecycle.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/lifecycle.md"
+    },
+    {
+      "path": "archive/v7.8/docs/migration-guide-v6-to-v7.md",
+      "sha256": "d634cbb6c70261626f5c0e452250d44fbaf0094d5c58cb3d69ab5184990b0026",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/migration-guide-v6-to-v7.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/migration-guide-v6-to-v7.md"
+    },
+    {
+      "path": "archive/v7.8/docs/open-source-maintainer-guide.md",
+      "sha256": "688a390713f4509849d89c5046f840db07dffde4267621bfab970d97ae3541bf",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/open-source-maintainer-guide.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/open-source-maintainer-guide.md"
+    },
+    {
+      "path": "archive/v7.8/docs/orchestration-guide.md",
+      "sha256": "f594a3b0182db051ef231cb8a705952f87a6a9b3e1f054a8cd181aebaf402f69",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/orchestration-guide.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/orchestration-guide.md"
+    },
+    {
+      "path": "archive/v7.8/docs/planning.md",
+      "sha256": "950926b0e88ff8e9a6ea7bc7ac226f8acfcaf882415720555046dba9e0b04f73",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/planning.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/planning.md"
+    },
+    {
+      "path": "archive/v7.8/docs/release-readiness-model.md",
+      "sha256": "5ffde071ef7bb80eae64b14f4e14f997aa333a4839efb0f35b819170a82bb314",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/release-readiness-model.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/release-readiness-model.md"
+    },
+    {
+      "path": "archive/v7.8/docs/repository-structure.md",
+      "sha256": "e6c2af98afaac907c292c79d2d354001f4c1b69921c81297f8ca0b6c7d89fa6c",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/repository-structure.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/repository-structure.md"
+    },
+    {
+      "path": "archive/v7.8/docs/rescue-existing-project.md",
+      "sha256": "8a172ff2cd45ffe92f6fc0919c35dd2a6868547ee65e622a95e433f7ec193b95",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/rescue-existing-project.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/rescue-existing-project.md"
+    },
+    {
+      "path": "archive/v7.8/docs/rescue-workflow.md",
+      "sha256": "41fe64e320546621c4491ea550cede8ff1881ec5bae51d07ed4229f72985b26f",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/rescue-workflow.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/rescue-workflow.md"
+    },
+    {
+      "path": "archive/v7.8/docs/review-model.md",
+      "sha256": "e49ba3892df7dc280d3b4b72d900cb411e87e499da1501576786f5041cc6492a",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/review-model.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/review-model.md"
+    },
+    {
+      "path": "archive/v7.8/docs/review-summary.md",
+      "sha256": "70e0a78ff8492f695b055fc73de8aa3531a5bf2150223bc016752ec84cd75a18",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/review-summary.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/review-summary.md"
+    },
+    {
+      "path": "archive/v7.8/docs/skills-guide.md",
+      "sha256": "afe3ff4972a8f07d518e74c52ed2d5c083039b1cddb26b9609765c3bb8e55edb",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/skills-guide.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/skills-guide.md"
+    },
+    {
+      "path": "archive/v7.8/docs/slice-status-board.md",
+      "sha256": "b8d2e53188a20f260d5376492d3cec43f5161b846cf5e0921241b5db96f6a666",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/slice-status-board.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/slice-status-board.md"
+    },
+    {
+      "path": "archive/v7.8/docs/traceability-matrix.md",
+      "sha256": "f61edc92b2628605000536d0979072cb66b844474221ff0e1bfc9ee6b89c2903",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/traceability-matrix.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/traceability-matrix.md"
+    },
+    {
+      "path": "archive/v7.8/docs/v7.3-roadmap-summary.md",
+      "sha256": "3a2a4daf1c8a1b53f1ad49f17b44a32031f6ae4ff30edba718f3b1ac2868e88a",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/v7.3-roadmap-summary.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/v7.3-roadmap-summary.md"
+    },
+    {
+      "path": "archive/v7.8/docs/v7.3-usage-guide.md",
+      "sha256": "2ea05fca6ed4bb56cc5fa58d5c04705167a5492a08330dd968e9d89849803a98",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/v7.3-usage-guide.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/v7.3-usage-guide.md"
+    },
+    {
+      "path": "archive/v7.8/docs/v7.4-roadmap-summary.md",
+      "sha256": "5813c33baacab28517d4ff300dfe7820af102756548a1155a06ee8cbeaee9f8e",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/v7.4-roadmap-summary.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/v7.4-roadmap-summary.md"
+    },
+    {
+      "path": "archive/v7.8/docs/v7.4-usage-guide.md",
+      "sha256": "331edf3cdf90616adb5f946eba42a93537fe5a3bec7c7ff8167687f53531eb8d",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/v7.4-usage-guide.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/v7.4-usage-guide.md"
+    },
+    {
+      "path": "archive/v7.8/docs/v7.5-roadmap-summary.md",
+      "sha256": "77634f3cc23813eaf4e9c8d8db2fffdf8100e0bc9fac0456e1123b37860ad189",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/v7.5-roadmap-summary.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/v7.5-roadmap-summary.md"
+    },
+    {
+      "path": "archive/v7.8/docs/v7.5-usage-guide.md",
+      "sha256": "7d9a7b17afb16c9dc0888ddac867eb383d624351112551f62acb8e3f7f58b869",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/v7.5-usage-guide.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/v7.5-usage-guide.md"
+    },
+    {
+      "path": "archive/v7.8/docs/workflow-routing.md",
+      "sha256": "2224243225d036c49f8140da286de759f1b10e8f3703c6d9f680f1f8f99bc019",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "docs/workflow-routing.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/docs/workflow-routing.md"
+    },
+    {
+      "path": "archive/v7.8/evidence/README.md",
+      "sha256": "49afe1f76ce370ae834332a340d02b523839a39de70a57a2e630a622a30c27f9",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "evidence/README.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/evidence/README.md"
+    },
+    {
+      "path": "archive/v7.8/examples/appsec-and-pt-integration-example.md",
+      "sha256": "171c873cf0e831c81da28c1847fea920698bcf31ae04220d279814abce81c5ca",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "examples/appsec-and-pt-integration-example.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/examples/appsec-and-pt-integration-example.md"
+    },
+    {
+      "path": "archive/v7.8/examples/example-adr-decision-log.md",
+      "sha256": "49d1ffa537afcf1b0c2386acc4ef85eb26f888101e72a9e52cc195afe59f485a",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "examples/example-adr-decision-log.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/examples/example-adr-decision-log.md"
+    },
+    {
+      "path": "archive/v7.8/examples/example-business-rule-verification-matrix.md",
+      "sha256": "3888c63d83408bbf5fab7579bb027549d1761449560efc7649b7989c3cf6c2e8",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "examples/example-business-rule-verification-matrix.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/examples/example-business-rule-verification-matrix.md"
+    },
+    {
+      "path": "archive/v7.8/examples/example-environment-matrix.md",
+      "sha256": "d53af61e0894fb4ba46f55e87bbeae33563540c65da83677536d39db78ce07f6",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "examples/example-environment-matrix.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/examples/example-environment-matrix.md"
+    },
+    {
+      "path": "archive/v7.8/examples/example-nfr-selection.md",
+      "sha256": "a97c2c0e8304bc6c8db1d0a48bc1eba57b0145cedbaa268637187fa7d9154ab6",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "examples/example-nfr-selection.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/examples/example-nfr-selection.md"
+    },
+    {
+      "path": "archive/v7.8/examples/example-project-test-strategy.md",
+      "sha256": "9df73f48d4d8b49bc0c3d6e21123b8cfb1ccf22d6a8936b38e45ea39179e972f",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "examples/example-project-test-strategy.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/examples/example-project-test-strategy.md"
+    },
+    {
+      "path": "archive/v7.8/examples/example-rescue-assessment-report.md",
+      "sha256": "1e4c3184ae4338762f3d33de88fe98ff80a713c7fab60b09565948e2cf070330",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "examples/example-rescue-assessment-report.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/examples/example-rescue-assessment-report.md"
+    },
+    {
+      "path": "archive/v7.8/examples/example-review-report.md",
+      "sha256": "33383c78389ded4559bee246a7031043682a27a5c1d04dfb1dd16f136e39cc6a",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "examples/example-review-report.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/examples/example-review-report.md"
+    },
+    {
+      "path": "archive/v7.8/examples/example-slice-plan.md",
+      "sha256": "08f9537bf9b8a572acebbc62386422415d9a25dea30064a8334fcf0edf25810c",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "examples/example-slice-plan.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/examples/example-slice-plan.md"
+    },
+    {
+      "path": "archive/v7.8/examples/example-ui-action-inventory.md",
+      "sha256": "7c7c438553fdf030e27e0f678707e3e1431e21b3636503771cf5babbabe244a7",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "examples/example-ui-action-inventory.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/examples/example-ui-action-inventory.md"
+    },
+    {
+      "path": "archive/v7.8/governance/approval-gates.md",
+      "sha256": "39184cb027ad0d96abc03d4c42fe69eb61c7040c9a0be4e24b54386452f4e36b",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "governance/approval-gates.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/governance/approval-gates.md"
+    },
+    {
+      "path": "archive/v7.8/governance/kpi-dashboard-template.md",
+      "sha256": "e0a096109ba43c8b9c97fab58b93098bf88743a8217ffb9ff19a4b106866490c",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "governance/kpi-dashboard-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/governance/kpi-dashboard-template.md"
+    },
+    {
+      "path": "archive/v7.8/governance/raci-matrix.md",
+      "sha256": "f3f73c7a5ad153585e22ca5c945d62467630094b6c38a2f8b179baa2c2c49b2d",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "governance/raci-matrix.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/governance/raci-matrix.md"
+    },
+    {
+      "path": "archive/v7.8/governance/release-template.md",
+      "sha256": "9f5818928ee2628bb2273cc9509b4381b3d021df655b544e45a62ea82016d10e",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "governance/release-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/governance/release-template.md"
+    },
+    {
+      "path": "archive/v7.8/governance/signoff-log.md",
+      "sha256": "e0040499fdba35560a111a0aaf3394e8097f70df248c240b9b2dc6a83364dae6",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "governance/signoff-log.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/governance/signoff-log.md"
+    },
+    {
+      "path": "archive/v7.8/governance/sprint-template.md",
+      "sha256": "67a1175dafb3dd5e64e6b8e2838e7aca307ed42676ed15f6afef65d769bfaccb",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "governance/sprint-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/governance/sprint-template.md"
+    },
+    {
+      "path": "archive/v7.8/jira/bug-template.md",
+      "sha256": "96a38560b72e039f79fc9380b495f545f1fbf2f503d4dbd9cf692ae49036e431",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "jira/bug-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/jira/bug-template.md"
+    },
+    {
+      "path": "archive/v7.8/jira/epic-template.md",
+      "sha256": "0c0b8645cb2bcd80e80d87ae7f4c977ac62a45cf86d2af3cd30fea33f35c1086",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "jira/epic-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/jira/epic-template.md"
+    },
+    {
+      "path": "archive/v7.8/jira/story-template.md",
+      "sha256": "3af3e150e2a9037e593ad1d740bed1c18f80973125f9ffc787ccb83f0df9dfad",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "jira/story-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/jira/story-template.md"
+    },
+    {
+      "path": "archive/v7.8/jira/workflow-mapping.md",
+      "sha256": "1d9c1ba2af6a76e8bb5c58d6cd40abae4525def42fcf710eeb66385de2c025b7",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "jira/workflow-mapping.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/jira/workflow-mapping.md"
+    },
+    {
+      "path": "archive/v7.8/packs/README.md",
+      "sha256": "e058ff1014beaa210a2d8162896aea5097e7f920967996f147991a14b8c6b1d1",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "packs/README.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/packs/README.md"
+    },
+    {
+      "path": "archive/v7.8/packs/appsec-testing-pack.md",
+      "sha256": "a1e096c715c517f2395cdfe0365804f79dffe8996f06dc41fb208317a439d2c7",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "packs/appsec-testing-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/packs/appsec-testing-pack.md"
+    },
+    {
+      "path": "archive/v7.8/packs/nfr-accessibility-pack.md",
+      "sha256": "ce35b3bb5bd5309c2e46e9e46e0c34dce56641f9edd020178651584b5598a8ce",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "packs/nfr-accessibility-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/packs/nfr-accessibility-pack.md"
+    },
+    {
+      "path": "archive/v7.8/packs/nfr-auditability-pack.md",
+      "sha256": "aa62f2793f8242e7edec1f0a4453d4b46f5273fe70c4639a476d6eead105f8db",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "packs/nfr-auditability-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/packs/nfr-auditability-pack.md"
+    },
+    {
+      "path": "archive/v7.8/packs/nfr-availability-pack.md",
+      "sha256": "f4e1f1e6bec72b0f279574199113cc48c4e04085083e4db4b161f8b35a193a81",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "packs/nfr-availability-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/packs/nfr-availability-pack.md"
+    },
+    {
+      "path": "archive/v7.8/packs/nfr-disaster-recovery-pack.md",
+      "sha256": "cecf24027dbe5b8c2a115b2628c42a620572616d23a3b8dd4f97250a3d53b618",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "packs/nfr-disaster-recovery-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/packs/nfr-disaster-recovery-pack.md"
+    },
+    {
+      "path": "archive/v7.8/packs/nfr-localization-pack.md",
+      "sha256": "294bc6dae97d53ab698aef804119d64e0699b5ad0ecc6d5b60f13face02e946f",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "packs/nfr-localization-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/packs/nfr-localization-pack.md"
+    },
+    {
+      "path": "archive/v7.8/packs/nfr-maintainability-pack.md",
+      "sha256": "882927cafd10337d86958c9ca3a091dbbe9e42d23be04781264f0a8f4a7b3c8e",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "packs/nfr-maintainability-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/packs/nfr-maintainability-pack.md"
+    },
+    {
+      "path": "archive/v7.8/packs/nfr-observability-pack.md",
+      "sha256": "d4d3806c6326127dac8056d92543923d750073d1cbb746b85109acce1644d3de",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "packs/nfr-observability-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/packs/nfr-observability-pack.md"
+    },
+    {
+      "path": "archive/v7.8/packs/nfr-performance-pack.md",
+      "sha256": "fca54690f209ce9826ab18c900fdbae18b258aeb22fe12600004cdcf4c4104cc",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "packs/nfr-performance-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/packs/nfr-performance-pack.md"
+    },
+    {
+      "path": "archive/v7.8/packs/nfr-scalability-pack.md",
+      "sha256": "ad9dadccca101b911309fed7c17c3a11f7f67a99b8a0e358e3e83c4e75b16800",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "packs/nfr-scalability-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/packs/nfr-scalability-pack.md"
+    },
+    {
+      "path": "archive/v7.8/packs/nfr-security-pack.md",
+      "sha256": "99acf64d9aa99d9aa0a5a1c4d9f190f099c9a22ba0aa7b056ab4efad06245511",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "packs/nfr-security-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/packs/nfr-security-pack.md"
+    },
+    {
+      "path": "archive/v7.8/packs/penetration-testing-pack.md",
+      "sha256": "84a131b986e2c22861f5f6fc6b1c580dbba9056710626e8fa463b7a7b5596609",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "packs/penetration-testing-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/packs/penetration-testing-pack.md"
+    },
+    {
+      "path": "archive/v7.8/plans/README.md",
+      "sha256": "4fe44ca15e95b78035cf1a89a3e6d44fe7d9d9db9d591d9686708ba117cbc2fd",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "plans/README.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/plans/README.md"
+    },
+    {
+      "path": "archive/v7.8/plans/example-traceability-matrix.md",
+      "sha256": "ac783b5cd27a1e45525c4813675af0a5aa6836d2238aefd178a3ff97f0ee199e",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "plans/example-traceability-matrix.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/plans/example-traceability-matrix.md"
+    },
+    {
+      "path": "archive/v7.8/prompts/ANALYST-PROMPTS.md",
+      "sha256": "1f1bf7c7331741dc179b48f2f2776abd906ef6674d21c40b5554f912c2216a02",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "prompts/ANALYST-PROMPTS.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/prompts/ANALYST-PROMPTS.md"
+    },
+    {
+      "path": "archive/v7.8/prompts/ARCHITECT-PROMPTS.md",
+      "sha256": "03eb91fc6ff469c6d29c0423824f154fc6970365860c286d24a784bafcb3ca04",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "prompts/ARCHITECT-PROMPTS.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/prompts/ARCHITECT-PROMPTS.md"
+    },
+    {
+      "path": "archive/v7.8/prompts/DEFECT-PROMPTS.md",
+      "sha256": "5a341917aa7961a4785d41e1ecad59ba2816f648c566a9bc05c350898428c116",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "prompts/DEFECT-PROMPTS.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/prompts/DEFECT-PROMPTS.md"
+    },
+    {
+      "path": "archive/v7.8/prompts/DEVELOPER-PROMPTS.md",
+      "sha256": "540dcdd77a9a0805534e1483202165a52246042b621a4f577f7d96eaa1ac4890",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "prompts/DEVELOPER-PROMPTS.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/prompts/DEVELOPER-PROMPTS.md"
+    },
+    {
+      "path": "archive/v7.8/prompts/ORCHESTRATOR-PROMPTS.md",
+      "sha256": "762f99159bbd7c7f1d723e0288e7a0eaa7ddd360cb36623e3dfd11c7216abee4",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "prompts/ORCHESTRATOR-PROMPTS.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/prompts/ORCHESTRATOR-PROMPTS.md"
+    },
+    {
+      "path": "archive/v7.8/prompts/REVIEWER-PROMPTS.md",
+      "sha256": "1e18d4c03cc0d1e9f3b1eb4482fe598d224fab26a4c62927e298968d6418d8a1",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "prompts/REVIEWER-PROMPTS.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/prompts/REVIEWER-PROMPTS.md"
+    },
+    {
+      "path": "archive/v7.8/prompts/START-PROJECT.md",
+      "sha256": "104c5b72ceb4b1d892a2661cc91d22736bd41d8ca92c45d14493c3bce9326296",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "prompts/START-PROJECT.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/prompts/START-PROJECT.md"
+    },
+    {
+      "path": "archive/v7.8/prompts/TESTER-PROMPTS.md",
+      "sha256": "b078afa438b30e4a9cf52a8959da42434451fcdd20675996ac92190f02ecd98f",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "prompts/TESTER-PROMPTS.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/prompts/TESTER-PROMPTS.md"
+    },
+    {
+      "path": "archive/v7.8/references/accessibility-checklist.md",
+      "sha256": "aad6c71e3c0351984935922dc045924e68958bd38600c4ad4e126f314bb44bf9",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/accessibility-checklist.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/accessibility-checklist.md"
+    },
+    {
+      "path": "archive/v7.8/references/angular-ui-checklist.md",
+      "sha256": "5554ec953b83a76a720132ca71407ae84a5abaf46876578916c66b6241723138",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/angular-ui-checklist.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/angular-ui-checklist.md"
+    },
+    {
+      "path": "archive/v7.8/references/api-design-checklist.md",
+      "sha256": "7ab6bc338f61052b08727c2eaf598456529c45fe34852a9c08ff92bd04579ddc",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/api-design-checklist.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/api-design-checklist.md"
+    },
+    {
+      "path": "archive/v7.8/references/appsec-testing-guidance.md",
+      "sha256": "3a5ce05f664785f6cc60f02d64c5622115240239134db993748e35dc8c022261",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/appsec-testing-guidance.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/appsec-testing-guidance.md"
+    },
+    {
+      "path": "archive/v7.8/references/auth-checklist.md",
+      "sha256": "fbaa602008a34664bc7f21b0578d0ebf6ed2255eea6d2c44b8f6dcdc01500a73",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/auth-checklist.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/auth-checklist.md"
+    },
+    {
+      "path": "archive/v7.8/references/flutter-ui-checklist.md",
+      "sha256": "51022df7edffaee5deafa4aeca76dcbdd38066eb25f6522ec58fc80d3dbedd35",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/flutter-ui-checklist.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/flutter-ui-checklist.md"
+    },
+    {
+      "path": "archive/v7.8/references/mobile-parity-checklist.md",
+      "sha256": "51d99dd93d49b636aead04a9a798c1b5812d5d9f7c94b3aaecdbe0fa4b6976d1",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/mobile-parity-checklist.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/mobile-parity-checklist.md"
+    },
+    {
+      "path": "archive/v7.8/references/penetration-testing-guidance.md",
+      "sha256": "74d1f4a8b8e59d36115e66756a1017b2abd887b958198fa3f0262b0d4f130175",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/penetration-testing-guidance.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/penetration-testing-guidance.md"
+    },
+    {
+      "path": "archive/v7.8/references/readiness-scoring-model.md",
+      "sha256": "fa2134f519b344956f007203f6877bbb5f96890e1e62decf31440169b04e847e",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/readiness-scoring-model.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/readiness-scoring-model.md"
+    },
+    {
+      "path": "archive/v7.8/references/rescue-gap-taxonomy.md",
+      "sha256": "03a224df4f8154159b1303b66ad39eed90391678b73f8ae10e0bcac1c13b49c9",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/rescue-gap-taxonomy.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/rescue-gap-taxonomy.md"
+    },
+    {
+      "path": "archive/v7.8/references/review-checklist.md",
+      "sha256": "8bee5f1f348bc1f4bdfae7f892948d7f9ea035f2288517e0b83b6dc51b90dfd1",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/review-checklist.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/review-checklist.md"
+    },
+    {
+      "path": "archive/v7.8/references/review-scorecard-guidance.md",
+      "sha256": "723b8bb068031e5877d453920b76a0f87f79f837c1d247cef1370820194389fc",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/review-scorecard-guidance.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/review-scorecard-guidance.md"
+    },
+    {
+      "path": "archive/v7.8/references/salvage-vs-rebuild-guidance.md",
+      "sha256": "c5155d0bb8c286ade3b9fe7947d1fd74ca26f55c459ede27d93dfc8e5a3107f2",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/salvage-vs-rebuild-guidance.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/salvage-vs-rebuild-guidance.md"
+    },
+    {
+      "path": "archive/v7.8/references/security-checklist.md",
+      "sha256": "1dac70b6429a0e48d2c0021a494dcd2631a105afa22799a2ecfdf7afe8f735f4",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/security-checklist.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/security-checklist.md"
+    },
+    {
+      "path": "archive/v7.8/references/simplicity-and-change-discipline.md",
+      "sha256": "41379e7d05aa92a4d19df6728353b7a3ec695e59aea6b00e31cde18fdd9e6dfa",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/simplicity-and-change-discipline.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/simplicity-and-change-discipline.md"
+    },
+    {
+      "path": "archive/v7.8/references/spec-quality-checklist.md",
+      "sha256": "002181fc0dbeaba9a7b773156680ac50e6eea8ca6996307fb42c51f58a587295",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/spec-quality-checklist.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/spec-quality-checklist.md"
+    },
+    {
+      "path": "archive/v7.8/references/sqlserver-checklist.md",
+      "sha256": "f1691f6811a6557fc0d42ae35949502a5bede3f1e80b279f115ec8f23d5cc2a5",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/sqlserver-checklist.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/sqlserver-checklist.md"
+    },
+    {
+      "path": "archive/v7.8/references/testing-patterns.md",
+      "sha256": "fabd218608bae912e177711be0cadc6e4941f7b9837630ea674e9ce09d9d72d9",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/testing-patterns.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/testing-patterns.md"
+    },
+    {
+      "path": "archive/v7.8/references/traceability-automation-guidance.md",
+      "sha256": "2ae002147fec954852042da78e80c7ed6137348649c6c762ece0b46ace37a6e1",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "references/traceability-automation-guidance.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/references/traceability-automation-guidance.md"
+    },
+    {
+      "path": "archive/v7.8/releases/README.md",
+      "sha256": "cd92959870661ca3434e336b4c11103a480ba2b481957429bcc7dde6057d5ff7",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "releases/README.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/releases/README.md"
+    },
+    {
+      "path": "archive/v7.8/review-checklists/analyst-review-checklist.md",
+      "sha256": "2ccfc2ef694eb42592f3171a3797701ee1ac2b31cde814715ede6e68e0f4647b",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "review-checklists/analyst-review-checklist.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/review-checklists/analyst-review-checklist.md"
+    },
+    {
+      "path": "archive/v7.8/review-checklists/angular-review-checklist.md",
+      "sha256": "06f035a83ab63e88d96d59c6fb2d5d3ea36d263d2b41094383cce034ede8e17e",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "review-checklists/angular-review-checklist.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/review-checklists/angular-review-checklist.md"
+    },
+    {
+      "path": "archive/v7.8/review-checklists/architect-review-checklist.md",
+      "sha256": "4cb3826171fd7b8160509cbbfd6798c8086dae17359c86bc5f6a11ba99cd4761",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "review-checklists/architect-review-checklist.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/review-checklists/architect-review-checklist.md"
+    },
+    {
+      "path": "archive/v7.8/review-checklists/backend-review-checklist.md",
+      "sha256": "882da6bf47f2ea64f1c731cef78a05f582f014097655e4a9739b6e65400c0016",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "review-checklists/backend-review-checklist.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/review-checklists/backend-review-checklist.md"
+    },
+    {
+      "path": "archive/v7.8/review-checklists/flutter-review-checklist.md",
+      "sha256": "b815a2a9a4151eb5584b4663d8e2e35e32802a913857a44deb4bd7c34d3432f1",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "review-checklists/flutter-review-checklist.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/review-checklists/flutter-review-checklist.md"
+    },
+    {
+      "path": "archive/v7.8/reviews/README.md",
+      "sha256": "a5ed0e08d095acacc486917992a39b6d55980983a940b8c41ae1a08edf9234c4",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "reviews/README.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/reviews/README.md"
+    },
+    {
+      "path": "archive/v7.8/skills/angular-ui-engineering/SKILL.md",
+      "sha256": "6e3c5f13e79f3f6733d1178b82843812138d96c9490158aa861cf4466d7d1254",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/angular-ui-engineering/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/angular-ui-engineering/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/api-contract-design/SKILL.md",
+      "sha256": "6adb0d1b7c41940eef43f288cebbfd7c5af8df48d7c77c93138947293e5f700c",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/api-contract-design/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/api-contract-design/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/appsec-testing-and-remediation/SKILL.md",
+      "sha256": "ef6bef99a4fcbc6af50da1ac5c4c0112dafa593c61ed8e33d496ebceff954c95",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/appsec-testing-and-remediation/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/appsec-testing-and-remediation/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/architecture-decisioning/SKILL.md",
+      "sha256": "a0731c9174c0182d6924cecab6c394e53c29b2e36c83918e753a0e78fea956c2",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/architecture-decisioning/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/architecture-decisioning/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/assumption-and-ambiguity-control/SKILL.md",
+      "sha256": "627ca443d22b3276320c23585b0943f5555bc3e34ea05b5e8674727b916ee097",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/assumption-and-ambiguity-control/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/assumption-and-ambiguity-control/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/auth-jwt-refresh-google-signin/SKILL.md",
+      "sha256": "de15cb6a9afffb4326c2e6a15a6727dafa8058abfefedae896b20d0f1947daf0",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/auth-jwt-refresh-google-signin/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/auth-jwt-refresh-google-signin/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/cross-platform-parity/SKILL.md",
+      "sha256": "ba823710e66f83f65a3e58a481411aa488a3e8dde40f1d6e5fa2a79b3f385298",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/cross-platform-parity/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/cross-platform-parity/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/debugging-and-recovery/SKILL.md",
+      "sha256": "06e925ee44d53463e5670d7c4432afaff6c09977787cf85fa789ec2acad27539",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/debugging-and-recovery/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/debugging-and-recovery/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/devops-and-deployment-readiness/SKILL.md",
+      "sha256": "0bdd450211a0071e268973e869d31c48753025fe9e683c0b5c95f9ce7545a516",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/devops-and-deployment-readiness/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/devops-and-deployment-readiness/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/documentation-and-adrs/SKILL.md",
+      "sha256": "2dd6db8600b52615a8a84d051133c57e542a1e441acbed74d3a70192d3014237",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/documentation-and-adrs/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/documentation-and-adrs/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/dotnet-api-delivery/SKILL.md",
+      "sha256": "2af59a5710822e1d9e47eb724035d977fe40fe42f061be33a3a124886f16b46f",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/dotnet-api-delivery/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/dotnet-api-delivery/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/enterprise-integration-and-orchestration/SKILL.md",
+      "sha256": "8868ce45372cc551f6e0dc55ce5772bb6b49a065034e9e7f24b533606ec6ae61",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/enterprise-integration-and-orchestration/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/enterprise-integration-and-orchestration/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/flutter-ui-engineering/SKILL.md",
+      "sha256": "48a5f748378877321956b708bd682b236db0e60499cf5bf68f25a3194c9b4a13",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/flutter-ui-engineering/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/flutter-ui-engineering/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/incremental-implementation/SKILL.md",
+      "sha256": "7ffd86916182c3b2d9cb390cba7b9c4e02ca8bbc78ce54aae7b657363986947f",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/incremental-implementation/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/incremental-implementation/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/nfr-selection-and-hardening/SKILL.md",
+      "sha256": "c700eb61d4d15c6973e2ddcdaf7e00cf2ffa40704519bed7eb417e36350aac34",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/nfr-selection-and-hardening/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/nfr-selection-and-hardening/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/observability-and-audit/SKILL.md",
+      "sha256": "9ce55cc02dcd66bc2caeb975ee2158b25cc9607581477af02636849563bb3933",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/observability-and-audit/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/observability-and-audit/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/orchestration-and-lifecycle-control/SKILL.md",
+      "sha256": "301eb77ae48bc7225c1486afc35c41de41823af2cd6fc8c2a5d1ce659f709365",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/orchestration-and-lifecycle-control/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/orchestration-and-lifecycle-control/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/penetration-testing-readiness/SKILL.md",
+      "sha256": "3882733dcf6502e163e0f7c95d041d5dd62c518d6569122cad5098fa00b1f3c9",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/penetration-testing-readiness/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/penetration-testing-readiness/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/planning-and-task-breakdown/SKILL.md",
+      "sha256": "39011b400908bca114a56584106cf6c26651ee1eb313330feb9f76f3c98461b1",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/planning-and-task-breakdown/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/planning-and-task-breakdown/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/project-rescue-and-completion/SKILL.md",
+      "sha256": "e4680aa6b994750bc404b166773c9031447b6a99b0d2802efe639c0d1b30f174",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/project-rescue-and-completion/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/project-rescue-and-completion/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/recurring-rules-engine/SKILL.md",
+      "sha256": "e38df61f5349e02bf1bf65c2c0134db0e809e6a2ae80bd1f26c2bf5a9cf6306b",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/recurring-rules-engine/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/recurring-rules-engine/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/review-gates/SKILL.md",
+      "sha256": "bec858f17c7e997b13948fef337d108fbe79cce87eb6662d1022c6a464a173eb",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/review-gates/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/review-gates/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/security-and-hardening/SKILL.md",
+      "sha256": "39ab0708e8ca44d2d77beeed19de302bdb4a7af27d3b9fd199d02ff91da8429e",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/security-and-hardening/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/security-and-hardening/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/shipping-readiness/SKILL.md",
+      "sha256": "38ffd946e48b6ad3bc60caae215b2cba54aee558c79082c6a21187d96e2a2fea",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/shipping-readiness/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/shipping-readiness/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/source-grounding/SKILL.md",
+      "sha256": "a1ce8d8b556fa75cea31a43f5c735c38c7201c280ad72a8a4bef13332212dff2",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/source-grounding/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/source-grounding/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/spec-driven-delivery/SKILL.md",
+      "sha256": "96805e14ff0a76bf298f84bfa393979fc959a78005d64af246ea8fdb4ebd047c",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/spec-driven-delivery/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/spec-driven-delivery/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/spec-quality-analysis/SKILL.md",
+      "sha256": "c17114b0b76bac87d19aed3416f3ed8fe05ff3a74a722f49a084691dfb7845a0",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/spec-quality-analysis/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/spec-quality-analysis/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/sqlserver-data-delivery/SKILL.md",
+      "sha256": "6ee65fb71176c04fcf9a571f0729d86473e541d65cc22f29cd17ffef40d4e946",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/sqlserver-data-delivery/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/sqlserver-data-delivery/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/surgical-change-control/SKILL.md",
+      "sha256": "20eefa3a578a8a67e5ef257babb7c85bc5a57aaca7f35619ad6fd71f0e5dfdc2",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/surgical-change-control/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/surgical-change-control/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/test-enforcement/SKILL.md",
+      "sha256": "d8bbf3033967e3a7fd660a4c674d850b41bc961d40229458465190e331bc7e60",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/test-enforcement/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/test-enforcement/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/test-strategy-selection/SKILL.md",
+      "sha256": "2f6442626e54bbcf7aa783017f0c55fc47b8ff1e99b6637f27b87ed0530c0e68",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/test-strategy-selection/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/test-strategy-selection/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/traceability-governance/SKILL.md",
+      "sha256": "b51fe4eefcfd2f5bd13a3c4e9fb8c525dab18aa836b50efa460733108ab86a22",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/traceability-governance/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/traceability-governance/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/skills/using-starter-kit/SKILL.md",
+      "sha256": "eff7b13f1a549b5812f3f0f1f3cc129e87cd9015e2f1f77c465407c45d56b927",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "skills/using-starter-kit/SKILL.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/skills/using-starter-kit/SKILL.md"
+    },
+    {
+      "path": "archive/v7.8/slice-libraries/angular-slices.md",
+      "sha256": "70729d4e59b0fa1e166aefc1911615630119ea99d901b1e49e1bdd3f2ca67f6e",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "slice-libraries/angular-slices.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/slice-libraries/angular-slices.md"
+    },
+    {
+      "path": "archive/v7.8/slice-libraries/backend-slices.md",
+      "sha256": "7c47c4ac0df406243a6ceac4cd6077b8d763a121947b747341c9fb7c8271291b",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "slice-libraries/backend-slices.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/slice-libraries/backend-slices.md"
+    },
+    {
+      "path": "archive/v7.8/slice-libraries/case-management-module-slices.md",
+      "sha256": "fd2022d65689d112f36e1aa111f0a66a377602dd4f911abaafd40e0fd0c95e73",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "slice-libraries/case-management-module-slices.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/slice-libraries/case-management-module-slices.md"
+    },
+    {
+      "path": "archive/v7.8/slice-libraries/crm-module-slices.md",
+      "sha256": "bbce8c7361fd41b0072fc180754dba0f3e057619f145d82b2e8d1aba343b206b",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "slice-libraries/crm-module-slices.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/slice-libraries/crm-module-slices.md"
+    },
+    {
+      "path": "archive/v7.8/slice-libraries/flutter-slices.md",
+      "sha256": "b592a9af94deaf6f719ee87e630f0347c3c2e7fd2f584b06b859b480463007ba",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "slice-libraries/flutter-slices.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/slice-libraries/flutter-slices.md"
+    },
+    {
+      "path": "archive/v7.8/slice-libraries/mobile-sales-module-slices.md",
+      "sha256": "1eebca0d2cafbe08e9271141155fb61614871beee5815b15b5ddb392c20a953d",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "slice-libraries/mobile-sales-module-slices.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/slice-libraries/mobile-sales-module-slices.md"
+    },
+    {
+      "path": "archive/v7.8/slice-libraries/portal-module-slices.md",
+      "sha256": "442d1a82913205b06b24b0d1654adb5832581be818c1f214c332b5c76fe37af7",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "slice-libraries/portal-module-slices.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/slice-libraries/portal-module-slices.md"
+    },
+    {
+      "path": "archive/v7.8/slice-libraries/workflow-bpm-module-slices.md",
+      "sha256": "bd0a577e8480046e780ae6d805c1f79ff6dbf3823b77f770118b5780222198f8",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "slice-libraries/workflow-bpm-module-slices.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/slice-libraries/workflow-bpm-module-slices.md"
+    },
+    {
+      "path": "archive/v7.8/specs/README.md",
+      "sha256": "b5471ce668da19b85839500d8ee0b4b37b4d9c5ff1525b82342b632fcca3e13b",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "specs/README.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/specs/README.md"
+    },
+    {
+      "path": "archive/v7.8/taskboards/case-management-project-board.md",
+      "sha256": "8c29d62e38747a2a4e7d599e5666ea3e2497548110e619acf5516d26c9313618",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "taskboards/case-management-project-board.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/taskboards/case-management-project-board.md"
+    },
+    {
+      "path": "archive/v7.8/taskboards/crm-project-board.md",
+      "sha256": "8d3e8fde125afbafa757e388993e712706836bea734e59a54a3ed0fdfc17ae2a",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "taskboards/crm-project-board.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/taskboards/crm-project-board.md"
+    },
+    {
+      "path": "archive/v7.8/taskboards/full-stack-project-board.md",
+      "sha256": "65cf0abc6ca629a06876ac06090f416776138078885c09d0794ff570860b8d96",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "taskboards/full-stack-project-board.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/taskboards/full-stack-project-board.md"
+    },
+    {
+      "path": "archive/v7.8/taskboards/mobile-app-project-board.md",
+      "sha256": "ecca3c591f12423ac44003f980a0b2cbbe8357508b661abf9eb69e3dc3c10c27",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "taskboards/mobile-app-project-board.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/taskboards/mobile-app-project-board.md"
+    },
+    {
+      "path": "archive/v7.8/taskboards/mobile-sales-project-board.md",
+      "sha256": "25a33ee0b0fdfffcb0e664ceea429b9f25d3cac8d385deda63c2025d733ba4b9",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "taskboards/mobile-sales-project-board.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/taskboards/mobile-sales-project-board.md"
+    },
+    {
+      "path": "archive/v7.8/taskboards/portal-project-board.md",
+      "sha256": "fdc18fba7448668cf55f7a86edd30cc42135111d4385d50154732480744d729f",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "taskboards/portal-project-board.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/taskboards/portal-project-board.md"
+    },
+    {
+      "path": "archive/v7.8/taskboards/web-api-project-board.md",
+      "sha256": "f6fb9afe19f0f243ebde2853a8fe605ed5859c11ddb87ad244eba6b2d2574c25",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "taskboards/web-api-project-board.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/taskboards/web-api-project-board.md"
+    },
+    {
+      "path": "archive/v7.8/taskboards/workflow-bpm-project-board.md",
+      "sha256": "03ad3a9f0b994ee4e2ff767ed8b85fc9860d16b04df843b0472093907520e81c",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "taskboards/workflow-bpm-project-board.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/taskboards/workflow-bpm-project-board.md"
+    },
+    {
+      "path": "archive/v7.8/templates/BRD-ANALYSIS-TEMPLATE.md",
+      "sha256": "929cf72c52e6b3304bf20f8b13145b6cc86114a0be2519e7b40998898dfa077f",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/BRD-ANALYSIS-TEMPLATE.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/BRD-ANALYSIS-TEMPLATE.md"
+    },
+    {
+      "path": "archive/v7.8/templates/DEFECT-FLOW-TEMPLATE.md",
+      "sha256": "e2ebae0c8a6737d5756a36ea7b3d55b5fbe1a847129aafa218c985d4ae67a391",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/DEFECT-FLOW-TEMPLATE.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/DEFECT-FLOW-TEMPLATE.md"
+    },
+    {
+      "path": "archive/v7.8/templates/REVIEW-TEMPLATE.md",
+      "sha256": "1416ad5593c67e94035b842dd7575ee14f0639da195b13e65e162a43eaa9e7bf",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/REVIEW-TEMPLATE.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/REVIEW-TEMPLATE.md"
+    },
+    {
+      "path": "archive/v7.8/templates/SLICE-TEMPLATE.md",
+      "sha256": "912e9f7fae8bb16cfdce3e41e38e5526909e993d2cce4d003c89e128f345b0bf",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/SLICE-TEMPLATE.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/SLICE-TEMPLATE.md"
+    },
+    {
+      "path": "archive/v7.8/templates/TRACEABILITY-TEMPLATE.md",
+      "sha256": "45cafebd97f501497a3bc51ceb38b05a440cdbde961a286bd1d674d96f33c151",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/TRACEABILITY-TEMPLATE.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/TRACEABILITY-TEMPLATE.md"
+    },
+    {
+      "path": "archive/v7.8/templates/USER-STORY-TEMPLATE.md",
+      "sha256": "bc74b2a69c6de63d358ad87fdd09caec7bc19c7bc6c6ae0ed29f0b5446aa7008",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/USER-STORY-TEMPLATE.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/USER-STORY-TEMPLATE.md"
+    },
+    {
+      "path": "archive/v7.8/templates/acceptance-criteria-template.md",
+      "sha256": "647506e3db910dce5c4e37769c794f398ac5bae0170d44cefe50921b79794ee9",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/acceptance-criteria-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/acceptance-criteria-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/adr-decision-log-template.md",
+      "sha256": "46712e65a800c3523db99965174efd593ebe69b181659c42002d01a4e78c97b0",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/adr-decision-log-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/adr-decision-log-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/adr-template.md",
+      "sha256": "603597400638f56bfeeac83cc13dad447f3cf5c34f8e5b7bc1c9278562aa4ee6",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/adr-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/adr-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/ambiguity-register-template.md",
+      "sha256": "e5346772d82713c84bed8e6ae38e1747f10831f3e19b71ddd7f850b6d1c683c2",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/ambiguity-register-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/ambiguity-register-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/api-spec-template.md",
+      "sha256": "68f2a42d763643e7dcc5e4a32956346924a7bfc02840875b78455aec2e383156",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/api-spec-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/api-spec-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/appsec-findings-tracker-template.md",
+      "sha256": "1a242a7ef5215eb6b16e1bcbab032e4ec39cc87eaa558ddc09f36646d1c931ef",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/appsec-findings-tracker-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/appsec-findings-tracker-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/appsec-review-scorecard-template.md",
+      "sha256": "e81dd199a1eefc8dc2997bc89ca70b307f887a11a97dc47cc503b6c4cfa0d91d",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/appsec-review-scorecard-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/appsec-review-scorecard-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/appsec-test-plan-template.md",
+      "sha256": "42de68c94b5caad76ff66b3e84dfeffbbf0a57cc3477de9cdb131f92f97cf290",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/appsec-test-plan-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/appsec-test-plan-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/architecture-review-scorecard-template.md",
+      "sha256": "9058d49978c9f8af0bc34a22b2fb9f9aa8a67b4f5c5d1835352ebc336ae5f9a8",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/architecture-review-scorecard-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/architecture-review-scorecard-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/assumptions-log-template.md",
+      "sha256": "604f8099c9b38ab6f13949613d3b2ef6e2b378488128e37f531fbcfb5e50ef49",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/assumptions-log-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/assumptions-log-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/business-rule-verification-matrix-template.md",
+      "sha256": "b0a55cb49ae168bdc602e7ee6fab466fb05c39ca4c23a8e911b5f30b2dfab856",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/business-rule-verification-matrix-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/business-rule-verification-matrix-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/cross-platform-parity-report-template.md",
+      "sha256": "6ea2f2bba82c2d589339c9b402bd73d1ca754fb913316204d3ea3b7af36e6dc6",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/cross-platform-parity-report-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/cross-platform-parity-report-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/data-model-template.md",
+      "sha256": "9afacc45812a9b95e9c0e7c57f05336cc7270eec56a4234d882dc00f60a4d96c",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/data-model-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/data-model-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/deployment-checklist-template.md",
+      "sha256": "a60eb9306d79bd195f8fd3998271e3aae822ec1e96f0fb933e10454c7a177bb6",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/deployment-checklist-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/deployment-checklist-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/environment-matrix-template.md",
+      "sha256": "72980f2b0d0f7a49990bec839dcb20af501a99a0d45e10a67ea0f955762948b3",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/environment-matrix-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/environment-matrix-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/evidence-template.md",
+      "sha256": "054aba06ebf4e5f635dabdb1206a7c9f09e519bedd37d172b2ddb04785cd2d30",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/evidence-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/evidence-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/functional-review-scorecard-template.md",
+      "sha256": "c1e8cab38f0fb5142cde9b6f67cf49e9f8d2308e1e3aedc2ce38afc173bb0f4b",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/functional-review-scorecard-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/functional-review-scorecard-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/mobile-navigation-map-template.md",
+      "sha256": "1ec4aa055bffccc4941ba3b637e4d545516fe3803512bcf49279435827830305",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/mobile-navigation-map-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/mobile-navigation-map-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/nfr-review-scorecard-template.md",
+      "sha256": "283bac3ec84f45c18896c69e94122d728c0cecc4b2d1beaa11cb3d69ea5a04fe",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/nfr-review-scorecard-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/nfr-review-scorecard-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/nfr-selection-template.md",
+      "sha256": "1446e5d2d02998a70722b3a7a4a16f6553284074460daa62af313432c267831b",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/nfr-selection-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/nfr-selection-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/ops-readiness-template.md",
+      "sha256": "73e07f86d61535dfcc0293fad0b742d68d704edae64ee1dd2a9c87c819f37aad",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/ops-readiness-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/ops-readiness-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/penetration-test-findings-log-template.md",
+      "sha256": "5e424cf01384d2491941517beb290cfb8e74730834b881ccce84b6bd86c6d1e3",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/penetration-test-findings-log-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/penetration-test-findings-log-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/penetration-test-readiness-template.md",
+      "sha256": "be09578164e8ec6546293ee7488d556c08f388eadccc67dd3183545245ef13fb",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/penetration-test-readiness-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/penetration-test-readiness-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/project-spec-template.md",
+      "sha256": "d58d38dd15f77e78ac85fd3305bfbf6d029e7a88490d296c89ee0024483da210",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/project-spec-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/project-spec-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/project-test-strategy-template.md",
+      "sha256": "c737a4d587aba6ec050c639b11d1e782e444d3d138d3f52f37b7557b2a33fa19",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/project-test-strategy-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/project-test-strategy-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/readiness-scorecard-template.md",
+      "sha256": "7f1823e703560b523aedb36a1297bb0f9e391d91d9100f2e61569330ac2278c2",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/readiness-scorecard-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/readiness-scorecard-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/release-readiness-scorecard-template.md",
+      "sha256": "0ec4b51e148bbc9029d69a4b5ec6c12b5f646a4b620543c8e392c6a011be1917",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/release-readiness-scorecard-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/release-readiness-scorecard-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/release-readiness-template.md",
+      "sha256": "7cc3296a91ec248115878db5bbb60c86938b5a510c4f375e98fc0b170d77bdc6",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/release-readiness-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/release-readiness-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/requirement-to-test-map-template.md",
+      "sha256": "f1f22aa8127fdbf169693f0c32587b91a469489e0149171ce619f8d3f7e05f4d",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/requirement-to-test-map-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/requirement-to-test-map-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/rescue-assessment-template.md",
+      "sha256": "24d772bd580f66b07005e818700f8a06a9f12b03ae7c8ebacd51c0f9b3e17373",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/rescue-assessment-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/rescue-assessment-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/rescue-recovery-plan-template.md",
+      "sha256": "64371d8d7ec95c1a46d4aca034b68900c2117dc56a8849faa55d7b1ff633e89c",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/rescue-recovery-plan-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/rescue-recovery-plan-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/review-report-template.md",
+      "sha256": "3aba9548b9bd0f0db1a8fd56ea738452cc6deeee2be779bc85ef49bf0e9e3f5c",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/review-report-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/review-report-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/salvage-vs-rebuild-decision-template.md",
+      "sha256": "a75fcaff4d1e05d13f0985ac43929518ebedec49de30496fa62979c435f702ec",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/salvage-vs-rebuild-decision-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/salvage-vs-rebuild-decision-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/screen-inventory-template.md",
+      "sha256": "fdd3c45de55143abcc55306029f8856360f5f2f31a2de55646c759443420d94c",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/screen-inventory-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/screen-inventory-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/screenshot-annotation-template.md",
+      "sha256": "2033b4b226c2574c2b0e69de79e74e5621d9941987c4a025b6a12d6965a795e7",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/screenshot-annotation-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/screenshot-annotation-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/security-review-scorecard-template.md",
+      "sha256": "42c575633de5374e72daa4632f7255bc825d0d33ce364256b193cee120448477",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/security-review-scorecard-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/security-review-scorecard-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/spec-gap-report-template.md",
+      "sha256": "737a56130ab1cd18cd34a93f23e457e8b9566cc678813741c6a89baf6e27f548",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/spec-gap-report-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/spec-gap-report-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/spec-readiness-scorecard-template.md",
+      "sha256": "a1448fab6d25dddcde04b10736bfc980e5631e64f6f0c873f676ba94fc9b548d",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/spec-readiness-scorecard-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/spec-readiness-scorecard-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/stack-conformance-template.md",
+      "sha256": "52fc6a09588809669216100e2527b1f44dbbfa777c92d6cd1e5830ee4b9d0ed3",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/stack-conformance-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/stack-conformance-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/step-verification-plan-template.md",
+      "sha256": "31123487212ca041bf879b72611ea2a3d2b5d08b852b42a5264255e21fe7d3b9",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/step-verification-plan-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/step-verification-plan-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/surgical-change-plan-template.md",
+      "sha256": "4189276c32c775fa95d434366cfa629de029e119e6e9e7d64674b06320d04cf5",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/surgical-change-plan-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/surgical-change-plan-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/testing-review-scorecard-template.md",
+      "sha256": "a063b53096d7a5aa5223c41a1cabec5bbe0e3afb24010b2927e0c02adc22743e",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/testing-review-scorecard-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/testing-review-scorecard-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/traceability-matrix-template.md",
+      "sha256": "84c2f7dc380e4055868655d6fe653b7d6f29160d83fc41749ee98d93b48fba12",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/traceability-matrix-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/traceability-matrix-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/ui-action-inventory-template.md",
+      "sha256": "8d22352e825926bded717273adb761084da2a37059a1806f2bf14bf9295f04e5",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/ui-action-inventory-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/ui-action-inventory-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/ui-mobile-spec-template.md",
+      "sha256": "cc192e70812a2181cd55689fd668d941ac7d187c15feac36483bca62557bdd5b",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/ui-mobile-spec-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/ui-mobile-spec-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/ui-review-scorecard-template.md",
+      "sha256": "7ea9d007033cffabcb7e19f58c0f982c34ba1fe60498fc698d1db9ac5472caef",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/ui-review-scorecard-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/ui-review-scorecard-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/ui-web-spec-template.md",
+      "sha256": "6945c30fbce206472d536795602f154ca9daf18982685d73d2f4e34f9fdebcda",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/ui-web-spec-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/ui-web-spec-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/ui-workflow-template.md",
+      "sha256": "82aeac56824ea2ba2bbf138e26a70a32628ca9e98f79b26e7b023aabbad2f26a",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/ui-workflow-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/ui-workflow-template.md"
+    },
+    {
+      "path": "archive/v7.8/templates/web-module-map-template.md",
+      "sha256": "7089e60dd042ed825c24231bdd1dfe3fe6c997b2b7e711bbf206f20c567654ef",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "templates/web-module-map-template.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/templates/web-module-map-template.md"
+    },
+    {
+      "path": "archive/v7.8/test-strategy-packs/README.md",
+      "sha256": "aca30ef4d3256f0faca591071732709cff7903cf8e14a858bad3a581bdc32cd4",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "test-strategy-packs/README.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/test-strategy-packs/README.md"
+    },
+    {
+      "path": "archive/v7.8/test-strategy-packs/crud-heavy-business-app-pack.md",
+      "sha256": "d0a5228345f318287e1c3d86d6ff17d53ea2a3cfaa63a3415248bfab515dc5ed",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "test-strategy-packs/crud-heavy-business-app-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/test-strategy-packs/crud-heavy-business-app-pack.md"
+    },
+    {
+      "path": "archive/v7.8/test-strategy-packs/integration-heavy-system-pack.md",
+      "sha256": "cc34ac8fece70755b4e636dac8f76eec9e0161029cf1997d6588ae8eef65cf55",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "test-strategy-packs/integration-heavy-system-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/test-strategy-packs/integration-heavy-system-pack.md"
+    },
+    {
+      "path": "archive/v7.8/test-strategy-packs/mobile-offline-online-pack.md",
+      "sha256": "20051b5f5154c32b2148bec28f47f3f8eac45514e5c554d975b7b629fba08a45",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "test-strategy-packs/mobile-offline-online-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/test-strategy-packs/mobile-offline-online-pack.md"
+    },
+    {
+      "path": "archive/v7.8/test-strategy-packs/mutation-integrity-pack.md",
+      "sha256": "766f94406325c1ed5b2968d6060cfa0b7f34a786fddb9ae2b9d534b4994e8cdb",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "test-strategy-packs/mutation-integrity-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/test-strategy-packs/mutation-integrity-pack.md"
+    },
+    {
+      "path": "archive/v7.8/test-strategy-packs/role-and-permission-matrix-pack.md",
+      "sha256": "58247c34e9f8aa46904710d7c2887e5e3c0163e2e9c3903a04d09b5638465601",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "test-strategy-packs/role-and-permission-matrix-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/test-strategy-packs/role-and-permission-matrix-pack.md"
+    },
+    {
+      "path": "archive/v7.8/test-strategy-packs/workflow-driven-system-pack.md",
+      "sha256": "133d431e6e4abe8e2b07e3bd87cb882a5b53979f8bdc93c76cbf30f3831f70b8",
+      "source_kind": "git",
+      "repository": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit",
+      "revision": "cf3a9281569782ba2962850ba7c1db90a6533158",
+      "source_path": "test-strategy-packs/workflow-driven-system-pack.md",
+      "source_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/blob/cf3a9281569782ba2962850ba7c1db90a6533158/test-strategy-packs/workflow-driven-system-pack.md"
+    },
+    {
+      "path": "archive/july-reusable-prompts/00-common-operating-protocol.md",
+      "sha256": "9e2a8ba2ebbdd7ddf4187ae180c491cc9652df04685dae513e3a51a8204da81d",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-reusable-prompts/01-product-owner-reusable-prompt.md",
+      "sha256": "f0d9f56023e85fc95121e60c7f3975011d50d8fa5d9ae55ae1f3cd0cd5e7d21a",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-reusable-prompts/02-solution-architect-reusable-prompt.md",
+      "sha256": "ebbe951a8cedfcf796c509818e6baff6ff662c1f2dc7a48eef9cdf435b9181ff",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-reusable-prompts/03-developer-reusable-prompt.md",
+      "sha256": "a4fa32f936faa2f1e785d917cf20ac70a5ee5860ef8943143f237cba9b1da987",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-reusable-prompts/04-qa-static-analysis-reusable-prompt.md",
+      "sha256": "1005e06ca50e7cedbf24404473cae4181acd618e8e6b7f443795f81da501ad99",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-reusable-prompts/05-remediation-developer-reusable-prompt.md",
+      "sha256": "be7083dce9176ba2882b0594b0478a06739e83e2c830fadf24fe23cc903aac93",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-reusable-prompts/06-qa-regression-reusable-prompt.md",
+      "sha256": "8a40fb51afe76b901d197dd3f54092289e5a9761f29cfe4e24d5ff4579aede22",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-reusable-prompts/07-slice-closure-reusable-prompt.md",
+      "sha256": "97c8c199b18498ab0bb2b99cbc4fbd80892813a0682772d5555d23a52a1c8e41",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-reusable-prompts/08-quick-task-context-examples.md",
+      "sha256": "372c2768df2406b7839a59693daf404aa0cb1b1a175e174c31c11c27a2c14708",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    },
+    {
+      "path": "archive/july-reusable-prompts/README.md",
+      "sha256": "214565818b29ba16219fc345e73c6454380e8055e55e248ca4ac57cba6fd6e61",
+      "source_kind": "recovered-user-supplied-kit",
+      "authority": "Historical context only; not current project SRS or approval"
+    }
+  ]
+}

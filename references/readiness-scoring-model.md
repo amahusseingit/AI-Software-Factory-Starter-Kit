@@ -1,39 +1,6 @@
-# Readiness Scoring Model
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
 
-Use this model to produce consistent go / conditional go / no-go decisions.
+# Readiness scoring
+Scores 0–5 are diagnostic only (0 missing, 1 weak, 2 partial, 3 adequate, 4 strong, 5 very strong). Assess specification, functionality, UI where applicable, testing, architecture, stack conformance, evidence and operations. Scores never grant progression.
 
-## Scoring scale
-- 0 = missing
-- 1 = weak
-- 2 = partial
-- 3 = acceptable
-- 4 = strong
-- 5 = very strong
-
-## Core dimensions
-- Spec completeness
-- Functional completeness
-- UI completeness
-- Test adequacy
-- Architecture consistency
-- Stack conformance
-- Evidence completeness
-- Release readiness
-
-## Suggested thresholds
-- 0-1: blocked
-- 2: major warnings
-- 3: acceptable with known gaps
-- 4-5: strong
-
-## Decision model
-- **Go**: no critical blockers and average score >= 4.0
-- **Conditional Go**: no unowned blockers and average score >= 3.0
-- **No-Go**: any critical blocker or average score < 3.0
-
-## Critical blocker examples
-- Authoritative spec missing
-- Required workflow missing
-- Required stack not enforced
-- Visible UI actions not behaviorally implemented
-- Automated tests missing for core business behavior
+The only progression decisions are PASS and BLOCKED under [protocol.md](../governance/protocol.md). Every mandatory check must be PASS with current bound evidence and valid approval. Any missing evidence, failed/not-run/unknown check, scope mismatch or security blocker overrides all averages. Nonblocking findings need an owner, deadline and explicit disposition. Historical conditional-go categories are superseded; re-evaluate historical results rather than mechanically translating them.
