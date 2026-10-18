@@ -4,3 +4,5 @@
 
 | Environment | Purpose | URL/Host | Data policy | Deployment trigger | Smoke tests | Notes |
 |---|---|---|---|---|---|---|
+
+Record verified branch/event-to-environment mapping, runtime identity/secret scope (never values), database/storage/external-service isolation, artifact digest, deployment approver and observed deployed SHA. Staging need not have a branch. Unknown mappings block deployment changes; development and PR jobs must have no production secrets/data or write access.
