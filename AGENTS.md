@@ -1,143 +1,25 @@
-# AGENTS.md
+# AI Software Factory: unified-1.0.0-draft.1
 
-This file governs execution inside ProjectStarterKit V7.
+This is a new draft unification of pinned V7.8 and the recovered July protocols, not a recovered V9. It is generic and does not authorize application implementation or publication by itself.
 
-## Operating principle
+## Authority
+Follow explicit current user scope and applicable safety/security constraints. Approved project SRS and ADRs supply project behavior; they cannot silently relax the Factory approval and evidence controls. The sole process authority is [governance/protocol.md](governance/protocol.md), with [security-policy.md](governance/security-policy.md) for severity/exception rules and [gate-contract.json](governance/gate-contract.json) for decision vocabulary. If authorities conflict, stop for an explicit scoped resolution; do not infer a waiver.
 
-Use the starter kit as a **governed, orchestrated delivery operating system**, not as an unstructured prompt pack.
+[ORCHESTRATOR.md](ORCHESTRATOR.md) routes work, [roles/](roles/) defines role responsibilities, commands select lifecycle activities, and skills/packs/templates supply subordinate detailed techniques. Archived sources and examples are never authority, approval or evidence.
 
-The operating model has four layers:
+## Mandatory controls
+- Every role, including QA, remediation, regression and closure coordinator, presents a scope/revision-bound plan and waits for explicit user approval before execution. No self-signoff or invented human approval.
+- Before approval, only read-only planning and one narrowly permitted append-only planning record are allowed; see the protocol for its exact boundary.
+- Unknown, failed, not-run, stale, missing-evidence and scope-mismatch states block. Template rows never count as evidence.
+- Use a new task-named branch per task. Record actual upstream base and head. No synthetic ancestry. See [branch-environment-policy.md](governance/branch-environment-policy.md).
+- Developer tests precede independent QA; QA precedes acceptance. Closure, merge and deployment are separately authorized actions.
+- No default stack or business rules. Select approved project profiles explicitly. Existing architecture is the baseline until a scoped change is approved.
+- Never claim application tests, security assessment, branch protection or deployment controls were verified by documentation validators.
 
-1. `AGENTS.md` = governance rules
-2. `ORCHESTRATOR.md` = human-facing orchestration guide
-3. `commands/` = lifecycle phases
-4. `skills/` = specialist execution workflows
+## Routing
+Always consider orchestration-and-lifecycle-control, using-starter-kit, spec-driven-delivery, planning-and-task-breakdown, traceability-governance and test-strategy-selection under skills/.
+Select API, data, Angular, Flutter, authentication, recurrence or integration skills only when the approved project scope requires them. Mobile parity applies only to in-scope clients. Always apply source grounding, ambiguity control, incremental vertical slices, test enforcement and independent review to their relevant phases. Security applicability assessment is mandatory; selected security checks cannot silently be skipped.
+For defects, use debugging-and-recovery and surgical-change-control; large rescue or rewrite needs its own approval.
 
-In addition, the AI should use:
-- `references/`
-- `templates/`
-- `packs/`
-- `adr-packs/`
-- `devops-packs/`
-- `test-strategy-packs/`
-
-when relevant.
-
-## Mandatory orchestration rule
-
-Before major work begins, the AI must use the orchestration layer to determine:
-- project state
-- lifecycle entry point
-- active commands
-- active skills
-- active packs/templates
-- minimum artifact expectations
-
-Use:
-- `ORCHESTRATOR.md`
-- `skills/orchestration-and-lifecycle-control/`
-
-Do not implement directly when a defined command or skill applies.
-
-## Lifecycle
-
-1. DEFINE
-2. PLAN
-3. BUILD
-4. VERIFY
-5. REVIEW
-6. SHIP
-
-## Project mode defaults
-
-Unless the authoritative project spec explicitly says otherwise, assume:
-
-- Backend: .NET 8 / ASP.NET Core Web API
-- Database: Microsoft SQL Server
-- Web: Angular
-- Mobile: Flutter
-- Authentication: JWT access token + refresh token
-- External auth when needed: Google Sign-In
-
-## Mandatory routing rules
-
-### New system or large feature
-Always activate:
-- `skills/orchestration-and-lifecycle-control/SKILL.md`
-- `skills/using-starter-kit/SKILL.md`
-- `skills/spec-driven-delivery/SKILL.md`
-- `skills/planning-and-task-breakdown/SKILL.md`
-- `skills/traceability-governance/SKILL.md`
-- `skills/test-strategy-selection/SKILL.md`
-
-### API or integration work
-Also activate as applicable:
-- `skills/api-contract-design/SKILL.md`
-- `skills/dotnet-api-delivery/SKILL.md`
-- `skills/enterprise-integration-and-orchestration/SKILL.md`
-- `skills/observability-and-audit/SKILL.md`
-
-### Data layer work
-Also activate:
-- `skills/sqlserver-data-delivery/SKILL.md`
-
-### Angular web work
-Also activate:
-- `skills/angular-ui-engineering/SKILL.md`
-
-### Flutter mobile work
-Also activate:
-- `skills/flutter-ui-engineering/SKILL.md`
-
-### Authentication work
-Also activate:
-- `skills/auth-jwt-refresh-google-signin/SKILL.md`
-
-### Financial and recurrence logic
-Also activate:
-- `skills/recurring-rules-engine/SKILL.md`
-
-### Build and completion
-Always activate:
-- `skills/incremental-implementation/SKILL.md`
-- `skills/test-enforcement/SKILL.md`
-- `skills/cross-platform-parity/SKILL.md`
-- `skills/review-gates/SKILL.md`
-- `skills/shipping-readiness/SKILL.md`
-
-### Defects and recovery
-When troubleshooting:
-- `skills/orchestration-and-lifecycle-control/SKILL.md`
-- `skills/debugging-and-recovery/SKILL.md`
-- `skills/source-grounding/SKILL.md`
-- `skills/project-rescue-and-completion/SKILL.md`
-- `skills/surgical-change-control/SKILL.md`
-
-### Ambiguity and assumptions
-When requirements are unclear:
-- `skills/orchestration-and-lifecycle-control/SKILL.md`
-- `skills/spec-quality-analysis/SKILL.md`
-- `skills/assumption-and-ambiguity-control/SKILL.md`
-
-### Security-sensitive projects
-Also activate as applicable:
-- `skills/appsec-testing-and-remediation/SKILL.md`
-- `skills/penetration-testing-readiness/SKILL.md`
-
-## Hard rules
-
-- Do not silently invent missing business rules.
-- Do not accept visual UI as functional completion.
-- Do not leave placeholder CRUD for in-scope modules.
-- Do not over-engineer with speculative abstractions.
-- Do not perform uncontrolled rescue or broad rewrite when surgical change control is required.
-- Do not claim review or release readiness without evidence artifacts.
-
-## Final rule
-
-Use the starter kit in this control order:
-1. governance from `AGENTS.md`
-2. orchestration from `ORCHESTRATOR.md`
-3. lifecycle selection through `commands/`
-4. detailed execution through `skills/`
-5. evidence and progression through project artifacts
+## Entry
+Read [ORCHESTRATOR.md](ORCHESTRATOR.md), the canonical protocol and the selected role. Identify the approved SRS/ADRs and their hashes; if missing, plan clarification rather than inventing requirements. Do not implement merely because a workflow says to execute.

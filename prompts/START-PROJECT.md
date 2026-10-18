@@ -1,42 +1,6 @@
-# Start Project Prompt
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
 
-```text
-/start-project-from-brd
+# Start a governed project
+Read AGENTS.md, ORCHESTRATOR.md, governance/protocol.md and the selected role in roles/. Identify approved sources and their versions. Prepare the current role plan; request explicit user approval and stop. After approved execution, log actual evidence and hand off without starting another role.
 
-Read:
-- AGENTS.md
-- ORCHESTRATOR.md
-- specs/BRD.md
-- docs/agent-timesheet.md
-- docs/agent-run-log.md
-- docs/slice-status-board.md
-- docs/planning.md
-- governance/approval-gates.md
-- governance/signoff-log.md
-- governance/raci-matrix.md
-- templates/BRD-ANALYSIS-TEMPLATE.md
-- templates/TRACEABILITY-TEMPLATE.md
-
-Use:
-@orchestrator
-
-Execution sequence:
-1. Kickoff and log intake
-2. Trigger Analyst to generate requirements, user stories, and traceability base
-3. Run G1 requirements approval gate
-4. Trigger Architect for architecture and data model
-5. Run G2 architecture approval gate
-6. Select project mode and task board
-7. Plan slices and update board
-8. Trigger Developer for first approved slice
-9. Trigger Reviewer after each implementation slice
-10. Trigger Tester once implemented scope is ready
-11. Run defect loop as needed
-12. Run G3 / G4 / G5 as applicable
-13. Close via completion gate
-
-Mandatory:
-- every role updates timesheet and run log
-- every slice updates status board
-- every review returns GO / GO WITH MINOR FIXES / REVISE
-```
+Sequence: product requirements and G1 → architecture and G2 → slice/test/traceability planning and G3 → approved developer execution with tests → approved independent QA → independent review/security and G4 → separately authorized release/G5 if in scope → closure plan, explicit user approval and G6. No role, remediation, regression or closure bypasses its approval stop. Templates and archived prompts are not evidence.

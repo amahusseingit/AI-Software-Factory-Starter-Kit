@@ -1,3 +1,7 @@
+> Role adapter: first read [roles/product-owner.md](../roles/product-owner.md). The following detailed prompts are task-planning aids, not permission to execute. Present the selected role plan and stop for explicit user approval.
+
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
 # Analyst Prompt Pack
 
 ## Generate Structured Requirements from BRD

@@ -1,3 +1,5 @@
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
 # Command: REVIEW
 
 Use this command to evaluate whether the current scope is functionally complete, traceable, adequately tested, and ready to pass to ship or further implementation.
@@ -18,7 +20,7 @@ Use this command to evaluate whether the current scope is functionally complete,
 ## Required outputs
 - review scorecards
 - updated traceability status
-- review disposition: GO / CONDITIONAL GO / NO-GO
+- review disposition: PASS / BLOCKED
 
 
 ## V7.5 review additions
@@ -53,3 +55,6 @@ Reviewers should explicitly evaluate:
 - whether speculative abstractions were introduced without justification
 - whether the diff scope stayed surgical where appropriate
 - whether each major step had a defined verification method and evidence
+
+## Unified execution boundary
+Before execution, read governance/protocol.md and the selected role plan. Require explicit user approval bound to role, task, scope, plan and input revision. G3 must pass before BUILD. Use only PASS/BLOCKED progression decisions. Execution ends at evidence handoff and stop; no automatic next role or closure. Commands are subordinate methods, never authority to approve themselves.

@@ -1,22 +1,2 @@
-# Jira Workflow Mapping
-
-## Suggested Workflow
-- New
-- Analysis
-- Ready for Architecture
-- Ready for Development
-- In Progress
-- Under Review
-- Needs Fix
-- Ready for Test
-- In Testing
-- Blocked
-- Done
-
-## Mapping Notes
-- Analysis corresponds to Analyst phase
-- Ready for Architecture corresponds to G1 approved
-- Ready for Development corresponds to G2 approved
-- Under Review corresponds to Reviewer gate
-- Ready for Test corresponds to GO / GO WITH MINOR FIXES
-- Done corresponds to G5 approval
+# Optional Jira workflow mapping
+Jira status labels are project-specific and never evidence or approval. Map approved workflow states to the canonical Factory lifecycle in governance/protocol.md. A transition to Ready for Test means only that a bound developer handoff exists; independently approved QA is still required. Done requires explicit closure approval and current mandatory evidence. No Jira status maps automatically to PASS. Configure no Jira workflow or automation from this document alone.

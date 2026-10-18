@@ -1,3 +1,5 @@
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
 # Command: PLAN
 
 Use this command to translate the authoritative spec into verifiable implementation slices, test strategy, and traceability artifacts.
@@ -61,3 +63,6 @@ Before finalizing the plan:
 - attach a verification method to every major slice
 - avoid vague slice names and speculative future-proofing
 - apply simplicity-and-change-discipline checks to planned scope
+
+## Unified execution boundary
+Before execution, read governance/protocol.md and the selected role plan. Require explicit user approval bound to role, task, scope, plan and input revision. G3 must pass before BUILD. Use only PASS/BLOCKED progression decisions. Execution ends at evidence handoff and stop; no automatic next role or closure. Commands are subordinate methods, never authority to approve themselves.

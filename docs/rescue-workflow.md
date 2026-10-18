@@ -1,3 +1,5 @@
+> REFERENCE/TEMPLATE ONLY. Existing sample rows are not executed work, approvals or gate evidence. Instantiate an approved task record with actual results before use. Canonical control: governance/protocol.md.
+
 # Rescue Workflow
 
 Use rescue mode when a project already exists but is incomplete, inconsistent, or partially generated.

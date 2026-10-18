@@ -1,3 +1,5 @@
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
 # Readiness Scorecard
 
 ## Project
@@ -22,5 +24,5 @@
 - 
 
 ## Recommended action
-- Go / Conditional Go / No-Go
+- PASS / BLOCKED
 - Next command to run:

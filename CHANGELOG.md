@@ -1,3 +1,14 @@
+# unified-1.0.0-draft.1 — 2026-10-18
+
+- Semantically combine V7.8 technical breadth with earlier July role/template depth and updated approval loop.
+- Introduce single approval/lifecycle/evidence/security contract, independent QA and explicit closure approval; fail closed.
+- Separate optional project/stack profiles from generic core; archive original bytes with hashes.
+- Require new task branches; describe dev/prod separation as policy only.
+- Add documentation validators and negative gate simulations; these are not application tests or deployed enforcement.
+- No application business formulas, deployment configuration, secrets, repository protections or production behavior changed.
+
+## Preserved historical changelog
+
 # Changelog
 
 ## V7.8

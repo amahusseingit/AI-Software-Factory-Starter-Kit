@@ -1,5 +1,5 @@
-# Traceability Template
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
 
-| BRD Section | User Story | FR | AC | Component | Slice | Test | Approval Gate |
-|-------------|------------|----|----|-----------|-------|------|---------------|
-| BRD-001 | US-001 | FR-001 | AC-001 | TBD | TBD | TBD | G1 |
+# Traceability template
+
+Use the single maintained [traceability-matrix-template.md](traceability-matrix-template.md). Historical content is preserved under archive/v7.8/templates/.

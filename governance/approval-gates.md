@@ -1,33 +1,5 @@
-# Approval Gates
+# Approval gates
 
-## G1 — Requirements Approval
-Inputs:
-- specs/functional-requirements.md
-- specs/non-functional-requirements.md
-- specs/acceptance-criteria.md
-- specs/user-stories.md
+The sole gate authority is [protocol.md](protocol.md), sections Canonical lifecycle and gates, Approval binding and invalidation, and Recovery and closure. G1 requirements; G2 architecture; G3 pre-build; G4 independent QA/review; G5 release; G6 approved closure. Every role still requires its own plan approval. [gate-contract.json](gate-contract.json) provides canonical vocabulary. No log entry or coordinator recommendation is human approval.
 
-## G2 — Architecture Approval
-Inputs:
-- docs/architecture.md
-- specs/data-model.md
-- docs/decision-log.md
-
-## G3 — Build Readiness Approval
-Inputs:
-- slice board
-- review summary
-- changed artifacts
-
-## G4 — Test Readiness / Quality Approval
-Inputs:
-- docs/integration-test-plan.md
-- docs/defect-log.md
-- test results
-
-## G5 — Release / Completion Approval
-Inputs:
-- traceability matrix
-- defect log
-- signoff log
-- review summary
+Severity and exception authority: [security-policy.md](security-policy.md).

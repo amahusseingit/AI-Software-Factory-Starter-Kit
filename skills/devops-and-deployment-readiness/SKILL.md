@@ -12,6 +12,9 @@ triggers:
   - monitoring
 ---
 
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
+
 # Overview
 
 This skill closes the gap between a built system and an operational system by selecting and applying the relevant DevOps and deployment packs.
