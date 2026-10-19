@@ -1,0 +1,1333 @@
+{
+  "task_id": "fact-004",
+  "display_task": "FACT-004A",
+  "started_utc": "2026-10-19T17:55:26.559498+00:00",
+  "ended_utc": "2026-10-19T17:55:28.407557+00:00",
+  "method": "Public NuGet index/nuspec and package XML inspection, Microsoft SDK release metadata; not restore/build/test/vulnerability certification",
+  "sdk": {
+    "version": "10.0.402",
+    "runtime": "10.0.13",
+    "release_metadata": {
+      "url": "https://builds.dotnet.microsoft.com/dotnet/release-metadata/10.0/releases.json",
+      "http_status": 200,
+      "started_utc": "2026-10-19T17:55:28.030241+00:00",
+      "ended_utc": "2026-10-19T17:55:28.402532+00:00",
+      "path": "raw/dotnet10-releases.json.gz",
+      "uncompressed_sha256": "8ba714cf0020d35ff4a3cb163376df2f4ccaf8e6e1d7021fcb1bd7dd628299d2",
+      "sha256": "d412b917d92946c078a62c281c8990cf1e45428496950c670ef746e983f1cae2",
+      "encoding": "gzip; original JSON bytes retained"
+    },
+    "linux_x64_archive": {
+      "name": "dotnet-sdk-linux-x64.tar.gz",
+      "rid": "linux-x64",
+      "url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/10.0.402/dotnet-sdk-10.0.402-linux-x64.tar.gz",
+      "hash": "1904a98dda2db34ba78ba3c4fb1b224455329af91c341d83547843c1839e112b04ae699ee92fa2449a8f62249196a938723078c0c60b9f65c88539d5687729c2"
+    }
+  },
+  "packages": [
+    {
+      "id": "Microsoft.Extensions.AI",
+      "version": "10.11.0",
+      "exists": true,
+      "license": "MIT",
+      "groups": [
+        {
+          "framework": "net10.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.11.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Caching.Abstractions",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Numerics.Tensors",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": ".NETFramework4.6.2",
+          "dependencies": [
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.11.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Caching.Abstractions",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Diagnostics.DiagnosticSource",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Numerics.Tensors",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Text.Json",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Threading.Channels",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": "net8.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.11.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Caching.Abstractions",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Diagnostics.DiagnosticSource",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Numerics.Tensors",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Text.Json",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Threading.Channels",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": "net9.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.11.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Caching.Abstractions",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Diagnostics.DiagnosticSource",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Numerics.Tensors",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Text.Json",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Threading.Channels",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": ".NETStandard2.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.11.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Caching.Abstractions",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Diagnostics.DiagnosticSource",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Numerics.Tensors",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Text.Json",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Threading.Channels",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.ai/index.json",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:26.562582+00:00",
+          "ended_utc": "2026-10-19T17:55:26.936079+00:00",
+          "path": "raw/microsoft.extensions.ai.versions.json.gz",
+          "uncompressed_sha256": "9e6f11c0a4da1fa7af8ffbfbeaa48f5c7c5cd7ebfe2d95ed1c7654129c1d352d",
+          "sha256": "634bfd918c4ea3cdc6f30cc3701a7bacabfc01c173b4f76e32d16f5f05b91cd1",
+          "encoding": "gzip; original HTTP response bytes retained"
+        },
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.ai/10.11.0/microsoft.extensions.ai.nuspec",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:26.936196+00:00",
+          "ended_utc": "2026-10-19T17:55:27.255673+00:00",
+          "path": "raw/microsoft.extensions.ai.10.11.0.nuspec.gz",
+          "uncompressed_sha256": "3cd80924088ddb8f25380a26aacf2241189c3648a390859af21b7bc92982deea",
+          "sha256": "7bc3748013794af9689a548f93107aa62f444e1d6aba3e59524872969c11b4f0",
+          "encoding": "gzip; original HTTP response bytes retained"
+        }
+      ],
+      "xml_files": []
+    },
+    {
+      "id": "Microsoft.Extensions.AI.OpenAI",
+      "version": "10.11.0",
+      "exists": true,
+      "license": "MIT",
+      "groups": [
+        {
+          "framework": "net10.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.11.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "OpenAI",
+              "version": "2.14.0",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": ".NETFramework4.6.2",
+          "dependencies": [
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.11.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "OpenAI",
+              "version": "2.14.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Text.Json",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": "net8.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.11.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "OpenAI",
+              "version": "2.14.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Text.Json",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": "net9.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.11.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "OpenAI",
+              "version": "2.14.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Text.Json",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": ".NETStandard2.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.11.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "OpenAI",
+              "version": "2.14.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Text.Json",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.ai.openai/index.json",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:26.562990+00:00",
+          "ended_utc": "2026-10-19T17:55:26.915680+00:00",
+          "path": "raw/microsoft.extensions.ai.openai.versions.json.gz",
+          "uncompressed_sha256": "4efa86ec002f384b105605c1be66db7a167e028a8415a9002364533a2d410a50",
+          "sha256": "0161458859f576393a9498b97ac42e15ebe7b973c0de406d99075c13437e6d87",
+          "encoding": "gzip; original HTTP response bytes retained"
+        },
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.ai.openai/10.11.0/microsoft.extensions.ai.openai.nuspec",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:26.915762+00:00",
+          "ended_utc": "2026-10-19T17:55:27.217230+00:00",
+          "path": "raw/microsoft.extensions.ai.openai.10.11.0.nuspec.gz",
+          "uncompressed_sha256": "4261e37cb5d9534bd0e8fca82176bac16c066344b02e3f494a33791c57fb8eb5",
+          "sha256": "4e9363897035de7e828d3dafe9e8b6ec9f3462f981620834accefb3f06497b53",
+          "encoding": "gzip; original HTTP response bytes retained"
+        },
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.ai.openai/10.11.0/microsoft.extensions.ai.openai.10.11.0.nupkg",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:27.217478+00:00",
+          "ended_utc": "2026-10-19T17:55:28.026080+00:00",
+          "package_sha256": "e56e5831edefe91451fdf58f98d2977fb7afd231f532f9903b906905fffc9122",
+          "method": "ZIP XML documentation read only; no assembly loaded or executed"
+        }
+      ],
+      "xml_files": [
+        {
+          "path": "raw/microsoft.extensions.ai.openai.10.11.0.Microsoft.Extensions.AI.OpenAI.xml.gz",
+          "uncompressed_sha256": "db307e9ff6872c1dc3ef1f1620d0ee0da47a7dddf6c7967ed45c301fbb885a28",
+          "sha256": "35147a6849aa282cf6406aeb10e3535776bf8254b34ab4537c0f1a72061b48e9",
+          "encoding": "gzip; original XML bytes retained"
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Agents.AI",
+      "version": "1.25.0",
+      "exists": true,
+      "license": "MIT",
+      "groups": [
+        {
+          "framework": "net10.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.Agents.AI.Abstractions",
+              "version": "1.25.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.AI",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.AI.Evaluation",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Compliance.Abstractions",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.FileSystemGlobbing",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.VectorData.Abstractions",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.ML.Tokenizers",
+              "version": "2.0.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.10.1",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": ".NETFramework4.7.2",
+          "dependencies": [
+            {
+              "id": "Microsoft.Agents.AI.Abstractions",
+              "version": "1.25.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.AI",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Compliance.Abstractions",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.FileSystemGlobbing",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.VectorData.Abstractions",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.ML.Tokenizers",
+              "version": "2.0.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Diagnostics.DiagnosticSource",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Bcl.AsyncInterfaces",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Bcl.HashCode",
+              "version": "6.0.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Bcl.Memory",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.10.1",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Text.Json",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Threading.Channels",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Threading.Tasks.Extensions",
+              "version": "4.6.3",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": "net8.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.Agents.AI.Abstractions",
+              "version": "1.25.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.AI",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.AI.Evaluation",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Compliance.Abstractions",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.FileSystemGlobbing",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.VectorData.Abstractions",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.ML.Tokenizers",
+              "version": "2.0.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Diagnostics.DiagnosticSource",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.10.1",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Text.Json",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Threading.Channels",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": "net9.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.Agents.AI.Abstractions",
+              "version": "1.25.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.AI",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.AI.Evaluation",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Compliance.Abstractions",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.FileSystemGlobbing",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.VectorData.Abstractions",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.ML.Tokenizers",
+              "version": "2.0.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Diagnostics.DiagnosticSource",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.10.1",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Text.Json",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Threading.Channels",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": ".NETStandard2.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.Agents.AI.Abstractions",
+              "version": "1.25.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.AI",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Compliance.Abstractions",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.FileSystemGlobbing",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.VectorData.Abstractions",
+              "version": "10.10.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.ML.Tokenizers",
+              "version": "2.0.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Diagnostics.DiagnosticSource",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Bcl.AsyncInterfaces",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Bcl.HashCode",
+              "version": "6.0.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Bcl.Memory",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.10.1",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Text.Json",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Threading.Channels",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Threading.Tasks.Extensions",
+              "version": "4.6.3",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/microsoft.agents.ai/index.json",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:26.563400+00:00",
+          "ended_utc": "2026-10-19T17:55:26.908099+00:00",
+          "path": "raw/microsoft.agents.ai.versions.json.gz",
+          "uncompressed_sha256": "db352136d5c351f8c99aca0113aa6a77f3762d45271fb8ff35261ab0b3311236",
+          "sha256": "bee77f060b35eab313e875a46a79c660e3966b0bc8ffcb692e358b0a1ec39cac",
+          "encoding": "gzip; original HTTP response bytes retained"
+        },
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/microsoft.agents.ai/1.25.0/microsoft.agents.ai.nuspec",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:26.908431+00:00",
+          "ended_utc": "2026-10-19T17:55:27.205638+00:00",
+          "path": "raw/microsoft.agents.ai.1.25.0.nuspec.gz",
+          "uncompressed_sha256": "d21db1fca7e255662d3e6bc6a5a665ec4cb98e8f2da9981d487f744cb29f2fae",
+          "sha256": "de5bf8591b73aee757147d01f8b8f4ba5910b8e9d703e3fd96b4366189b89d84",
+          "encoding": "gzip; original HTTP response bytes retained"
+        },
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/microsoft.agents.ai/1.25.0/microsoft.agents.ai.1.25.0.nupkg",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:27.206383+00:00",
+          "ended_utc": "2026-10-19T17:55:27.764252+00:00",
+          "package_sha256": "529bc3f3044f16e52129ed9cb715818dcaf0077b1b085f973929056628702c4c",
+          "method": "ZIP XML documentation read only; no assembly loaded or executed"
+        }
+      ],
+      "xml_files": [
+        {
+          "path": "raw/microsoft.agents.ai.1.25.0.Microsoft.Agents.AI.xml.gz",
+          "uncompressed_sha256": "7ed4d325b80730f13323a2e98e39421722bc624622b64b305969c81d8fa85c79",
+          "sha256": "eaa203097abd99f5d8806cfdaec58e7916b2892f4d26cfd08e8e658de0478123",
+          "encoding": "gzip; original XML bytes retained"
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.Agents.AI.Abstractions",
+      "version": "1.25.0",
+      "exists": true,
+      "license": "MIT",
+      "groups": [
+        {
+          "framework": "net10.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.10.1",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": ".NETFramework4.7.2",
+          "dependencies": [
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.10.1",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Bcl.AsyncInterfaces",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Text.Json",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Threading.Tasks.Extensions",
+              "version": "4.6.3",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": "net8.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.10.1",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Text.Json",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": "net9.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.10.1",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Text.Json",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": ".NETStandard2.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "version": "10.10.1",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Bcl.AsyncInterfaces",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Text.Json",
+              "version": "10.0.12",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Threading.Tasks.Extensions",
+              "version": "4.6.3",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/microsoft.agents.ai.abstractions/index.json",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:26.563815+00:00",
+          "ended_utc": "2026-10-19T17:55:26.949538+00:00",
+          "path": "raw/microsoft.agents.ai.abstractions.versions.json.gz",
+          "uncompressed_sha256": "462837794b3b7e79dd5b5fc19d214675ca0b27e430f0ae2c51b483d902d4bb8b",
+          "sha256": "763fc084f548681e8d5a3b5580e415020ba5925f0a715688cabdcc64b362ba50",
+          "encoding": "gzip; original HTTP response bytes retained"
+        },
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/microsoft.agents.ai.abstractions/1.25.0/microsoft.agents.ai.abstractions.nuspec",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:26.949638+00:00",
+          "ended_utc": "2026-10-19T17:55:27.131238+00:00",
+          "path": "raw/microsoft.agents.ai.abstractions.1.25.0.nuspec.gz",
+          "uncompressed_sha256": "6e6377ae5d8b34440201711d0d559bbb85eb0e745b50564a00f1681bd4f2abc9",
+          "sha256": "ca0096ae25a30e57785e6ebc21404898f89220a3b994362d6c1a50abf9d5cf5e",
+          "encoding": "gzip; original HTTP response bytes retained"
+        },
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/microsoft.agents.ai.abstractions/1.25.0/microsoft.agents.ai.abstractions.1.25.0.nupkg",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:27.131566+00:00",
+          "ended_utc": "2026-10-19T17:55:27.480286+00:00",
+          "package_sha256": "2775d7113045eadb2c4898a659e1fb888902e0d0dafe4a3a0aea9feb94ac9823",
+          "method": "ZIP XML documentation read only; no assembly loaded or executed"
+        }
+      ],
+      "xml_files": [
+        {
+          "path": "raw/microsoft.agents.ai.abstractions.1.25.0.Microsoft.Agents.AI.Abstractions.xml.gz",
+          "uncompressed_sha256": "0006fe910a58bdcf26c0aa66cd398eef51409484a6cde51f45380cbf7c214205",
+          "sha256": "3cf509e7e9317cc59cd1b5fbdf06c6877ca9f8ef1041d933b7d6df7ac25f2af3",
+          "encoding": "gzip; original XML bytes retained"
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.CodeAnalysis.CSharp",
+      "version": "5.9.0",
+      "exists": true,
+      "license": "MIT",
+      "groups": [
+        {
+          "framework": "net10.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.CodeAnalysis.Common",
+              "version": "[5.9.0, 5.9.0]",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.CodeAnalysis.Analyzers",
+              "version": "5.9.0-1.26328.17",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": ".NETStandard2.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.CodeAnalysis.Common",
+              "version": "[5.9.0, 5.9.0]",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.CodeAnalysis.Analyzers",
+              "version": "5.9.0-1.26328.17",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Buffers",
+              "version": "4.6.1",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Collections.Immutable",
+              "version": "10.0.1",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Memory",
+              "version": "4.6.3",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Numerics.Vectors",
+              "version": "4.6.1",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Reflection.Metadata",
+              "version": "10.0.1",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Runtime.CompilerServices.Unsafe",
+              "version": "6.1.2",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Text.Encoding.CodePages",
+              "version": "8.0.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Threading.Tasks.Extensions",
+              "version": "4.6.3",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.csharp/index.json",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:26.564202+00:00",
+          "ended_utc": "2026-10-19T17:55:26.891551+00:00",
+          "path": "raw/microsoft.codeanalysis.csharp.versions.json.gz",
+          "uncompressed_sha256": "562be44e0947b1de299ec2a8ac5d627f9c40c145b060a12277ea0a457debf930",
+          "sha256": "22bfc59b72734ba95c6cf54bf18c2f4550893522ec3e4ddb16524bd39b8e5d64",
+          "encoding": "gzip; original HTTP response bytes retained"
+        },
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.csharp/5.9.0/microsoft.codeanalysis.csharp.nuspec",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:26.891778+00:00",
+          "ended_utc": "2026-10-19T17:55:27.178726+00:00",
+          "path": "raw/microsoft.codeanalysis.csharp.5.9.0.nuspec.gz",
+          "uncompressed_sha256": "2da8371eda8ef12a69063c6a8163492659bd50129ac88151e1a62b157a9f6253",
+          "sha256": "117883369c4dedfe6be1a2ecc27641cdff4e2d3f8c1d82a900211c29f3e3d8c3",
+          "encoding": "gzip; original HTTP response bytes retained"
+        }
+      ],
+      "xml_files": []
+    },
+    {
+      "id": "OpenAI",
+      "version": "2.14.0",
+      "exists": true,
+      "license": "MIT",
+      "groups": [
+        {
+          "framework": "net10.0",
+          "dependencies": [
+            {
+              "id": "System.ClientModel",
+              "version": "1.15.0",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": "net8.0",
+          "dependencies": [
+            {
+              "id": "System.ClientModel",
+              "version": "1.15.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Diagnostics.DiagnosticSource",
+              "version": "10.0.11",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Net.ServerSentEvents",
+              "version": "10.0.11",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        },
+        {
+          "framework": ".NETStandard2.0",
+          "dependencies": [
+            {
+              "id": "System.ClientModel",
+              "version": "1.15.0",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Diagnostics.DiagnosticSource",
+              "version": "10.0.11",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "System.Net.ServerSentEvents",
+              "version": "10.0.11",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/openai/index.json",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:26.564641+00:00",
+          "ended_utc": "2026-10-19T17:55:26.946874+00:00",
+          "path": "raw/openai.versions.json.gz",
+          "uncompressed_sha256": "fba95d1825125b8bc49d65c9c78907a5cbd292f157b4359add1195beead21ac7",
+          "sha256": "fba7eb61864866f6584e5390c266c10fff2a63bb3124574fb4628ebe3572442c",
+          "encoding": "gzip; original HTTP response bytes retained"
+        },
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/openai/2.14.0/openai.nuspec",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:26.947135+00:00",
+          "ended_utc": "2026-10-19T17:55:27.038810+00:00",
+          "path": "raw/openai.2.14.0.nuspec.gz",
+          "uncompressed_sha256": "b05e4ff5ccb5ed2b086c8cbf45ea7326c790494c03baeb2898847f9157646ab8",
+          "sha256": "3e0c4873b56c3e0c9203d9abaafbf62dffbafb55ca08f75610f51618c6901f5d",
+          "encoding": "gzip; original HTTP response bytes retained"
+        },
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/openai/2.14.0/openai.2.14.0.nupkg",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:27.039063+00:00",
+          "ended_utc": "2026-10-19T17:55:27.689204+00:00",
+          "package_sha256": "788e7eae201e01bc7853a1166df1f0b09b14d11da40be6887e0b783b03edc0a3",
+          "method": "ZIP XML documentation read only; no assembly loaded or executed"
+        }
+      ],
+      "xml_files": [
+        {
+          "path": "raw/openai.2.14.0.OpenAI.xml.gz",
+          "uncompressed_sha256": "db568d4f81911887793627653f13293b64f2c83b3a6bfe375891ec9b44a99e3f",
+          "sha256": "c9246da1897db248337413c370f11218f7ed02bc1a9714b51a8d4480c41a0886",
+          "encoding": "gzip; original XML bytes retained"
+        }
+      ]
+    },
+    {
+      "id": "Microsoft.NET.Test.Sdk",
+      "version": "17.14.1",
+      "exists": true,
+      "license": "MIT",
+      "groups": [
+        {
+          "framework": "net8.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.TestPlatform.TestHost",
+              "version": "17.14.1"
+            },
+            {
+              "id": "Microsoft.CodeCoverage",
+              "version": "17.14.1"
+            }
+          ]
+        },
+        {
+          "framework": ".NETFramework4.6.2",
+          "dependencies": [
+            {
+              "id": "Microsoft.CodeCoverage",
+              "version": "17.14.1"
+            }
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/index.json",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:27.178976+00:00",
+          "ended_utc": "2026-10-19T17:55:27.483320+00:00",
+          "path": "raw/microsoft.net.test.sdk.versions.json.gz",
+          "uncompressed_sha256": "79223636d8395de759e9ea2b820ca282b2f7245c37e52ffc5d1ae8606fdf7c1b",
+          "sha256": "fbd94efec36080ce7f6465a6de60bb2ff1cb2448a911de5c7bab61fd9945ac64",
+          "encoding": "gzip; original HTTP response bytes retained"
+        },
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/17.14.1/microsoft.net.test.sdk.nuspec",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:27.483451+00:00",
+          "ended_utc": "2026-10-19T17:55:27.745654+00:00",
+          "path": "raw/microsoft.net.test.sdk.17.14.1.nuspec.gz",
+          "uncompressed_sha256": "23b71d3025f4c51ff29934156e39cd6f8bd12837e273c782f01b3cbbbda46c07",
+          "sha256": "0d5b5e4db521f1f150152d8e1a502d2bb4cb955deff99c661f79e9b9ec755b57",
+          "encoding": "gzip; original HTTP response bytes retained"
+        }
+      ],
+      "xml_files": []
+    },
+    {
+      "id": "xunit",
+      "version": "2.9.3",
+      "exists": true,
+      "license": "Apache-2.0",
+      "groups": [],
+      "observations": [
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/xunit/index.json",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:27.256009+00:00",
+          "ended_utc": "2026-10-19T17:55:27.608934+00:00",
+          "path": "raw/xunit.versions.json.gz",
+          "uncompressed_sha256": "e2b8daf501fa3a63588dea78c24d980df47c5883038dfa8678d46a4d13b03a25",
+          "sha256": "fbc1774aad4eb01daa4e621775f8f647fd5e938c833db01967e5f6292ba41620",
+          "encoding": "gzip; original HTTP response bytes retained"
+        },
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/xunit/2.9.3/xunit.nuspec",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:27.609087+00:00",
+          "ended_utc": "2026-10-19T17:55:27.880494+00:00",
+          "path": "raw/xunit.2.9.3.nuspec.gz",
+          "uncompressed_sha256": "9052d3d354f8c254f4bd29488ea94fc030973c9b239d032704f5e3eeec5c44bf",
+          "sha256": "e26cd5a68180805d64fe68c2f73ebc564d4c6c4b69c1eb62609f5d98086c21e9",
+          "encoding": "gzip; original HTTP response bytes retained"
+        }
+      ],
+      "xml_files": []
+    },
+    {
+      "id": "xunit.runner.visualstudio",
+      "version": "3.1.4",
+      "exists": true,
+      "license": "Apache-2.0",
+      "groups": [
+        {
+          "framework": ".NETFramework4.7.2",
+          "dependencies": [
+            {
+              "id": "Microsoft.TestPlatform.ObjectModel",
+              "version": "17.13.0"
+            }
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/index.json",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:27.482857+00:00",
+          "ended_utc": "2026-10-19T17:55:27.619824+00:00",
+          "path": "raw/xunit.runner.visualstudio.versions.json.gz",
+          "uncompressed_sha256": "7b7f85d14dee823c75defff0be8013be46b65ec37e56cfcfec0fec954b91cb5b",
+          "sha256": "158ff381e8a0ff4912b258889f1c481ffabab0709781e6239fb24e2a0be1685d",
+          "encoding": "gzip; original HTTP response bytes retained"
+        },
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/3.1.4/xunit.runner.visualstudio.nuspec",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:27.619926+00:00",
+          "ended_utc": "2026-10-19T17:55:27.745999+00:00",
+          "path": "raw/xunit.runner.visualstudio.3.1.4.nuspec.gz",
+          "uncompressed_sha256": "c7d9d82408362c96adcaedb158f9c0e2e3404c566fccc64bf274326d2f1f029f",
+          "sha256": "be1a64be3a1e604b83760c9621b23a84f54b07639cfdd643c199b8cbfe644166",
+          "encoding": "gzip; original HTTP response bytes retained"
+        }
+      ],
+      "xml_files": []
+    },
+    {
+      "id": "Microsoft.AspNetCore.Mvc.Testing",
+      "version": "10.0.13",
+      "exists": true,
+      "license": "MIT",
+      "groups": [
+        {
+          "framework": "net10.0",
+          "dependencies": [
+            {
+              "id": "Microsoft.AspNetCore.TestHost",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.DependencyModel",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            },
+            {
+              "id": "Microsoft.Extensions.Hosting",
+              "version": "10.0.13",
+              "exclude": "Build,Analyzers"
+            }
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.testing/index.json",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:27.695890+00:00",
+          "ended_utc": "2026-10-19T17:55:27.804385+00:00",
+          "path": "raw/microsoft.aspnetcore.mvc.testing.versions.json.gz",
+          "uncompressed_sha256": "df523634513e083320e9895cc8e0d379c4914fbfc0560d22c35f90be1c3d7fa3",
+          "sha256": "ab7584f4f1109acf0bba6914b65534f996d9fdee4b4d9e0e13b91a32678f14d8",
+          "encoding": "gzip; original HTTP response bytes retained"
+        },
+        {
+          "url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.testing/10.0.13/microsoft.aspnetcore.mvc.testing.nuspec",
+          "http_status": 200,
+          "started_utc": "2026-10-19T17:55:27.804527+00:00",
+          "ended_utc": "2026-10-19T17:55:27.873380+00:00",
+          "path": "raw/microsoft.aspnetcore.mvc.testing.10.0.13.nuspec.gz",
+          "uncompressed_sha256": "82ac9cf26d0bc327261fcb2c180e3568b7df207097236bd64d1b4e426220690a",
+          "sha256": "b1f2c261ddabb3abe696ecb03938755c51a54a595c39164f682e95ef061388d3",
+          "encoding": "gzip; original HTTP response bytes retained"
+        }
+      ],
+      "xml_files": []
+    }
+  ],
+  "restore": "NOT_RUN",
+  "build": "NOT_RUN",
+  "tests": "NOT_RUN",
+  "transitive_vulnerability_audit": "NOT_RUN"
+}

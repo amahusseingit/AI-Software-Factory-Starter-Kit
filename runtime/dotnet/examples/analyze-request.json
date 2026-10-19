@@ -1,0 +1,5 @@
+{
+  "fileName": "synthetic.cs",
+  "sourceCode": "class Synthetic { bool Check(int tier) => tier == 3; }",
+  "consentToSendCode": false
+}

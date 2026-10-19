@@ -1,0 +1,74 @@
+{
+  "archive_sha256": "844feacdc5110ad2a6508357bf7181f5115029205f42bb0ffbbf24e8a9099e71",
+  "file_count": 13,
+  "method": "All archive text files read without extraction/execution; first assessment retained in conversation",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 821,
+      "sha256": "9c84ce8ba48fafb99dd22ab5d0e70f6dc7cb0ad16ee51b412da9847239999874"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3845,
+      "sha256": "6fe136eb3b6b80824c4fe55f8a0f69bb497a117e71bdcf920e2c37da70e3dee6"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 62,
+      "sha256": "a9cfcce604f6f0999d40bc77815118ea2acec9bb446acd0068a311ffd49572eb"
+    },
+    {
+      "path": "docs/INTEGRATION-PLAN.md",
+      "bytes": 2189,
+      "sha256": "1eb47038e8b8f2b34c132e37dd8ec64e6385925b61f28c17b3c28ce42e200807"
+    },
+    {
+      "path": "examples/analyze-request.json",
+      "bytes": 233,
+      "sha256": "993d0bd4ca2a7ad7400b6184a1e4e7922597d6bcea5fe1025b8378f908974f36"
+    },
+    {
+      "path": "tests/Factory.Tests/RoslynRuleScannerTests.cs",
+      "bytes": 1159,
+      "sha256": "17da876ca95859ed54461f42da28b7e592e9ffbfed00055641fa087d8ab112fb"
+    },
+    {
+      "path": "tests/Factory.Tests/Factory.Tests.csproj",
+      "bytes": 589,
+      "sha256": "aa36d1f2a2294c2622406669a4d10ac2cd8017345359e651ac767862915bd39b"
+    },
+    {
+      "path": "src/Factory.Api/Program.cs",
+      "bytes": 2036,
+      "sha256": "43d9a5da9494e31088ff442b67f43a0f4ddb72625d73be8a9bdfd21658a90e23"
+    },
+    {
+      "path": "src/Factory.Api/appsettings.json",
+      "bytes": 226,
+      "sha256": "4d20c959e6fc3c6aaaad8c683d1e98860c7766abbcdd3f427ef04b2860d365d4"
+    },
+    {
+      "path": "src/Factory.Api/Factory.Api.csproj",
+      "bytes": 668,
+      "sha256": "5358c361cb23a40589607ab370a8725aaed3745cc0f74def96937dc790cb0b92"
+    },
+    {
+      "path": "src/Factory.Api/Contracts/AnalysisModels.cs",
+      "bytes": 604,
+      "sha256": "a008d3b8b124f76cd96b842c5dfbe6d6f8960926812c7b4479419209386d62c2"
+    },
+    {
+      "path": "src/Factory.Api/Analysis/RoslynRuleScanner.cs",
+      "bytes": 2221,
+      "sha256": "0d6f171b48f209bef211cf6b4eb0a637b6c45e6e2d6400235f404a5de7f2fe35"
+    },
+    {
+      "path": "src/Factory.Api/Agents/FactoryAgentService.cs",
+      "bytes": 3760,
+      "sha256": "6db8272565947427a8c03e0434501ed8603ae4c0d41f0d92e6c103ff4dc0865c"
+    }
+  ],
+  "build": "NOT_RUN",
+  "tests": "NOT_RUN"
+}
