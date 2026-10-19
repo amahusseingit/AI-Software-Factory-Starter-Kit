@@ -1,0 +1,359 @@
+{
+  "version": 1,
+  "parameters": "--include-transitive",
+  "projects": [
+    {
+      "path": "/workspace/factory-dotnet10/runtime/dotnet/src/Factory.Api/Factory.Api.csproj",
+      "frameworks": [
+        {
+          "framework": "net10.0",
+          "topLevelPackages": [
+            {
+              "id": "Microsoft.Agents.AI",
+              "requestedVersion": "1.25.0",
+              "resolvedVersion": "1.25.0"
+            },
+            {
+              "id": "Microsoft.CodeAnalysis.CSharp",
+              "requestedVersion": "5.9.0",
+              "resolvedVersion": "5.9.0"
+            },
+            {
+              "id": "Microsoft.Extensions.AI",
+              "requestedVersion": "10.11.0",
+              "resolvedVersion": "10.11.0"
+            },
+            {
+              "id": "Microsoft.Extensions.AI.OpenAI",
+              "requestedVersion": "10.11.0",
+              "resolvedVersion": "10.11.0"
+            },
+            {
+              "id": "OpenAI",
+              "requestedVersion": "2.14.0",
+              "resolvedVersion": "2.14.0"
+            }
+          ],
+          "transitivePackages": [
+            {
+              "id": "Google.Protobuf",
+              "resolvedVersion": "3.30.2"
+            },
+            {
+              "id": "Microsoft.Agents.AI.Abstractions",
+              "resolvedVersion": "1.25.0"
+            },
+            {
+              "id": "Microsoft.CodeAnalysis.Analyzers",
+              "resolvedVersion": "5.9.0-1.26328.17"
+            },
+            {
+              "id": "Microsoft.CodeAnalysis.Common",
+              "resolvedVersion": "5.9.0"
+            },
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "resolvedVersion": "10.11.0"
+            },
+            {
+              "id": "Microsoft.Extensions.AI.Evaluation",
+              "resolvedVersion": "10.10.0"
+            },
+            {
+              "id": "Microsoft.Extensions.Compliance.Abstractions",
+              "resolvedVersion": "10.10.0"
+            },
+            {
+              "id": "Microsoft.Extensions.VectorData.Abstractions",
+              "resolvedVersion": "10.10.0"
+            },
+            {
+              "id": "Microsoft.ML.Tokenizers",
+              "resolvedVersion": "2.0.0"
+            },
+            {
+              "id": "System.ClientModel",
+              "resolvedVersion": "1.15.0"
+            },
+            {
+              "id": "System.Memory.Data",
+              "resolvedVersion": "10.0.9"
+            },
+            {
+              "id": "System.Numerics.Tensors",
+              "resolvedVersion": "10.0.13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/workspace/factory-dotnet10/runtime/dotnet/tests/Factory.Tests/Factory.Tests.csproj",
+      "frameworks": [
+        {
+          "framework": "net10.0",
+          "topLevelPackages": [
+            {
+              "id": "Microsoft.AspNetCore.Mvc.Testing",
+              "requestedVersion": "10.0.13",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.NET.Test.Sdk",
+              "requestedVersion": "17.14.1",
+              "resolvedVersion": "17.14.1"
+            },
+            {
+              "id": "xunit",
+              "requestedVersion": "2.9.3",
+              "resolvedVersion": "2.9.3"
+            },
+            {
+              "id": "xunit.runner.visualstudio",
+              "requestedVersion": "3.1.4",
+              "resolvedVersion": "3.1.4"
+            }
+          ],
+          "transitivePackages": [
+            {
+              "id": "Google.Protobuf",
+              "resolvedVersion": "3.30.2"
+            },
+            {
+              "id": "Microsoft.Agents.AI",
+              "resolvedVersion": "1.25.0"
+            },
+            {
+              "id": "Microsoft.Agents.AI.Abstractions",
+              "resolvedVersion": "1.25.0"
+            },
+            {
+              "id": "Microsoft.AspNetCore.TestHost",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.CodeAnalysis.Analyzers",
+              "resolvedVersion": "5.9.0-1.26328.17"
+            },
+            {
+              "id": "Microsoft.CodeAnalysis.Common",
+              "resolvedVersion": "5.9.0"
+            },
+            {
+              "id": "Microsoft.CodeAnalysis.CSharp",
+              "resolvedVersion": "5.9.0"
+            },
+            {
+              "id": "Microsoft.CodeCoverage",
+              "resolvedVersion": "17.14.1"
+            },
+            {
+              "id": "Microsoft.Extensions.AI",
+              "resolvedVersion": "10.11.0"
+            },
+            {
+              "id": "Microsoft.Extensions.AI.Abstractions",
+              "resolvedVersion": "10.11.0"
+            },
+            {
+              "id": "Microsoft.Extensions.AI.Evaluation",
+              "resolvedVersion": "10.10.0"
+            },
+            {
+              "id": "Microsoft.Extensions.AI.OpenAI",
+              "resolvedVersion": "10.11.0"
+            },
+            {
+              "id": "Microsoft.Extensions.Caching.Abstractions",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Compliance.Abstractions",
+              "resolvedVersion": "10.10.0"
+            },
+            {
+              "id": "Microsoft.Extensions.Configuration",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Configuration.Abstractions",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Configuration.Binder",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Configuration.CommandLine",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Configuration.FileExtensions",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Configuration.Json",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Configuration.UserSecrets",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.DependencyInjection",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.DependencyModel",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Diagnostics",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Diagnostics.Abstractions",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.FileProviders.Abstractions",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.FileProviders.Physical",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.FileSystemGlobbing",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Hosting",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Hosting.Abstractions",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging.Abstractions",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging.Configuration",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging.Console",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging.Debug",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging.EventLog",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging.EventSource",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.ObjectPool",
+              "resolvedVersion": "10.0.12"
+            },
+            {
+              "id": "Microsoft.Extensions.Options",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Options.ConfigurationExtensions",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.Primitives",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "Microsoft.Extensions.VectorData.Abstractions",
+              "resolvedVersion": "10.10.0"
+            },
+            {
+              "id": "Microsoft.ML.Tokenizers",
+              "resolvedVersion": "2.0.0"
+            },
+            {
+              "id": "Microsoft.TestPlatform.ObjectModel",
+              "resolvedVersion": "17.14.1"
+            },
+            {
+              "id": "Microsoft.TestPlatform.TestHost",
+              "resolvedVersion": "17.14.1"
+            },
+            {
+              "id": "Newtonsoft.Json",
+              "resolvedVersion": "13.0.3"
+            },
+            {
+              "id": "OpenAI",
+              "resolvedVersion": "2.14.0"
+            },
+            {
+              "id": "System.ClientModel",
+              "resolvedVersion": "1.15.0"
+            },
+            {
+              "id": "System.Diagnostics.EventLog",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "System.Memory.Data",
+              "resolvedVersion": "10.0.9"
+            },
+            {
+              "id": "System.Numerics.Tensors",
+              "resolvedVersion": "10.0.13"
+            },
+            {
+              "id": "xunit.abstractions",
+              "resolvedVersion": "2.0.3"
+            },
+            {
+              "id": "xunit.analyzers",
+              "resolvedVersion": "1.18.0"
+            },
+            {
+              "id": "xunit.assert",
+              "resolvedVersion": "2.9.3"
+            },
+            {
+              "id": "xunit.core",
+              "resolvedVersion": "2.9.3"
+            },
+            {
+              "id": "xunit.extensibility.core",
+              "resolvedVersion": "2.9.3"
+            },
+            {
+              "id": "xunit.extensibility.execution",
+              "resolvedVersion": "2.9.3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

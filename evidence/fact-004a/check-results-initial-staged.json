@@ -1,0 +1,84 @@
+{
+  "task_id": "fact-004",
+  "run_id": "fact-004a-readiness-20261019",
+  "actor": "Codex readiness executor",
+  "independent_reviewer": null,
+  "repository": "amahusseingit/AI-Software-Factory-Starter-Kit",
+  "branch": "task/fact-004-a-dotnet-runtime-readiness",
+  "base_sha": "7ed5858e44bafbabf083022397ef97a4bb827dd2",
+  "candidate_binding": "Exact readiness artifact hashes in output-manifest.json; no runtime candidate",
+  "environment": {
+    "environment_id": "ccarenv_b64_Y2NhcmVudl80MDZiMzllN2RhMzQ4MTkxYjYwZGYzNzlhNWNlOTkzYw",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "python": "3.12.14",
+    "git": "git version 2.52.0",
+    "dotnet": "NOT_INSTALLED"
+  },
+  "checks": [
+    {
+      "name": "factory-docs",
+      "command": [
+        "python3",
+        "tools/validate_factory.py"
+      ],
+      "started_utc": "2026-10-19T18:02:15.803217+00:00",
+      "ended_utc": "2026-10-19T18:02:15.881539+00:00",
+      "exit_code": 0,
+      "state": "PASS",
+      "scope": "documentation and synthetic Factory evaluator checks only",
+      "raw_output": "raw/initial-staged-factory-docs.txt.gz",
+      "uncompressed_sha256": "0c4ca5f5c3a8efad208a59bce77d8e7d7672a670519b6d51cfb57ed02623e5ee",
+      "sha256": "1b1494d4192eb2c533a0cecf7af7a24e542eab28fde7f700247191b584a6ebf9",
+      "encoding": "gzip"
+    },
+    {
+      "name": "factory-gate-tests",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools",
+        "-p",
+        "test_factory*.py",
+        "-v"
+      ],
+      "started_utc": "2026-10-19T18:02:15.881857+00:00",
+      "ended_utc": "2026-10-19T18:02:15.960742+00:00",
+      "exit_code": 0,
+      "state": "PASS",
+      "scope": "documentation and synthetic Factory evaluator checks only",
+      "raw_output": "raw/initial-staged-factory-gate-tests.txt.gz",
+      "uncompressed_sha256": "cd1c9fb6dd7d6ee3a959bc95a958baf700cd5db6942e4003e23c0f07bae34550",
+      "sha256": "140a69df7311401e2c36beb3372f3173e6d199290db8d71a5a17ef2b3f635619",
+      "encoding": "gzip"
+    },
+    {
+      "name": "whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "started_utc": "2026-10-19T18:02:15.961031+00:00",
+      "ended_utc": "2026-10-19T18:02:15.965002+00:00",
+      "exit_code": 2,
+      "state": "FAILED",
+      "scope": "documentation and synthetic Factory evaluator checks only",
+      "raw_output": "raw/initial-staged-whitespace.txt.gz",
+      "uncompressed_sha256": "87408465ddc72b0ba7d876a08de37de15793e82dcdfb9d3f998504c92af800c7",
+      "sha256": "b1fc26fb065e17214e9e8341873000298d8177bc28705471abef2b9053c359ba",
+      "encoding": "gzip"
+    }
+  ],
+  "application_restore": "NOT_RUN",
+  "application_build": "NOT_RUN",
+  "application_tests": "NOT_RUN",
+  "independent_qa": "NOT_RUN",
+  "independent_review": "NOT_RUN",
+  "independent_security": "NOT_RUN",
+  "gate_decision": "BLOCKED",
+  "superseded_by": "check-results.json; initial staged whitespace failure retained"
+}
