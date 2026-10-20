@@ -175,6 +175,103 @@ public sealed class ApiTests
         Assert.Equal(HttpStatusCode.OK, afterRelease.StatusCode);
     }
 
+    [Fact]
+    public async Task ClientAbortReleasesOccupiedAnalysisPermitWithoutCapacityDrift()
+    {
+        using var scanner = new CancellationAwareScanner();
+        await using var factory = new ApiFactory { ConfigureServices = services => { services.RemoveAll<IRuleScanner>(); services.AddSingleton<IRuleScanner>(scanner); } };
+        using var client = factory.CreateClient(new WebApplicationFactoryClientOptions { BaseAddress = new Uri("http://127.0.0.1") });
+        var permits = factory.Services.GetRequiredService<SemaphoreSlim>();
+        var requests = new List<(string FileName, CancellationTokenSource Cancellation, Task<HttpResponseMessage> Response)>();
+        void StartRequest(string fileName)
+        {
+            var cancellation = new CancellationTokenSource();
+            var response = Task.Run(() => client.PostAsJsonAsync("/api/factory/analyze", new { fileName, sourceCode = "class C {}" }, cancellation.Token));
+            requests.Add((fileName, cancellation, response));
+        }
+        async Task WaitForCapacity(int expected)
+        {
+            using var deadline = new CancellationTokenSource(TimeSpan.FromSeconds(10));
+            while (permits.CurrentCount != expected) await Task.Delay(10, deadline.Token);
+        }
+        try
+        {
+            for (var index = 0; index < 4; index++) StartRequest($"occupied-{index}.cs");
+            foreach (var request in requests) await scanner.WaitForEntry(request.FileName).WaitAsync(TimeSpan.FromSeconds(10));
+            Assert.Equal(0, permits.CurrentCount);
+            for (var cycle = 0; cycle < 3; cycle++)
+            {
+                using var rejected = await client.PostAsJsonAsync("/api/factory/analyze", new { fileName = "excess.cs", sourceCode = "class C {}" });
+                Assert.Equal(HttpStatusCode.TooManyRequests, rejected.StatusCode);
+                var aborted = requests[cycle];
+                aborted.Cancellation.Cancel();
+                await scanner.WaitForCancellation(aborted.FileName).WaitAsync(TimeSpan.FromSeconds(10));
+                await Assert.ThrowsAnyAsync<OperationCanceledException>(() => aborted.Response);
+                await WaitForCapacity(1);
+                var replacement = $"replacement-{cycle}.cs";
+                StartRequest(replacement);
+                await scanner.WaitForEntry(replacement).WaitAsync(TimeSpan.FromSeconds(10));
+                Assert.Equal(0, permits.CurrentCount);
+            }
+        }
+        finally
+        {
+            foreach (var request in requests) request.Cancellation.Cancel();
+            scanner.Release.Set();
+            foreach (var request in requests)
+            {
+                try { using var response = await request.Response.WaitAsync(TimeSpan.FromSeconds(10)); }
+                catch (OperationCanceledException) { }
+                finally { request.Cancellation.Dispose(); }
+            }
+        }
+        await WaitForCapacity(4);
+        using var afterAborts = await client.PostAsJsonAsync("/api/factory/analyze", new { fileName = "after-aborts.cs", sourceCode = "class C {}" });
+        Assert.Equal(HttpStatusCode.OK, afterAborts.StatusCode);
+        Assert.Equal(4, permits.CurrentCount);
+    }
+
+    private sealed class CancellationAwareScanner : IRuleScanner, IDisposable
+    {
+        private readonly System.Collections.Concurrent.ConcurrentDictionary<string, TaskCompletionSource> entered = new();
+        private readonly System.Collections.Concurrent.ConcurrentDictionary<string, TaskCompletionSource> cancelled = new();
+        public ManualResetEventSlim Release { get; } = new();
+        public Task WaitForEntry(string fileName) => entered.GetOrAdd(fileName, _ => new(TaskCreationOptions.RunContinuationsAsynchronously)).Task;
+        public Task WaitForCancellation(string fileName) => cancelled.GetOrAdd(fileName, _ => new(TaskCreationOptions.RunContinuationsAsynchronously)).Task;
+        public ScanResult Scan(string fileName, string source, CancellationToken cancellationToken = default)
+        {
+            entered.GetOrAdd(fileName, _ => new(TaskCreationOptions.RunContinuationsAsynchronously)).TrySetResult();
+            try
+            {
+                if (!Release.Wait(TimeSpan.FromSeconds(15), cancellationToken)) throw new TimeoutException("Synthetic cancellation barrier expired.");
+                cancellationToken.ThrowIfCancellationRequested();
+                return new("synthetic-digest", "synthetic-version", [], []);
+            }
+            catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
+            {
+                cancelled.GetOrAdd(fileName, _ => new(TaskCreationOptions.RunContinuationsAsynchronously)).TrySetResult();
+                throw;
+            }
+        }
+        public void Dispose() => Release.Dispose();
+    }
+
+    [Fact]
+    public async Task UnsupportedJsonCharsetIsASanitizedClientError()
+    {
+        await using var factory = new ApiFactory();
+        using var client = factory.CreateClient(new WebApplicationFactoryClientOptions { BaseAddress = new Uri("http://127.0.0.1") });
+        using var content = new StringContent("{\"fileName\":\"CHARSET_FILE_SENTINEL.cs\",\"sourceCode\":\"// CHARSET_SOURCE_SENTINEL\\nclass C {}\"}", Encoding.UTF8, "application/json");
+        content.Headers.ContentType!.CharSet = "invalid-synthetic-charset";
+        using var response = await client.PostAsync("/api/factory/analyze", content);
+        Assert.True(response.StatusCode is HttpStatusCode.BadRequest or HttpStatusCode.UnsupportedMediaType, $"Expected a client error, actual {(int)response.StatusCode}.");
+        Assert.Equal("application/problem+json", response.Content.Headers.ContentType?.MediaType);
+        var body = await response.Content.ReadAsStringAsync();
+        Assert.DoesNotContain("CHARSET_FILE_SENTINEL", body);
+        Assert.DoesNotContain("CHARSET_SOURCE_SENTINEL", body);
+        Assert.DoesNotContain("invalid-synthetic-charset", body);
+    }
+
     private sealed class BlockingScanner : IRuleScanner, IDisposable
     {
         private int entered;

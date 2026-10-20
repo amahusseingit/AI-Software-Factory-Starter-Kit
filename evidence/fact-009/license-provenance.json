@@ -1,0 +1,19 @@
+{
+  "observed_utc": "2026-10-20T03:49:39.933448+00:00",
+  "package": "xunit.abstractions",
+  "version": "2.0.3",
+  "state": "UNKNOWN",
+  "method": "Cached nuspec plus read-only upstream Git tag/tree inspection",
+  "nuspec_sha256": "e59191df9e3047dd953b695c886597786ac2771f66897baa40877f643da9f7b1",
+  "nuspec_license_url": "https://raw.githubusercontent.com/xunit/xunit/master/license.txt",
+  "tag": "https://github.com/xunit/abstractions.xunit/tree/2.0.3",
+  "tag_object": "aafc368765b30c3c9ed2e953a61fe084c078302f",
+  "resolved_commit": "489a2b3949a9ae8587201a22a8ecfc1d791fa1f3",
+  "limitations": [
+    "Unsigned tag; immutable object identified but no license file in its complete source tree",
+    "No cryptographic linkage from cached NuGet package to that source commit asserted",
+    "Mutable master license URL is not version-specific legal approval",
+    "Separate shell network investigation returned aborted before result; not evidence of source availability or license approval"
+  ],
+  "decision": "Unresolved; no risk or legal acceptance"
+}

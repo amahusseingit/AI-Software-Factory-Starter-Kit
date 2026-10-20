@@ -1,0 +1,51 @@
+{
+  "task_id": "fact-009",
+  "role": "remediation developer",
+  "plan_revision": "R1",
+  "approval": {
+    "text": "Approved",
+    "source": "User message immediately following FACT-009 remediation plan R1",
+    "message_id": null,
+    "issued_timestamp": null,
+    "limitation": "Not exposed; not invented",
+    "expiry": "Bounded FACT-009 completion"
+  },
+  "recorded_utc": "2026-10-20T02:46:03.312868+00:00",
+  "base": "7ed5858e44bafbabf083022397ef97a4bb827dd2",
+  "input_candidate": "85198a6351cfd529ff40e8eb7603da3fbda58936",
+  "branch": "task/fact-009-harden-runtime-verification",
+  "carry_forward_merge": "beba351204d796616737005b248e4e9c3866484b",
+  "allowed_files": [
+    ".github/workflows/dotnet-ci.yml",
+    "tools/verify_dotnet_security_evidence.py",
+    "tools/tests/*security_evidence*",
+    "runtime/dotnet/tests/Factory.Tests/ApiTests.cs",
+    "runtime/dotnet/src/Factory.Api/Program.cs only if charset defect reproduced",
+    "plans/fact-009-*",
+    "evidence/fact-009/**",
+    "docs/agent-run-log.md append-only"
+  ],
+  "findings": [
+    "SEC-001",
+    "QA-001",
+    "QA-Q01 reproduction-first"
+  ],
+  "permissions": [
+    "task branch creation",
+    "task-branch candidate carry-forward merge",
+    "scoped source and tests",
+    "actual developer checks",
+    "draft PR into develop"
+  ],
+  "excluded": [
+    "dependency upgrades",
+    "persistent permission changes",
+    "live provider calls",
+    "production access",
+    "independent acceptance",
+    "PR merges",
+    "deployment",
+    "closure"
+  ],
+  "scope_hash": "8f7cfd25ec5d8ca35726d6a9735ecd92f79a94ee4dbd6d3c3af5838524ebc2f2"
+}
