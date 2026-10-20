@@ -1,0 +1,42 @@
+{
+  "task_id": "fact-005",
+  "role": "developer",
+  "action": "execute",
+  "source": "Current conversation: user Go ahead directly following explicit FACT-005 execution/carry-forward/draft PR request",
+  "original_message_id": null,
+  "original_issued_utc": null,
+  "observed_utc": "2026-10-19T18:09:24.676036+00:00",
+  "expiry": "bounded FACT-005 developer handoff",
+  "actor": "requesting user in current authenticated conversation; external legal/GitHub identity not independently attested",
+  "candidate_revision": "7ed5858e44bafbabf083022397ef97a4bb827dd2",
+  "scope": {
+    "task": "fact-005",
+    "role": "developer",
+    "base": "7ed5858e44bafbabf083022397ef97a4bb827dd2",
+    "branch": "task/fact-005-integrate-dotnet-runtime",
+    "inputs": "685cf8784fff62b862a13552f02c7773d3115dae",
+    "carry_forward": true,
+    "runtime": "runtime/dotnet/**",
+    "ci": ".github/workflows/dotnet-ci.yml",
+    "records": [
+      "plans/fact-005-*",
+      "evidence/fact-005/**",
+      "docs/agent-run-log.md:append-only"
+    ],
+    "publication": "task branch and draft PR to develop",
+    "excludes": [
+      "independent acceptance",
+      "merge",
+      "deploy",
+      "close",
+      "live model calls",
+      "production data"
+    ]
+  },
+  "scope_hash": "298af44e76995bf2f04e1dfb7cb4571db97a62b090c808172df3056d0c2c9480",
+  "plan_hash": "b58390db974b10b058d30d25962afc31f504d509d3306bbf49cb1b00d284f7ac",
+  "srs_hash": "4fea76ffa442f399ee43da2baa0add275ebd289ad2516adf1f7640e61e2bf2e8",
+  "adr_hash": "65613d60701d7697a48ff9c7a0722ec82edbddadf4da5b69638825a766b386d5",
+  "previous_output_approval": "user Approved after readiness commit 685cf8784fff62b862a13552f02c7773d3115dae specification/architecture request",
+  "limitation": "Source conversation is authority; hashes identify recorded scope and approved file content. No fabricated source IDs/timestamps or downstream signoff."
+}

@@ -1,0 +1,124 @@
+{
+  "repository": "amahusseingit/AI-Software-Factory-Starter-Kit",
+  "base_sha": "7ed5858e44bafbabf083022397ef97a4bb827dd2",
+  "base_tree": "1f663322120f1c3efb26c8c9c9cd7f8d48f02ea0",
+  "branch": "task/fact-004-a-dotnet-runtime-readiness",
+  "artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "00f4c65e77d9af9e9916d28aa18f27a12db75b93ce402b29a62f20c48c030246"
+    },
+    {
+      "path": "ORCHESTRATOR.md",
+      "sha256": "dcf6af5efbd02ceda204c62ce0edbf61d41517c4d5c5675e3cf0a7cf74040e10"
+    },
+    {
+      "path": "governance/protocol.md",
+      "sha256": "2c195943f96c37844952213b72688ca3f7655076e4e2f4831e4592e291a992dd"
+    },
+    {
+      "path": "governance/security-policy.md",
+      "sha256": "a28fbc92c32d996f47a659601cf74540993897be61f2d571dac523df568a4caa"
+    },
+    {
+      "path": "governance/branch-environment-policy.md",
+      "sha256": "ed05611f71c5603fd0fea16d4bc6af31bc89c0a81e80403c6846e2af2425347b"
+    },
+    {
+      "path": "governance/gate-contract.json",
+      "sha256": "013d2efb5ad45a30e494b9862149991d4c4041b2eabbb5c6c0980cbde73ffc10"
+    },
+    {
+      "path": "governance/readiness-and-done.md",
+      "sha256": "effefee083c28d16ec2ae0a53589aa699d70f96ba31e07fce9ec9b58b07988ce"
+    },
+    {
+      "path": "roles/coordinator.md",
+      "sha256": "b9ffbdb71ef73e1ca4e6ea4b5ae5c3731c7c2b2f8b4bb040ccc6e43b7777a48d"
+    },
+    {
+      "path": "roles/product-owner.md",
+      "sha256": "34fe6694d61d2ddb4b97519d0033dfc27a15bdf5a260287eec23760d137bc96c"
+    },
+    {
+      "path": "roles/architect.md",
+      "sha256": "01e43bdbf4151de4c33fbd445d60959ec1fc6aebc0e101aa5422f6f0f622ce4e"
+    },
+    {
+      "path": "templates/role-plan-template.md",
+      "sha256": "045b811761ac232f28509ed1c7856bb345ceac225759a42dbc9e56e47db3c1fa"
+    },
+    {
+      "path": "templates/role-handoff-template.md",
+      "sha256": "4610e82c3c9881017d26835bf7d70aab7decaab0114e46dcf9ece204319d8ff8"
+    },
+    {
+      "path": "templates/evidence-template.md",
+      "sha256": "058ac11f71fea6af893e9eaab2ecfe364d22d5975b7e36219c382a4a5fa2e5a2"
+    },
+    {
+      "path": "templates/traceability-matrix-template.md",
+      "sha256": "7953333bee63b85298db520e685a8e40d9f8679d446701e811826d4e25dbb0bb"
+    },
+    {
+      "path": "templates/branch-record-template.md",
+      "sha256": "d0cf653ae12a87dfab746cf0d91348809cf428c7ef41a2564ad1d0e4a6e91a8a"
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "b5ff6ca3c838e298769fe4af738bf97f93a522d58d8ad41febca02a9c46bc2a5"
+    },
+    {
+      "path": ".github/workflows/factory-ci.yml",
+      "sha256": "13bae35d5d2af6bc3a72f110fcd892fcb6a184eb491de384ffddf35b7f31ca42"
+    },
+    {
+      "path": "docs/agent-run-log.md",
+      "sha256": "67e64e7c989fc867252cf87ba48e5664c52a04368845a8559743a76c5de942b1"
+    },
+    {
+      "path": "skills/orchestration-and-lifecycle-control/SKILL.md",
+      "sha256": "bb8652a6da806439d4767e9b7e58fba53f1170ac5abcc607e49af9f3b88871f7"
+    },
+    {
+      "path": "skills/using-starter-kit/SKILL.md",
+      "sha256": "a00589534b6c489d973d22ee525cc754f3a00bcd9164a8b9d708c101511b37d4"
+    },
+    {
+      "path": "skills/spec-driven-delivery/SKILL.md",
+      "sha256": "b614e043d435b9721f822006daf04fd8e11bd04f96dec42b7e5b2b4bef857b71"
+    },
+    {
+      "path": "skills/planning-and-task-breakdown/SKILL.md",
+      "sha256": "6b3d310444db83ce150fd9e1f77f7478e83935239a000e929dd676d4a75cb3e1"
+    },
+    {
+      "path": "skills/traceability-governance/SKILL.md",
+      "sha256": "b65bc36d7791046e76f1d58f80f7562a51d4cc573037bb676f2a0dbd23d5ee59"
+    },
+    {
+      "path": "skills/test-strategy-selection/SKILL.md",
+      "sha256": "0684d30db04c14823cd722cbb3fe1cb7f7f74100dc86092c9c516d6155ec4fbe"
+    },
+    {
+      "path": "skills/source-grounding/SKILL.md",
+      "sha256": "d1ccea1e603a012706544133cf2329ff1ebe066f7bb53af04fbb9366a6f493f2"
+    },
+    {
+      "path": "skills/architecture-decisioning/SKILL.md",
+      "sha256": "38be766a97339685f73fe5959e22a1882670ad89bf60b9c6de4d5763db476d0e"
+    },
+    {
+      "path": "skills/api-contract-design/SKILL.md",
+      "sha256": "35db061cea643ea5fa9a0ffe120fb05d9ce13b2e2a6a552b0c73aebb2206c4eb"
+    },
+    {
+      "path": "skills/security-and-hardening/SKILL.md",
+      "sha256": "5a5e69ab0cf1412aa59d4b5f6ecd5bf80a5277d69ca5075b52134bbedb918685"
+    },
+    {
+      "path": "skills/dotnet-api-delivery/SKILL.md",
+      "sha256": "817980bdae2326c7a46404a0ededb60ced97e5af66a2802271b57408352d0c88"
+    }
+  ]
+}

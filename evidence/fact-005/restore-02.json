@@ -1,0 +1,108 @@
+{
+  "task_id": "fact-005",
+  "run_id": "restore-02",
+  "actor": "Codex root developer self-check",
+  "independent_reviewer": null,
+  "repository": "amahusseingit/AI-Software-Factory-Starter-Kit",
+  "branch": "task/fact-005-integrate-dotnet-runtime",
+  "approved_base": "7ed5858e44bafbabf083022397ef97a4bb827dd2",
+  "git_head_before_check": "e7f1a1f8410e9a384ebbf683a88d4e485c7a85d5",
+  "source_artifact_set_digest": "a5c52a065501284970533737e672f8fc2a81b4eac768642cd197176b9124adf1",
+  "source_files": [
+    {
+      "path": ".github/workflows/dotnet-ci.yml",
+      "sha256": "4f4f8c1592376e50e9f6cba527426bf6280f3a06708b7c1e29d8ca147e456635"
+    },
+    {
+      "path": "runtime/dotnet/.gitignore",
+      "sha256": "0b153de0342b07fd63a54ed7a7b229983c41b0182768a640985a2884ede424e0"
+    },
+    {
+      "path": "runtime/dotnet/AGENTS.md",
+      "sha256": "406ab408a33ce430ee3470c3a69103e1a1692869274e040184e4e61d6e364f81"
+    },
+    {
+      "path": "runtime/dotnet/Directory.Build.props",
+      "sha256": "e12bdb14ecd296e46a21c6faa0d8d6ede284e01c52855c5da2b23b1a1d5f4402"
+    },
+    {
+      "path": "runtime/dotnet/Directory.Packages.props",
+      "sha256": "1d82c94051d47c7c851f705c47d025e3da2e50431cb2a25f523945f3bedb86a0"
+    },
+    {
+      "path": "runtime/dotnet/Factory.slnx",
+      "sha256": "cd2885ddea71da4165e6d98f8e3538154ecce9742a7c2c51563922b3760ffc03"
+    },
+    {
+      "path": "runtime/dotnet/NuGet.Config",
+      "sha256": "288e7ea6a4e6262902d19228109822b09383dfc751d9b182b4eb67b08089c3fc"
+    },
+    {
+      "path": "runtime/dotnet/global.json",
+      "sha256": "d1bb820bf074027be921b263729d1fba343d34328f0c4b7484d10162287c059e"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Analysis/IRuleScanner.cs",
+      "sha256": "f7395b9e51e189113405db39142305e47c6ba257ae1b5f9241cff1e1ab7326db"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Analysis/RoslynRuleScanner.cs",
+      "sha256": "a4c30ac1d267ed5f5ac739fc38e9656c6df50c77764f70b73804cbf61f62505c"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Configuration/AnalysisOptions.cs",
+      "sha256": "707fe5c820646bddcd9c0304235a30dcf8a50dc94716a152ff3f5d5a706760f5"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Contracts/AnalysisModels.cs",
+      "sha256": "9bfe3b9e917d5049de2223eed441f5d4b627808726359a882d4df107fbb7a080"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Factory.Api.csproj",
+      "sha256": "a6b4b5be5bc9f54131cdc949ab0ef9318700a443c1ba1a4540a8fab98a363b74"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/AgentTests.cs",
+      "sha256": "a19626cfcc7cdde8a4ce9f80d3b41980e89dfe13c3565297672cb2f874c06e62"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/ApiTests.cs",
+      "sha256": "aa9b7a292ab5b1a23392e9289c4b22adca8c327ec0f887badd55dcf7d53b7edb"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/Factory.Tests.csproj",
+      "sha256": "14765b0902c902b23019b572dfb7b6f209b2285c67f53d8fb406d2306f9518c0"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/LogCapture.cs",
+      "sha256": "c67b7d8c149ca7de4adb0e93efbfa1198baca19693ca74bad44770cae504f12d"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/ManualTimeProvider.cs",
+      "sha256": "86a1ff34e1717ae5d0c5b5f1cc5fab5ad54fe60d74322d3ed8982c28731c2a8d"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/RecordingChatClient.cs",
+      "sha256": "9e4e4a6624027b7418f2bf3dfe444dbee8b35110678a0d21c706db03d769425b"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/ScannerTests.cs",
+      "sha256": "b9bda762f8c3042cdc2ff118cab4b8cad7f48f3f107ff7db38123e8e2a6c006a"
+    }
+  ],
+  "command": [
+    "/workspace/.factory-tools/dotnet/dotnet",
+    "restore",
+    "Factory.slnx",
+    "--use-lock-file"
+  ],
+  "cwd": "/workspace/factory-dotnet10/runtime/dotnet",
+  "started_utc": "2026-10-19T18:21:39.514350+00:00",
+  "ended_utc": "2026-10-19T18:21:39.629712+00:00",
+  "exit_code": 1,
+  "command_state": "FAILED",
+  "interpretation": "Command exit only; semantic results must be separately inspected. Not independent acceptance.",
+  "raw_output": "evidence/fact-005/raw/restore-02.txt",
+  "raw_sha256": "f7da23a7b8b1301be6f0414c702b875b640ae7991f682672b4b3fac298d5252a",
+  "environment_id": "ccarenv_b64_Y2NhcmVudl80MDZiMzllN2RhMzQ4MTkxYjYwZGYzNzlhNWNlOTkzYw"
+}

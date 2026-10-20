@@ -1,0 +1,259 @@
+{
+  "task_id": "fact-004",
+  "display_task": "FACT-004A",
+  "actor": "Codex readiness executor",
+  "created_utc": "2026-10-19T18:03:19.605584+00:00",
+  "repository": "amahusseingit/AI-Software-Factory-Starter-Kit",
+  "branch": "task/fact-004-a-dotnet-runtime-readiness",
+  "base_sha": "7ed5858e44bafbabf083022397ef97a4bb827dd2",
+  "scope_hash": "aad62fa92d85e770f1cf8cccb263da3f24366e6f1bfbd65f314eee462fa785dd",
+  "plan_hash": "b4d47bc3acdbeb96f758ce157398892598a546b6206571ec871b7f2505bfff6d",
+  "artifact_set_digest": "d7f7a8a24b0d73ac0a7f95f5d9b158416a5531ad6fa4f5801b38373cfb55a9f7",
+  "digest_method": "SHA256 of UTF-8 json.dumps(artifacts,sort_keys=True,separators=(comma,colon)); this manifest excludes itself to avoid circular hashing",
+  "artifacts": [
+    {
+      "path": "specs/factory-runtime-phase1.md",
+      "sha256": "4fea76ffa442f399ee43da2baa0add275ebd289ad2516adf1f7640e61e2bf2e8",
+      "bytes": 10119
+    },
+    {
+      "path": "adrs/factory-runtime-phase1.md",
+      "sha256": "65613d60701d7697a48ff9c7a0722ec82edbddadf4da5b69638825a766b386d5",
+      "bytes": 9020
+    },
+    {
+      "path": "plans/fact-004a-readiness-plan.md",
+      "sha256": "b4d47bc3acdbeb96f758ce157398892598a546b6206571ec871b7f2505bfff6d",
+      "bytes": 5647
+    },
+    {
+      "path": "plans/fact-004a-handoff.md",
+      "sha256": "780ebf525006e0f0111b98a2838c4df71a8e0b118f4ea9da16c0436e6b44da95",
+      "bytes": 5048
+    },
+    {
+      "path": "plans/fact-004b-developer-plan.md",
+      "sha256": "b58390db974b10b058d30d25962afc31f504d509d3306bbf49cb1b00d284f7ac",
+      "bytes": 9265
+    },
+    {
+      "path": "plans/fact-004b-traceability.md",
+      "sha256": "246d94db9fb686b06b5ba6ab3d5a9eaba3632aa99dc844b692fe93e39bb06a23",
+      "bytes": 2786
+    },
+    {
+      "path": "docs/agent-run-log.md",
+      "sha256": "29649a8a9e4bb0e99108aa307912903ca425e41b622ec54173bcb6fff20bf590",
+      "bytes": 6988
+    },
+    {
+      "path": "evidence/fact-004a/api-members.json",
+      "sha256": "4a0ed57852a7229f22a83dfa11b9df756d127b9d09396b4ba2e84e0c656a6208",
+      "bytes": 5994
+    },
+    {
+      "path": "evidence/fact-004a/authorization.json",
+      "sha256": "074bb9434f5a32212f32f9f8218e4cebfe1f511453aea3bc3227b91c32928330",
+      "bytes": 1629
+    },
+    {
+      "path": "evidence/fact-004a/check-results-initial-staged.json",
+      "sha256": "b069937309db7293785ec9e0cb4cd07fde6e135f0a222e95423210582442897f",
+      "bytes": 3034
+    },
+    {
+      "path": "evidence/fact-004a/check-results.json",
+      "sha256": "828cd1f42a45eefff8d961ec531fb3723d060040e967504e1c216b0a3140a15d",
+      "bytes": 2524
+    },
+    {
+      "path": "evidence/fact-004a/dependency-assessment.md",
+      "sha256": "658e75edc4ad50c662c22873c5e0bc43e22ddc0c010aa4344261baf92f576c7f",
+      "bytes": 6483
+    },
+    {
+      "path": "evidence/fact-004a/dependency-manifest.json",
+      "sha256": "b0a151d3c90dc9ee0265adcf59550aab2b6e81c311db10543330fd5baffb8b3c",
+      "bytes": 47227
+    },
+    {
+      "path": "evidence/fact-004a/input-manifest.json",
+      "sha256": "74eb036c52dd9a48bab60d914506d1f4cebe31fa75fcceea8873eaf5ca632b32",
+      "bytes": 4461
+    },
+    {
+      "path": "evidence/fact-004a/prototype-inventory.json",
+      "sha256": "ae239603bc5d318435b1b06b9af53e6ce9d673c9aa59b839c026c65fc599bfda",
+      "bytes": 2425
+    },
+    {
+      "path": "evidence/fact-004a/raw/dotnet10-releases.json.gz",
+      "sha256": "d412b917d92946c078a62c281c8990cf1e45428496950c670ef746e983f1cae2",
+      "bytes": 216855
+    },
+    {
+      "path": "evidence/fact-004a/raw/factory-docs.txt",
+      "sha256": "0c4ca5f5c3a8efad208a59bce77d8e7d7672a670519b6d51cfb57ed02623e5ee",
+      "bytes": 41
+    },
+    {
+      "path": "evidence/fact-004a/raw/factory-gate-tests.txt",
+      "sha256": "5459f11f3ba28a39f98eead8bca8f3092de35f70211b47b125a81821cf193e39",
+      "bytes": 6314
+    },
+    {
+      "path": "evidence/fact-004a/raw/initial-staged-factory-docs.txt.gz",
+      "sha256": "1b1494d4192eb2c533a0cecf7af7a24e542eab28fde7f700247191b584a6ebf9",
+      "bytes": 57
+    },
+    {
+      "path": "evidence/fact-004a/raw/initial-staged-factory-gate-tests.txt.gz",
+      "sha256": "140a69df7311401e2c36beb3372f3173e6d199290db8d71a5a17ef2b3f635619",
+      "bytes": 1072
+    },
+    {
+      "path": "evidence/fact-004a/raw/initial-staged-whitespace.txt.gz",
+      "sha256": "b1fc26fb065e17214e9e8341873000298d8177bc28705471abef2b9053c359ba",
+      "bytes": 11775
+    },
+    {
+      "path": "evidence/fact-004a/raw/microsoft.agents.ai.1.25.0.Microsoft.Agents.AI.xml.gz",
+      "sha256": "eaa203097abd99f5d8806cfdaec58e7916b2892f4d26cfd08e8e658de0478123",
+      "bytes": 125290
+    },
+    {
+      "path": "evidence/fact-004a/raw/microsoft.agents.ai.1.25.0.nuspec.gz",
+      "sha256": "de5bf8591b73aee757147d01f8b8f4ba5910b8e9d703e3fd96b4366189b89d84",
+      "bytes": 860
+    },
+    {
+      "path": "evidence/fact-004a/raw/microsoft.agents.ai.abstractions.1.25.0.Microsoft.Agents.AI.Abstractions.xml.gz",
+      "sha256": "3cf509e7e9317cc59cd1b5fbdf06c6877ca9f8ef1041d933b7d6df7ac25f2af3",
+      "bytes": 31173
+    },
+    {
+      "path": "evidence/fact-004a/raw/microsoft.agents.ai.abstractions.1.25.0.nuspec.gz",
+      "sha256": "ca0096ae25a30e57785e6ebc21404898f89220a3b994362d6c1a50abf9d5cf5e",
+      "bytes": 666
+    },
+    {
+      "path": "evidence/fact-004a/raw/microsoft.agents.ai.abstractions.versions.json.gz",
+      "sha256": "763fc084f548681e8d5a3b5580e415020ba5925f0a715688cabdcc64b362ba50",
+      "bytes": 240
+    },
+    {
+      "path": "evidence/fact-004a/raw/microsoft.agents.ai.versions.json.gz",
+      "sha256": "bee77f060b35eab313e875a46a79c660e3966b0bc8ffcb692e358b0a1ec39cac",
+      "bytes": 242
+    },
+    {
+      "path": "evidence/fact-004a/raw/microsoft.aspnetcore.mvc.testing.10.0.13.nuspec.gz",
+      "sha256": "b1f2c261ddabb3abe696ecb03938755c51a54a595c39164f682e95ef061388d3",
+      "bytes": 708
+    },
+    {
+      "path": "evidence/fact-004a/raw/microsoft.aspnetcore.mvc.testing.versions.json.gz",
+      "sha256": "ab7584f4f1109acf0bba6914b65534f996d9fdee4b4d9e0e13b91a32678f14d8",
+      "bytes": 1051
+    },
+    {
+      "path": "evidence/fact-004a/raw/microsoft.codeanalysis.csharp.5.9.0.nuspec.gz",
+      "sha256": "117883369c4dedfe6be1a2ecc27641cdff4e2d3f8c1d82a900211c29f3e3d8c3",
+      "bytes": 920
+    },
+    {
+      "path": "evidence/fact-004a/raw/microsoft.codeanalysis.csharp.versions.json.gz",
+      "sha256": "22bfc59b72734ba95c6cf54bf18c2f4550893522ec3e4ddb16524bd39b8e5d64",
+      "bytes": 574
+    },
+    {
+      "path": "evidence/fact-004a/raw/microsoft.extensions.ai.10.11.0.nuspec.gz",
+      "sha256": "7bc3748013794af9689a548f93107aa62f444e1d6aba3e59524872969c11b4f0",
+      "bytes": 745
+    },
+    {
+      "path": "evidence/fact-004a/raw/microsoft.extensions.ai.openai.10.11.0.Microsoft.Extensions.AI.OpenAI.xml.gz",
+      "sha256": "35147a6849aa282cf6406aeb10e3535776bf8254b34ab4537c0f1a72061b48e9",
+      "bytes": 13131
+    },
+    {
+      "path": "evidence/fact-004a/raw/microsoft.extensions.ai.openai.10.11.0.nuspec.gz",
+      "sha256": "4e9363897035de7e828d3dafe9e8b6ec9f3462f981620834accefb3f06497b53",
+      "bytes": 676
+    },
+    {
+      "path": "evidence/fact-004a/raw/microsoft.extensions.ai.openai.versions.json.gz",
+      "sha256": "0161458859f576393a9498b97ac42e15ebe7b973c0de406d99075c13437e6d87",
+      "bytes": 280
+    },
+    {
+      "path": "evidence/fact-004a/raw/microsoft.extensions.ai.versions.json.gz",
+      "sha256": "634bfd918c4ea3cdc6f30cc3701a7bacabfc01c173b4f76e32d16f5f05b91cd1",
+      "bytes": 210
+    },
+    {
+      "path": "evidence/fact-004a/raw/microsoft.net.test.sdk.17.14.1.nuspec.gz",
+      "sha256": "0d5b5e4db521f1f150152d8e1a502d2bb4cb955deff99c661f79e9b9ec755b57",
+      "bytes": 617
+    },
+    {
+      "path": "evidence/fact-004a/raw/microsoft.net.test.sdk.versions.json.gz",
+      "sha256": "fbd94efec36080ce7f6465a6de60bb2ff1cb2448a911de5c7bab61fd9945ac64",
+      "bytes": 822
+    },
+    {
+      "path": "evidence/fact-004a/raw/openai.2.14.0.OpenAI.xml.gz",
+      "sha256": "c9246da1897db248337413c370f11218f7ed02bc1a9714b51a8d4480c41a0886",
+      "bytes": 57003
+    },
+    {
+      "path": "evidence/fact-004a/raw/openai.2.14.0.nuspec.gz",
+      "sha256": "3e0c4873b56c3e0c9203d9abaafbf62dffbafb55ca08f75610f51618c6901f5d",
+      "bytes": 685
+    },
+    {
+      "path": "evidence/fact-004a/raw/openai.versions.json.gz",
+      "sha256": "fba7eb61864866f6584e5390c266c10fff2a63bb3124574fb4628ebe3572442c",
+      "bytes": 198
+    },
+    {
+      "path": "evidence/fact-004a/raw/tooling-metadata.json",
+      "sha256": "426913c6e019af6eb3052627942009fbf68379fe48761ccb4cbe7329df19e6ae",
+      "bytes": 112638
+    },
+    {
+      "path": "evidence/fact-004a/raw/whitespace.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "evidence/fact-004a/raw/xunit.2.9.3.nuspec.gz",
+      "sha256": "e26cd5a68180805d64fe68c2f73ebc564d4c6c4b69c1eb62609f5d98086c21e9",
+      "bytes": 692
+    },
+    {
+      "path": "evidence/fact-004a/raw/xunit.runner.visualstudio.3.1.4.nuspec.gz",
+      "sha256": "be1a64be3a1e604b83760c9621b23a84f54b07639cfdd643c199b8cbfe644166",
+      "bytes": 746
+    },
+    {
+      "path": "evidence/fact-004a/raw/xunit.runner.visualstudio.versions.json.gz",
+      "sha256": "158ff381e8a0ff4912b258889f1c481ffabab0709781e6239fb24e2a0be1685d",
+      "bytes": 455
+    },
+    {
+      "path": "evidence/fact-004a/raw/xunit.versions.json.gz",
+      "sha256": "fbc1774aad4eb01daa4e621775f8f647fd5e938c833db01967e5f6292ba41620",
+      "bytes": 493
+    }
+  ],
+  "self_check": {
+    "metadata_hashed_observations_verified": 25,
+    "raw_check_output_hashes_verified": true,
+    "log_preserves_full_base_prefix": true
+  },
+  "application_evidence": "NOT_RUN",
+  "independent_qa_review_security": "NOT_RUN",
+  "progression": "BLOCKED",
+  "publication": "NOT_RUN"
+}
