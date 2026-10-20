@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "parameters": "--vulnerable --include-transitive",
+  "sources": [
+    "https://api.nuget.org/v3/index.json"
+  ],
+  "projects": [
+    {
+      "path": "/workspace/factory-dotnet10/runtime/dotnet/src/Factory.Api/Factory.Api.csproj"
+    },
+    {
+      "path": "/workspace/factory-dotnet10/runtime/dotnet/tests/Factory.Tests/Factory.Tests.csproj"
+    }
+  ]
+}

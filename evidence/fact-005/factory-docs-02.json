@@ -1,0 +1,170 @@
+{
+  "task_id": "fact-005",
+  "run_id": "factory-docs-02",
+  "actor": "Codex root developer self-check",
+  "independent_reviewer": null,
+  "repository": "amahusseingit/AI-Software-Factory-Starter-Kit",
+  "branch": "task/fact-005-integrate-dotnet-runtime",
+  "approved_base": "7ed5858e44bafbabf083022397ef97a4bb827dd2",
+  "git_head_before_check": "e7f1a1f8410e9a384ebbf683a88d4e485c7a85d5",
+  "source_artifact_set_digest": "1e5d3e44c3e0c48e7c9e1cdc72095ea126048e7d841edf7fe8d842cf60622b5e",
+  "source_files": [
+    {
+      "path": ".github/workflows/dotnet-ci.yml",
+      "sha256": "4f4f8c1592376e50e9f6cba527426bf6280f3a06708b7c1e29d8ca147e456635"
+    },
+    {
+      "path": "runtime/dotnet/.gitignore",
+      "sha256": "0b153de0342b07fd63a54ed7a7b229983c41b0182768a640985a2884ede424e0"
+    },
+    {
+      "path": "runtime/dotnet/AGENTS.md",
+      "sha256": "406ab408a33ce430ee3470c3a69103e1a1692869274e040184e4e61d6e364f81"
+    },
+    {
+      "path": "runtime/dotnet/Directory.Build.props",
+      "sha256": "e12bdb14ecd296e46a21c6faa0d8d6ede284e01c52855c5da2b23b1a1d5f4402"
+    },
+    {
+      "path": "runtime/dotnet/Directory.Packages.props",
+      "sha256": "1d82c94051d47c7c851f705c47d025e3da2e50431cb2a25f523945f3bedb86a0"
+    },
+    {
+      "path": "runtime/dotnet/Factory.slnx",
+      "sha256": "cd2885ddea71da4165e6d98f8e3538154ecce9742a7c2c51563922b3760ffc03"
+    },
+    {
+      "path": "runtime/dotnet/NuGet.Config",
+      "sha256": "288e7ea6a4e6262902d19228109822b09383dfc751d9b182b4eb67b08089c3fc"
+    },
+    {
+      "path": "runtime/dotnet/README.md",
+      "sha256": "367a409304db8ecb967141d05bf55caf0720d4c44596d6b162c6d901ed983b9a"
+    },
+    {
+      "path": "runtime/dotnet/examples/analyze-request.json",
+      "sha256": "f1d1bf564c33a3c081590cb76f867e2c3257bf65bbd04e59aa6b8d347e862c8e"
+    },
+    {
+      "path": "runtime/dotnet/global.json",
+      "sha256": "d1bb820bf074027be921b263729d1fba343d34328f0c4b7484d10162287c059e"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Agents/FactoryAgentService.cs",
+      "sha256": "4a5684b3439f40d2eaba17b89caaaacd6e7d1fa3501c181c8163963f8b7c41bb"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Agents/IAgentReviewService.cs",
+      "sha256": "477daad74d5ca4b4853e3f3ce2002c37887ee4be5ef6f5343b7d59be9dd805c3"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Analysis/AnalysisService.cs",
+      "sha256": "35bc3cdf3ccaa910c6fbed3aad8e1f5272c85f7837d47238a3dbb66c8543c84e"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Analysis/IRuleScanner.cs",
+      "sha256": "20565b3bd552a03e37d5c49c69fde8e0c62953327e8e2679acec1995bf2058ab"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Analysis/RoslynRuleScanner.cs",
+      "sha256": "7a0a94bebc2ac3a52ea24a7fa959c1715c48c99f367348e6c74d4f05a2ae42e6"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Configuration/AIOptions.cs",
+      "sha256": "39db39f0b6377904c75ccf0116ba49dd18017fed04c16317b464aa3527deed2b"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Configuration/AnalysisOptions.cs",
+      "sha256": "8abd0fc68f7dec839463c866fa51eb48a354557b7cbd33c2d34f89517b3d439b"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Configuration/ProviderRegistration.cs",
+      "sha256": "a859b385a369a90e0e62dbc825972f8915b1122b6124e4daed976d40ea97ffc6"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Contracts/AnalysisModels.cs",
+      "sha256": "ddeb1f4222b4db32ecece25ce762e0b82d5d2f34c562fe8466327aebb9398ae5"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Factory.Api.csproj",
+      "sha256": "a6b4b5be5bc9f54131cdc949ab0ef9318700a443c1ba1a4540a8fab98a363b74"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Program.cs",
+      "sha256": "3c03a7ce2504a6de5edc374c4475d1cd02027deb3d510a622f2d93d06b212501"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Security/LocalHostPolicy.cs",
+      "sha256": "c26ae732d5b73095322593562833744d45362ff58ba1dffc0f9d68d1cfe53371"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/appsettings.json",
+      "sha256": "121c27e6a288a5e4efdd0d23370eb3ed6dee31c5b20359eb934d213d5a9549ca"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/packages.lock.json",
+      "sha256": "fbdc37c3a4f79eb532efc59ee7a7bad14364e166768d51ecb37e990cafa1c2df"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/AgentTests.cs",
+      "sha256": "561402708dff7d0b4a542530e442f122cdfbc97a90f57d026bd7d958f84f5026"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/AnalysisServiceTests.cs",
+      "sha256": "2bd326460545bdc09bde83e0fdd3692e6b1a0672eec6b163d69b6be1fd71f116"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/ApiTests.cs",
+      "sha256": "7423a1793da808c186a1044f55c3c97729bcb2d02162f93f0c7083dfd2f2db95"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/Factory.Tests.csproj",
+      "sha256": "14765b0902c902b23019b572dfb7b6f209b2285c67f53d8fb406d2306f9518c0"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/HostingTests.cs",
+      "sha256": "62a05795ccb26777a3ee5ad1d43c2a2592c4e564328d9593e7f0ffb8c229e800"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/LocalHostPolicyTests.cs",
+      "sha256": "826a29228ef4dc0323db91d266c780fa9d8c39ba58a29297292f1b7db915c947"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/LogCapture.cs",
+      "sha256": "a6d08de802979cc8b072e44c67cd9941c61651f6f8406f8eb98eef4c7d0d4dbf"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/ManualTimeProvider.cs",
+      "sha256": "86a1ff34e1717ae5d0c5b5f1cc5fab5ad54fe60d74322d3ed8982c28731c2a8d"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/ProviderTests.cs",
+      "sha256": "fe0128fe3d0b46f624647b8cdc1227f78766e6f6b9a1821c689899aee0c5420e"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/RecordingChatClient.cs",
+      "sha256": "9e4e4a6624027b7418f2bf3dfe444dbee8b35110678a0d21c706db03d769425b"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/ScannerTests.cs",
+      "sha256": "af99a8906cc77dd0f7c24d1d003c36ad7872c9781f7bc349a48fd4a5949fd73c"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/packages.lock.json",
+      "sha256": "950410300cd986e72e3365d4dc79e83ff87979a65d5b705d73cf27dd4458acf7"
+    }
+  ],
+  "command": [
+    "python3",
+    "tools/validate_factory.py"
+  ],
+  "cwd": "/workspace/factory-dotnet10",
+  "started_utc": "2026-10-19T18:59:03.234419+00:00",
+  "ended_utc": "2026-10-19T18:59:03.315659+00:00",
+  "exit_code": 0,
+  "command_state": "PASS",
+  "interpretation": "Command exit only; semantic results must be separately inspected. Not independent acceptance.",
+  "raw_output": "evidence/fact-005/raw/factory-docs-02.txt",
+  "raw_sha256": "0c4ca5f5c3a8efad208a59bce77d8e7d7672a670519b6d51cfb57ed02623e5ee",
+  "environment_id": "ccarenv_b64_Y2NhcmVudl80MDZiMzllN2RhMzQ4MTkxYjYwZGYzNzlhNWNlOTkzYw"
+}
