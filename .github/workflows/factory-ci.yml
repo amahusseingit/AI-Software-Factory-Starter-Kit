@@ -44,4 +44,4 @@ jobs:
         with:
           python-version: '3.12'
       - name: Test Factory gate and branch record evaluators
-        run: python -m unittest discover -s tools -p 'test_factory*.py' -v
+        run: python -B tools/run_factory_tests.py

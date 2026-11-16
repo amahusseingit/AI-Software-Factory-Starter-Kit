@@ -19,6 +19,13 @@ Implements in verified vertical slices.
 ## TEST
 Applies test strategy and validation evidence.
 
+`TEST` executes the `VERIFY` lifecycle phase. It does not create a separate
+lifecycle phase.
+
+## VERIFY
+The lifecycle gate that requires test outputs, evidence, updated traceability,
+and a canonical PASS/BLOCKED decision. Execute it through `commands/TEST.md`.
+
 ## REVIEW
 Runs structured scorecards and readiness checks.
 
@@ -27,3 +34,8 @@ Prepares release-readiness and deployment packaging.
 
 ## RESCUE-PROJECT
 Recovers incomplete or inconsistent generated systems.
+
+## CLOSE
+Follow governance/protocol.md and roles/coordinator.md. Explicit user action
+`close` and current independent evidence are required. This is separate from
+SHIP, merge, deployment and any next role.

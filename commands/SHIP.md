@@ -2,6 +2,11 @@
 
 # SHIP Command
 
+## Activate these skills
+- `skills/orchestration-and-lifecycle-control/SKILL.md`
+- `skills/review-gates/SKILL.md`
+- `skills/shipping-readiness/SKILL.md`
+
 Use this command to prepare a release-ready package.
 
 ## Required actions

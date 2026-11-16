@@ -14,6 +14,7 @@ import json
 from pathlib import Path
 import re
 import sys
+import subprocess
 from urllib.parse import unquote, urlsplit
 
 LIFECYCLE = ["DEFINE", "PLAN", "BUILD", "VERIFY", "REVIEW", "SHIP", "CLOSE"]
@@ -235,11 +236,65 @@ def inside(root, relative):
     return path
 
 
+def source_matches(root, name, expected, blob=None):
+    """Check raw provenance bytes, allowing only Git's CRLF checkout conversion.
+
+    Existing Windows clones may predate archive -text attributes. A fallback
+    requires the committed blob to match the manifest AND the worktree to equal
+    that blob with LF converted to CRLF. Content edits still fail. Exports with
+    exact bytes need neither Git nor a .git directory.
+    """
+    actual = inside(root, name).read_bytes()
+    if hashlib.sha256(actual).hexdigest() == expected:
+        return True
+    try:
+        if blob is not None:
+            return (hashlib.sha256(blob).hexdigest() == expected
+                    and b"\r" not in blob and actual == blob.replace(b"\n", b"\r\n"))
+        top = subprocess.run(["git", "-C", str(root), "rev-parse", "--show-toplevel"],
+                             capture_output=True, check=True, timeout=10).stdout.decode("utf-8").strip()
+        if Path(top).resolve() != root.resolve():
+            return False
+        blob = subprocess.run(["git", "-C", str(root), "cat-file", "blob", "HEAD:" + name],
+                              capture_output=True, check=True, timeout=10).stdout
+    except (OSError, subprocess.SubprocessError, UnicodeError):
+        return False
+    return (hashlib.sha256(blob).hexdigest() == expected
+            and b"\r" not in blob and actual == blob.replace(b"\n", b"\r\n"))
+
+
+def committed_sources(root, names):
+    """Read source blobs in one read-only Git invocation for older CRLF clones."""
+    try:
+        top = subprocess.run(["git", "-C", str(root), "rev-parse", "--show-toplevel"],
+                             capture_output=True, check=True, timeout=10).stdout.decode("utf-8").strip()
+        if Path(top).resolve() != root.resolve():
+            return {}
+        if any("\n" in name or "\r" in name for name in names):
+            return {}
+        result = subprocess.run(["git", "-C", str(root), "cat-file", "--batch"],
+                                input="".join("HEAD:" + n + "\n" for n in names).encode("utf-8"),
+                                capture_output=True, check=True, timeout=30).stdout
+        blobs, pos = {}, 0
+        for name in names:
+            end = result.index(b"\n", pos)
+            header = result[pos:end].split()
+            pos = end + 1
+            if len(header) != 3 or header[1] != b"blob":
+                continue
+            size = int(header[2])
+            blobs[name] = result[pos:pos + size]
+            pos += size + 1
+        return blobs
+    except (OSError, subprocess.SubprocessError, UnicodeError, ValueError):
+        return {}
+
+
 def validate_repository(root):
     errors = []
     contract_path = root / "governance/gate-contract.json"
     try:
-        contract = json.loads(contract_path.read_text())
+        contract = json.loads(contract_path.read_text(encoding="utf-8"))
         for key, value in (("lifecycle", LIFECYCLE), ("decisions", ["PASS", "BLOCKED"]), ("check_states", STATES), ("actions", ACTIONS), ("binding_fields", BINDINGS), ("required_gate_checks", ["qa", "security", "review"]), ("security_severities", ["CRITICAL", "HIGH", "MEDIUM", "LOW"]), ("source_manifest", "SOURCE_MANIFEST.json")):
             if contract.get(key) != value:
                 errors.append("canonical contract mismatch: " + key)
@@ -251,13 +306,28 @@ def validate_repository(root):
             if not (root / name).is_file():
                 errors.append("missing canonical document: " + name)
         for name in pointers:
-            body = (root / name).read_text()
+            body = (root / name).read_text(encoding="utf-8")
             if "protocol.md" not in body or "security-policy.md" not in body:
                 errors.append("missing canonical pointers: " + name)
+        # Existing small fixture/export repositories need not ship the adapter.
+        # If installed, validate its actual dependencies and command skill paths.
+        adapter = root / "skills/codex-factory-adapter/SKILL.md"
+        if adapter.exists():
+            for name in (".agents/skills/factory/SKILL.md", "roles/README.md",
+                         "templates/role-plan-template.md", "templates/role-handoff-template.md",
+                         "tools/run_factory_tests.py", "tools/test_factory_gates.py",
+                         "tools/test_factory_branches.py", "tools/test_factory_portability.py"):
+                if not (root / name).is_file():
+                    errors.append("missing Codex adapter dependency: " + name)
+            for command in (root / "commands").glob("*.md"):
+                text = command.read_text(encoding="utf-8")
+                for name in re.findall(r"skills/[a-z0-9-]+/SKILL\.md", text):
+                    if not (root / name).is_file():
+                        errors.append("missing command skill: " + name)
         for doc in root.rglob("*.md"):
             if ".git" in doc.parts:
                 continue
-            body = re.sub(r"```.*?```", "", doc.read_text(), flags=re.S)
+            body = re.sub(r"```.*?```", "", doc.read_text(encoding="utf-8"), flags=re.S)
             # Validate local inline Markdown links; external links and anchors are exempt.
             for target in re.findall(r"\[[^\]]*\]\(([^\s)]+)(?:\s+[^)]*)?\)", body):
                 url = urlsplit(target.strip("<>"))
@@ -270,19 +340,21 @@ def validate_repository(root):
         if not manifest.exists():
             errors.append("required SOURCE_MANIFEST.json missing")
         else:
-            data = json.loads(manifest.read_text())
+            data = json.loads(manifest.read_text(encoding="utf-8"))
             sources = data.get("sources")
             if not isinstance(sources, list) or not sources:
                 errors.append("source manifest sources must be nonempty list")
             else:
                 seen = set()
+                mismatched = [s["path"] for s in sources
+                              if hashlib.sha256(inside(root, s["path"]).read_bytes()).hexdigest() != s["sha256"]]
+                blobs = committed_sources(root, mismatched) if mismatched else {}
                 for source in sources:
                     name = source["path"]
                     if name in seen:
                         errors.append("duplicate manifest source: " + name)
                     seen.add(name)
-                    actual = hashlib.sha256(inside(root, name).read_bytes()).hexdigest()
-                    if actual != source["sha256"]:
+                    if not source_matches(root, name, source["sha256"], blobs.get(name)):
                         errors.append("source manifest hash mismatch: " + name)
     except (OSError, ValueError, TypeError, KeyError, AttributeError) as exc:
         errors.append("invalid repository/contract/manifest: " + str(exc))
@@ -295,7 +367,7 @@ def main():
     parser.add_argument("--record", type=Path)
     args = parser.parse_args()
     try:
-        errors = validate_record(json.loads(args.record.read_text())) if args.record else validate_repository(args.root.resolve())
+        errors = validate_record(json.loads(args.record.read_text(encoding="utf-8"))) if args.record else validate_repository(args.root.resolve())
     except (OSError, ValueError, TypeError) as exc:
         errors = ["invalid input: " + str(exc)]
     print(json.dumps({"decision": "BLOCKED" if errors else "PASS", "errors": errors}, indent=2))

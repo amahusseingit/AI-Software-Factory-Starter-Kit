@@ -26,7 +26,7 @@ Generate:
 - specs/ui-web-spec.md
 - specs/ui-mobile-spec.md
 - specs/user-stories.md
-- docs/traceability-matrix.md
+- plans/<project>-traceability-matrix.md
 
 Before starting:
 - record start time

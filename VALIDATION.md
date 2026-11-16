@@ -4,9 +4,36 @@ Run from the repository root with Python 3.10 or later:
 
 ```sh
 python3 tools/validate_factory.py
-python3 -m unittest discover -s tools -p 'test_factory*.py' -v
+python3 tools/run_factory_tests.py
 git diff --cached --check -- . ":(exclude)archive/**"
 ```
+
+On Windows, use `python` instead of `python3`. Python reads repository text as
+UTF-8 explicitly. The PowerShell entry points delegate to the same canonical
+implementation and propagate nonzero exit codes:
+
+```powershell
+.\scripts\validate-factory.ps1 -Strict
+.\scripts\smoke-test-factory.ps1
+```
+
+All 314 currently archived source blobs contain LF text (verified against Git).
+`.gitattributes` uses `text=auto eol=lf` under archive/: fresh text checkouts and
+staged text stay LF, while binary files remain binary. This also preserves
+manifest hashes when staging older Windows clones that contain CRLF copies.
+For those existing worktrees, verification requires both a
+committed Git blob with the exact manifest hash and a working copy differing
+only by LF-to-CRLF checkout conversion. Content changes, absent Git blobs and
+manifest mismatches fail closed. Exact-byte exports need no Git dependency.
+The validator does not rewrite archives or replace manifest hashes.
+
+The test runner requires each gate, branch and portability suite to exist,
+import and contain tests. A partial or empty suite is BLOCKED even when unittest
+would accept the remaining tests. Direct unittest discovery is useful for
+diagnostics; the runner is the acceptance entry point used by wrappers and CI.
+New historical imports must verify original and staged hashes before commit;
+original CRLF text requires an explicit per-file binary/attribute decision
+rather than silently changing its provenance digest.
 
 The first command checks the canonical contract, selected authority pointers, local Markdown links and archived source SHA256 values. The second runs synthetic positive/negative records for the offline reference gate evaluator. Negative cases include missing/stale approval, scope change, QA failure, missing evidence, Critical/High security blockers, unknown/not-run/scope-mismatch states, self-signoff, missing closure approval, invalid planning append and exception/traceability defects. Test names and assertions in tools/test_factory_gates.py are the exact coverage inventory.
 
@@ -31,10 +58,19 @@ Validation results for the exact final candidate are delivered with the review p
 [Factory CI](.github/workflows/factory-ci.yml) defines two jobs on GitHub-hosted Ubuntu 24.04 with Python 3.12:
 
 - `factory-docs`: runs `python tools/validate_factory.py`.
-- `factory-gate-tests`: runs `python -m unittest discover -s tools -p 'test_factory*.py' -v`, covering both gate and branch-record evaluator tests.
+- `factory-gate-tests`: runs `python -B tools/run_factory_tests.py`, requiring gate, branch-record and portability suites.
 
 The workflow runs for pull requests targeting `main` or `develop`, and pushes to `main`, `develop`, `task/**` or `release/**`. There are no path filters or job-level skip conditions. Pull requests use checkout's default event revision (GitHub's synthetic merge commit), while pushes test the pushed revision. A later target change still requires fresh integration evidence before merge.
 
 Both official actions are pinned to full commit SHAs and use Node 24. Jobs have read-only `contents` permission, do not persist checkout credentials, and use no configured secrets, package installation, deployment steps or privileged pull-request trigger. Action pins must be reviewed when updated. Python's patch release and the hosted runner image can change; the job logs record the actual runtime.
 
 This is documentation and synthetic evaluator CI only. It does not implement `factory-branch-contract`, authenticate approval or independent review, enforce task uniqueness or branch naming on GitHub, or configure required checks/branch protection. The two check names must be observed successfully on a real PR before any separately approved protection setup. Local tests alone do not prove live GitHub enforcement, application behavior or deployment readiness.
+
+## Cross-platform validation matrix
+
+`.github/workflows/factory-validation.yml` runs documentation validation and
+synthetic gate/branch/portability tests on Windows and Ubuntu with Python 3.10
+and 3.14. The workflow uses read-only repository permissions and no deployment
+steps. Its reported matrix job names are `factory-validation (<os>, Python <version>)`.
+These are candidate check contexts until an actual GitHub run is observed;
+no branch-protection settings have been installed or verified by local checks.

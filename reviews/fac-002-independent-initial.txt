@@ -1,0 +1,57 @@
+**Technical recommendation: BLOCKED.** Two confirmed MEDIUM/P2 findings require remediation before technical PASS.
+
+1. **[P2] Required test suites can be absent while smoke validation succeeds** — [smoke-test-factory.ps1:10](</C:/My Stuff/AI/AI Software Factory Starter Kit/scripts/smoke-test-factory.ps1:10>).
+
+   In a temporary fixture, I copied the real validator, portability suite and gate contract, leaving `test_factory_gates.py` and `test_factory_branches.py` absent. Running the unchanged wrapper with `-Root <fixture>` returned **exit 0**, reporting **9 tests OK** while all 61 gate/branch tests were unexecuted.
+
+   Require the mandatory suite files before discovery and add a regression for an incomplete suite. This affects F2-03/F2-08. **Correction:** an empty directory returned **exit 5** on Python 3.14; I am not claiming a reproduced zero-test success.
+
+2. **[P2] Archive attributes need a safe legacy-clone migration path** — [.gitattributes:2](</C:/My Stuff/AI/AI Software Factory Starter Kit/.gitattributes:2>), [VALIDATION.md:20](</C:/My Stuff/AI/AI Software Factory Starter Kit/VALIDATION.md:20>).
+
+   Reproduction in a temporary Git repository: commit an LF archive with its manifest hash; check it out as CRLF; apply `archive/** -text`; invalidate Git’s file-stat cache without changing content. Git then reports the archive modified. Validation still returns **PASS** through the fallback. An ordinary `git add -A` and fixture commit records those CRLF bytes; validation subsequently returns **BLOCKED: source manifest hash mismatch**.
+
+   Provide a guarded migration procedure that preserves manifest-matching archive bytes before staging, and cover the upgrade/staging path in regression tests. This affects F2-02. No repository archive was changed during review.
+
+Both findings belong to the implementing parent and should be resolved before independent re-review.
+
+The approved checks completed on Windows with Python 3.14.3, Git 2.52.0 and PowerShell 7.6.9:
+
+| Check | Result |
+|---|---|
+| `python -B tools/validate_factory.py` | PASS, exit 0 |
+| `python -B -m unittest discover -s tools -p 'test_factory*.py' -v` | 70 passed, exit 0 |
+| Diff whitespace check against requested base | PASS |
+| Wrapper validator failure, failing test, missing Python/root | Nonzero exits in PowerShell 7 and Windows PowerShell |
+| Provenance adversarial fixtures | Rejected text edits, mixed/extra CR bytes, wrong hashes, missing blobs and parent-repository fallback |
+| Unicode/space paths and batched committed blobs | PASS |
+
+I found **no integrity bypass in the tested provenance paths**. The role aliases, handoff pointers and lifecycle changes preserve canonical authority. Native discovery uses the documented repository location; the skill was available in this reviewer’s catalog and loaded. [Official skill documentation](https://learn.chatgpt.com/docs/build-skills)
+
+CI static inspection found no blocking syntax/security issue: four matrix combinations, `contents: read`, credential persistence disabled, and no deployment steps. The permission declaration leaves unspecified token permissions disabled. [GitHub workflow syntax](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax) Parent-reported Linux execution, YAML parsing and discovery observations remain separately attributed developer evidence.
+
+Review covered all 20 uncommitted candidate files against `4df16e0b73b2410daaab3960a0b5a9e846f9971b`. Their hashes were unchanged between **17:20:39 and 17:24:52 UTC, 2026-11-16**:
+
+| Candidate file | SHA-256 |
+|---|---|
+| [.agents/skills/factory/SKILL.md](</C:/My Stuff/AI/AI Software Factory Starter Kit/.agents/skills/factory/SKILL.md>) | `7ba8a41e41ccf9be60c017723602b788b04d012b1fd5b6ae8422cde2c77da7f5` |
+| [.gitattributes](</C:/My Stuff/AI/AI Software Factory Starter Kit/.gitattributes>) | `771b36ab37c9c5fb6a7c7c30d93727c02d112bc381714f814152d753ea10c1e9` |
+| [.github/workflows/factory-validation.yml](</C:/My Stuff/AI/AI Software Factory Starter Kit/.github/workflows/factory-validation.yml>) | `72f5b6476b9ca6e6187fc22bc252fbe12f3fbf7e6b834f04752966c83cf3b170` |
+| [AGENTS.md](</C:/My Stuff/AI/AI Software Factory Starter Kit/AGENTS.md>) | `203e7161c8465a157cd8f4f8e4b16ff6507012f1089617783720bd8ad160ffc5` |
+| [VALIDATION.md](</C:/My Stuff/AI/AI Software Factory Starter Kit/VALIDATION.md>) | `6b9e1a87ceb0312cf3569551e2be7b3174bc2b7233ff9b384492ec23fe68d6c0` |
+| [agents/role-registry.md](</C:/My Stuff/AI/AI Software Factory Starter Kit/agents/role-registry.md>) | `afcb581ac1aae709200304034ea82670533c0450a7458eada8fcf3a95d135f3c` |
+| [commands/REVIEW.md](</C:/My Stuff/AI/AI Software Factory Starter Kit/commands/REVIEW.md>) | `aa4d4b548b7e7b2bb0c121b965102702f12abd42fdb2d51398f0e9566db91c33` |
+| [commands/TEST.md](</C:/My Stuff/AI/AI Software Factory Starter Kit/commands/TEST.md>) | `33755efc73b88b8689c5714e88cd0f4bc6ad569da4f1b19e432e0a001eeca120` |
+| [commands/VERIFY.md](</C:/My Stuff/AI/AI Software Factory Starter Kit/commands/VERIFY.md>) | `4f4d70a02b749a0c8b84dd7ff65c84037bb9882397e853b58e4b36a198901ec7` |
+| [docs/codex-execution-protocol.md](</C:/My Stuff/AI/AI Software Factory Starter Kit/docs/codex-execution-protocol.md>) | `76b55488999051b06cf7885f0af56c2d58262001d78e9ea679ed663f226b5e6f` |
+| [docs/commands-guide.md](</C:/My Stuff/AI/AI Software Factory Starter Kit/docs/commands-guide.md>) | `516ab35dbd3db377209aad8a0f3b87455362b00bbc518be1abe98ee77bc0803f` |
+| [docs/lifecycle.md](</C:/My Stuff/AI/AI Software Factory Starter Kit/docs/lifecycle.md>) | `dd06d8f0a4500b9987ea6324e6ae7d713ad9010549cbb26e0a73418e116d4e07` |
+| [evidence/fac-002-local-checks.txt](</C:/My Stuff/AI/AI Software Factory Starter Kit/evidence/fac-002-local-checks.txt>) | `686dd6bd79217cf96524b9c8a7ce75edf909664f58432cb0e02693d91ad3e135` |
+| [plans/fac-002-hardening.md](</C:/My Stuff/AI/AI Software Factory Starter Kit/plans/fac-002-hardening.md>) | `9c916eb2b8fb2ae79001494b706017132725e80e785e27478f5669bd201b6a68` |
+| [scripts/smoke-test-factory.ps1](</C:/My Stuff/AI/AI Software Factory Starter Kit/scripts/smoke-test-factory.ps1>) | `1d5a2fc63b98e5381d14915b4362a1da9458d5ecf366e8d5cf7f04c8c41901d2` |
+| [scripts/validate-factory.ps1](</C:/My Stuff/AI/AI Software Factory Starter Kit/scripts/validate-factory.ps1>) | `e0abbcdfbfbe9a049626cd247efbe6ae116588d04050203ce1261f8222b80f8d` |
+| [skills/codex-factory-adapter/SKILL.md](</C:/My Stuff/AI/AI Software Factory Starter Kit/skills/codex-factory-adapter/SKILL.md>) | `67fc0f9d71e6e3e29b75475a160f36d12877b0638a5764530cdb495a26e59663` |
+| [templates/handoff-contract-template.md](</C:/My Stuff/AI/AI Software Factory Starter Kit/templates/handoff-contract-template.md>) | `09a17a7a2ec5bce9af5d464dce3a36e678d833f25c4b88f84c2d4572106cd70b` |
+| [tools/test_factory_portability.py](</C:/My Stuff/AI/AI Software Factory Starter Kit/tools/test_factory_portability.py>) | `d1aa90aaea762b98ba8f8f5c2c85a3f94f3b395f2999d65d25a49e5633dbae08` |
+| [tools/validate_factory.py](</C:/My Stuff/AI/AI Software Factory Starter Kit/tools/validate_factory.py>) | `fe9e895a33177e6b3eec52f25a3c86fd7d096ef6b8132ea1dd3e693637575f1a` |
+
+The bounded independent review is complete. No repository edits, commits, pushes or merges were performed. Human acceptance and topology approval remain outstanding; live CI is **NOT_RUN**. Publication, merge, deployment and closure remain separately authorized actions.
