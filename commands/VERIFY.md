@@ -1,5 +1,9 @@
 # VERIFY Command
 
+Subordinate to [canonical protocol](../governance/protocol.md) and
+[security policy](../governance/security-policy.md). Every role requires its
+own scope/revision-bound approval and independently recorded evidence.
+
 `VERIFY` is the lifecycle phase for proving that implemented behavior is correct.
 Execute the phase through `commands/TEST.md`; do not treat TEST as a separate
 lifecycle phase.
@@ -25,7 +29,7 @@ lifecycle phase.
 - automated test results
 - updated requirement-to-test mapping
 - evidence for the verified behavior
-- explicit pass/fail disposition
+- canonical check states and a PASS/BLOCKED progression decision
 - defects recorded when verification fails
 
 ## Gate rule

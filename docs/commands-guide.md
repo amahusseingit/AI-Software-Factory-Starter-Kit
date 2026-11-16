@@ -24,7 +24,7 @@ lifecycle phase.
 
 ## VERIFY
 The lifecycle gate that requires test outputs, evidence, updated traceability,
-and an explicit pass/fail disposition. Execute it through `commands/TEST.md`.
+and a canonical PASS/BLOCKED decision. Execute it through `commands/TEST.md`.
 
 ## REVIEW
 Runs structured scorecards and readiness checks.
@@ -34,3 +34,8 @@ Prepares release-readiness and deployment packaging.
 
 ## RESCUE-PROJECT
 Recovers incomplete or inconsistent generated systems.
+
+## CLOSE
+Follow governance/protocol.md and roles/coordinator.md. Explicit user action
+`close` and current independent evidence are required. This is separate from
+SHIP, merge, deployment and any next role.

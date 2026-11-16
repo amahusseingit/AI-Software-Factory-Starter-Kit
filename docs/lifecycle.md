@@ -23,3 +23,8 @@ Goal: block incomplete, unsafe, or low-quality delivery.
 
 ## SHIP
 Goal: make release practical and supportable.
+
+## CLOSE
+Goal: reconcile current independent evidence and record closure only after
+explicit user action `close`, following governance/protocol.md. Closure grants
+no merge, deployment or successor-role execution permission.

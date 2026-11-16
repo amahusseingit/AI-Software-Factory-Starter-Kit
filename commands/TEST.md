@@ -17,12 +17,6 @@ Use this command to select, plan, implement, and evaluate the right tests for th
 
 Apply a risk-appropriate test strategy that proves business behavior, not just superficial execution.
 
-## Activate these skills
-- `skills/test-enforcement/SKILL.md`
-- `skills/test-strategy-selection/SKILL.md`
-- `skills/traceability-governance/SKILL.md`
-- `skills/review-gates/SKILL.md`
-
 ## Required inputs
 - authoritative spec
 - current plan or rescue plan

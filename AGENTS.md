@@ -22,4 +22,6 @@ Select API, data, Angular, Flutter, authentication, recurrence or integration sk
 For defects, use debugging-and-recovery and surgical-change-control; large rescue or rewrite needs its own approval.
 
 ## Entry
+For Codex, use the repository skill at [.agents/skills/factory/SKILL.md](.agents/skills/factory/SKILL.md)
+or read [the Codex adapter](skills/codex-factory-adapter/SKILL.md) directly.
 Read [ORCHESTRATOR.md](ORCHESTRATOR.md), the canonical protocol and the selected role. Identify the approved SRS/ADRs and their hashes; if missing, plan clarification rather than inventing requirements. Do not implement merely because a workflow says to execute.
