@@ -17,6 +17,13 @@ Implements in verified vertical slices.
 ## TEST
 Applies test strategy and validation evidence.
 
+`TEST` executes the `VERIFY` lifecycle phase. It does not create a separate
+lifecycle phase.
+
+## VERIFY
+The lifecycle gate that requires test outputs, evidence, updated traceability,
+and an explicit pass/fail disposition. Execute it through `commands/TEST.md`.
+
 ## REVIEW
 Runs structured scorecards and readiness checks.
 

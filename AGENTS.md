@@ -36,6 +36,7 @@ Before major work begins, the AI must use the orchestration layer to determine:
 Use:
 - `ORCHESTRATOR.md`
 - `skills/orchestration-and-lifecycle-control/`
+- `skills/codex-factory-adapter/SKILL.md` when work is being routed through Codex
 
 Do not implement directly when a defined command or skill applies.
 
@@ -47,6 +48,16 @@ Do not implement directly when a defined command or skill applies.
 4. VERIFY
 5. REVIEW
 6. SHIP
+
+Lifecycle command mapping:
+
+- `START-PROJECT` enters DEFINE for a new project.
+- `SPEC` normalizes and assesses requirements within DEFINE.
+- `PLAN` produces implementation slices and planning artifacts.
+- `BUILD` implements approved vertical slices.
+- `VERIFY` is the lifecycle gate; `commands/TEST.md` is its execution command.
+- `REVIEW` evaluates completeness and readiness.
+- `SHIP` prepares release readiness.
 
 ## Project mode defaults
 
@@ -64,6 +75,7 @@ Unless the authoritative project spec explicitly says otherwise, assume:
 ### New system or large feature
 Always activate:
 - `skills/orchestration-and-lifecycle-control/SKILL.md`
+- `skills/codex-factory-adapter/SKILL.md` when using Codex
 - `skills/using-starter-kit/SKILL.md`
 - `skills/spec-driven-delivery/SKILL.md`
 - `skills/planning-and-task-breakdown/SKILL.md`
@@ -104,6 +116,8 @@ Always activate:
 - `skills/cross-platform-parity/SKILL.md`
 - `skills/review-gates/SKILL.md`
 - `skills/shipping-readiness/SKILL.md`
+
+The applicable command file must repeat its active-skill set and required gate inputs.
 
 ### Defects and recovery
 When troubleshooting:

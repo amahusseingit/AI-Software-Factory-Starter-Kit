@@ -13,8 +13,8 @@ Read:
 
 Task:
 Produce:
-- docs/architecture.md
-- specs/data-model.md
+- plans/<project>-architecture.md
+- plans/<project>-data-model.md
 - technical planning inputs
 - decision log entries
 

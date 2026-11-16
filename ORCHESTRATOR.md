@@ -94,10 +94,13 @@ Use when:
 The normal lifecycle is:
 
 ```text
-START-PROJECT → SPEC → PLAN → BUILD → TEST → REVIEW → SHIP
+START-PROJECT → SPEC → PLAN → BUILD → VERIFY(TEST) → REVIEW → SHIP
                          ↑
                      RESCUE
 ```
+
+`VERIFY` is the lifecycle phase. `commands/TEST.md` is the command used to
+execute verification activities and capture test evidence.
 
 ### Core rule
 Do not skip phases casually.
@@ -120,7 +123,7 @@ For example:
    - `SPEC`
    - `PLAN`
    - `BUILD`
-   - `TEST`
+   - `VERIFY` via `commands/TEST.md`
    - `REVIEW`
    - `SHIP`
 
@@ -132,7 +135,7 @@ For example:
 5. Re-enter lifecycle through:
    - `PLAN`
    - `BUILD`
-   - `TEST`
+   - `VERIFY` via `commands/TEST.md`
    - `REVIEW`
    - `SHIP`
 
@@ -153,11 +156,18 @@ For example:
 The orchestrator should activate only the skills that match the situation.
 
 ## Always consider these core skills
+- `skills/orchestration-and-lifecycle-control/`
+- `skills/codex-factory-adapter/` when using Codex
+- `skills/using-starter-kit/`
 - `skills/spec-driven-delivery/`
 - `skills/planning-and-task-breakdown/`
 - `skills/incremental-implementation/`
 - `skills/test-enforcement/`
+- `skills/traceability-governance/`
+- `skills/test-strategy-selection/`
+- `skills/cross-platform-parity/`
 - `skills/review-gates/`
+- `skills/shipping-readiness/`
 
 ## Activate when the spec is weak
 - `skills/spec-quality-analysis/`
@@ -200,7 +210,7 @@ At minimum:
 - test strategy
 - assumptions log when ambiguity exists
 
-## Before TEST
+## Before VERIFY
 At minimum:
 - implemented slices
 - updated traceability

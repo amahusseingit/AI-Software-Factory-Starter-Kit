@@ -1,5 +1,11 @@
 # SPEC Command
 
+## Activate these skills
+- `skills/orchestration-and-lifecycle-control/SKILL.md`
+- `skills/spec-quality-analysis/SKILL.md`
+- `skills/assumption-and-ambiguity-control/SKILL.md`
+- `skills/spec-driven-delivery/SKILL.md`
+
 Use this command to normalize, strengthen, and assess the project specification before planning or implementation.
 
 ## Required actions

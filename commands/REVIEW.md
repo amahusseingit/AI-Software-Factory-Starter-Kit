@@ -1,5 +1,12 @@
 # Command: REVIEW
 
+## Activate these skills
+- `skills/orchestration-and-lifecycle-control/SKILL.md`
+- `skills/review-gates/SKILL.md`
+- `skills/traceability-governance/SKILL.md`
+- `skills/test-enforcement/SKILL.md`
+- `skills/cross-platform-parity/SKILL.md`
+
 Use this command to evaluate whether the current scope is functionally complete, traceable, adequately tested, and ready to pass to ship or further implementation.
 
 ## Activate these skills

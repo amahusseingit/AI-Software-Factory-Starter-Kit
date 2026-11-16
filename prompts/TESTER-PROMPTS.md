@@ -8,7 +8,7 @@ Read:
 - relevant specs/*
 - docs/planning.md
 - docs/integration-test-plan.md
-- docs/traceability-matrix.md
+- plans/<project>-traceability-matrix.md
 - docs/agent-timesheet.md
 - docs/agent-run-log.md
 
@@ -30,7 +30,7 @@ Use @tester.
 Read:
 - relevant specs/*
 - docs/integration-test-plan.md
-- docs/traceability-matrix.md
+- plans/<project>-traceability-matrix.md
 - docs/agent-timesheet.md
 - docs/agent-run-log.md
 - .windsurf/rules/testing-standards.md

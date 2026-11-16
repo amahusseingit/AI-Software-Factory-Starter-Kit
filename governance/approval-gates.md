@@ -9,9 +9,9 @@ Inputs:
 
 ## G2 — Architecture Approval
 Inputs:
-- docs/architecture.md
-- specs/data-model.md
-- docs/decision-log.md
+- plans/<project>-architecture.md
+- plans/<project>-data-model.md
+- adrs/<project>-decision-log.md when architectural decisions require ADRs
 
 ## G3 — Build Readiness Approval
 Inputs:
@@ -27,7 +27,7 @@ Inputs:
 
 ## G5 — Release / Completion Approval
 Inputs:
-- traceability matrix
+- plans/<project>-traceability-matrix.md
 - defect log
 - signoff log
 - review summary

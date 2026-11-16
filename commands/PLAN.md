@@ -7,6 +7,7 @@ Use this command to translate the authoritative spec into verifiable implementat
 Produce a build plan that is behaviorally explicit, traceable, and review-ready.
 
 ## Activate these skills
+- `skills/orchestration-and-lifecycle-control/SKILL.md`
 - `skills/planning-and-task-breakdown/SKILL.md`
 - `skills/traceability-governance/SKILL.md`
 - `skills/test-strategy-selection/SKILL.md`
