@@ -1,0 +1,8 @@
+# Canonical security and exception policy
+Severity: CRITICAL, HIGH, MEDIUM, LOW. Unknown severity or incomplete applicability is BLOCKED until assessed. Mandatory security applicability assessment is required for every task; any excluded check needs a scoped, named human decision and rationale. An exclusion cannot waive a known vulnerability.
+
+CRITICAL always blocks progression, release and closure. No exception in this Factory draft permits a Critical finding. HIGH blocks unless organizational policy permits a specific exception approved by both the named accountable business owner and security owner. The exception must identify finding, rationale, scope_hash, candidate_revision, compensating controls, evidence, remediation owner/deadline, approval sources and future UTC expiry. Missing, stale, unapproved, out-of-scope or expired exceptions block. Agent assertions are not owner approval. Material changes require reassessment and fresh approval. Any stricter project/organization policy prevails.
+
+MEDIUM and LOW findings require owner, due date, risk disposition and current evidence. They may still block under the approved project policy or if they violate an acceptance criterion. Scores cannot hide a blocking finding. Retest remediated findings on the exact candidate; recurrence reopens the finding. Security review is independent of the implementer and follows the per-role approval loop.
+
+This policy supersedes all older references allowing Critical acceptance, generic blocker waivers, or conditional readiness on owned blockers. It is a documentation control design, not a claim that scans, penetration tests or repository protections exist or passed.

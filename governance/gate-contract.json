@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "lifecycle": [
+    "DEFINE",
+    "PLAN",
+    "BUILD",
+    "VERIFY",
+    "REVIEW",
+    "SHIP",
+    "CLOSE"
+  ],
+  "decisions": [
+    "PASS",
+    "BLOCKED"
+  ],
+  "check_states": [
+    "PASS",
+    "FAILED",
+    "UNKNOWN",
+    "NOT_RUN",
+    "SCOPE_MISMATCH"
+  ],
+  "actions": [
+    "execute",
+    "gate",
+    "close",
+    "planning_append"
+  ],
+  "binding_fields": [
+    "role",
+    "task",
+    "scope_hash",
+    "plan_hash",
+    "candidate_revision"
+  ],
+  "required_gate_checks": [
+    "qa",
+    "security",
+    "review"
+  ],
+  "canonical_documents": [
+    "governance/protocol.md",
+    "governance/security-policy.md"
+  ],
+  "pointer_documents": [
+    "AGENTS.md",
+    "ORCHESTRATOR.md",
+    "governance/approval-gates.md"
+  ],
+  "source_manifest": "SOURCE_MANIFEST.json",
+  "description": "Offline, fail-closed record and documentation validation. This does not authenticate identities, execute roles, enforce GitHub settings, or prove that supplied evidence is truthful. Trusted operators must verify identities and evidence.",
+  "security_severities": [
+    "CRITICAL",
+    "HIGH",
+    "MEDIUM",
+    "LOW"
+  ],
+  "approval_source_field": "approval.source",
+  "evidence_acceptance_criteria_field": "mandatory_checks[].evidence.acceptance_criteria",
+  "revision_semantics": {
+    "execute": "approved input base revision",
+    "gate": "reviewed output revision",
+    "close": "reviewed output revision"
+  },
+  "expected_acceptance_criteria_field": "expected_acceptance_criteria"
+}

@@ -12,6 +12,9 @@ triggers:
   - remediation
 ---
 
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
+
 # Overview
 
 This skill makes security testing part of the delivery lifecycle instead of a late-stage add-on. It ensures application security requirements are planned early, tested continuously, triaged consistently, and reviewed before release decisions.
@@ -54,7 +57,7 @@ Use this skill when:
    - container/image scanning if containers exist
    - IaC scanning if infrastructure-as-code exists
 3. Define severity handling:
-   - Critical and High must block release unless explicitly accepted by governance
+   - Unresolved Critical findings always block. High findings block unless a valid exception satisfies governance/security-policy.md
    - Medium requires triage and fix plan
    - Low requires backlog decision
 4. Produce remediation workflow:

@@ -3,6 +3,9 @@ name: enterprise-integration-and-orchestration
 description: Use when the system integrates with external APIs, gateways, orchestration layers, ESBs, message brokers, or third-party platforms.
 ---
 
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
+
 # Overview
 
 This skill governs reliable external integration design and delivery for enterprise systems.

@@ -7,6 +7,9 @@ triggers:
   - gate
 ---
 
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
+
 # Overview
 
 This skill applies multi-axis quality gates and blocks premature completion.
@@ -29,10 +32,10 @@ Use during REVIEW and before SHIP.
 2. Review functional completeness
 3. Review business rules and persistence
 4. Review stack conformance
-5. Review Angular and Flutter parity
+5. Review parity only between approved in-scope clients
 6. Review tests and evidence
 7. Review release-readiness implications
-8. Produce pass/fail outcome
+8. Produce PASS/BLOCKED progression decision
 
 # Rationalizations to Reject
 
@@ -53,10 +56,10 @@ Use during REVIEW and before SHIP.
 # Verification
 
 - review report exists
-- pass/fail is explicit
+- PASS/BLOCKED is explicit
 - blockers are captured if failed
 
 # Outputs
 
 - `reviews/<module>-review-report.md`
-- pass/fail decision
+- PASS/BLOCKED decision

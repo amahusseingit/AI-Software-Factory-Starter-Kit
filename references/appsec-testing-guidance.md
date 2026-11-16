@@ -1,3 +1,5 @@
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
 # AppSec Testing Guidance
 
 ## Objective
@@ -13,7 +15,7 @@ Integrate application security testing into planning, implementation, testing, r
 
 ## Release Policy Guidance
 - unresolved Critical findings block release
-- unresolved High findings block release unless explicitly risk-accepted
+- unresolved High findings block release unless a valid scope/revision-bound exception satisfies governance/security-policy.md
 - Medium findings require triage and a fix plan
 - Low findings should still be tracked
 

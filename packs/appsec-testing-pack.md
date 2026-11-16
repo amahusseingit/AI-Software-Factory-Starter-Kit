@@ -1,3 +1,5 @@
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
 # Application Security Testing Pack
 
 ## Purpose
@@ -20,7 +22,7 @@ Provide a generic reusable baseline for integrating AppSec testing into the soft
 
 ## Typical Severity Policy
 - Critical: release blocker
-- High: release blocker unless formally accepted
+- High: release blocker unless a valid scope/revision-bound exception satisfies governance/security-policy.md
 - Medium: triage required, fix plan required
 - Low: backlog or hardening queue
 

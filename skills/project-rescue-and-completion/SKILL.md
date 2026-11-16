@@ -3,6 +3,9 @@ name: project-rescue-and-completion
 description: Use when a project already exists but is incomplete, partially generated, inconsistent, or needs recovery from shallow implementation.
 ---
 
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
+
 # Overview
 
 This skill is for rescuing systems that look presentable but are not behaviorally complete.

@@ -1,14 +1,2 @@
-# RACI Matrix
-
-| Activity | Orchestrator | Analyst | Architect | Developer | Reviewer | Tester | Approver |
-|----------|--------------|---------|-----------|-----------|----------|--------|----------|
-| BRD intake | A | C | I | I | I | I | I |
-| Requirements extraction | C | R | I | I | I | I | C |
-| Requirements approval | A | C | I | I | I | I | R |
-| Architecture design | C | I | R | I | I | I | C |
-| Architecture approval | A | I | R | I | C | I | C |
-| Slice planning | R | C | C | I | I | I | I |
-| Slice implementation | C | I | C | R | I | I | I |
-| Slice review | C | I | I | I | R | I | I |
-| Testing | C | I | I | I | I | R | I |
-| Project completion approval | A | I | C | I | C | C | R |
+# Role accountability
+The named user or designated authorized human is accountable for scoped execution/acceptance decisions. Product owner prepares requirements; architect prepares contracts; developer implements; independent QA verifies; independent reviewer reviews; security owner decides eligible security exceptions jointly with business owner; release owner performs explicitly authorized release work; coordinator routes and records. Artifact authors cannot approve their own output. Role prompts live in roles/; canonical controls live in [protocol.md](protocol.md). Name actual actors and human approval sources in the task plan. If independence cannot be established, block.

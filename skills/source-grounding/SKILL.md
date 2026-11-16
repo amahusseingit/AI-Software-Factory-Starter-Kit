@@ -7,6 +7,9 @@ triggers:
   - verify against input
 ---
 
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
+
 # Overview
 
 This skill keeps delivery grounded in real source artifacts such as specs, screenshots, contracts, or existing code behavior.

@@ -7,6 +7,9 @@ triggers:
   - workflow selection
 ---
 
+> Unified draft: subordinate guidance only. The root governance/protocol.md and governance/security-policy.md control approvals, lifecycle, decisions and security. Examples/templates are not evidence; select stack/domain content only through approved project scope. Historical source is preserved in archive/v7.8/.
+
+
 # Overview
 
 This skill ensures the kit is used as a governed system rather than as an unstructured prompt folder.
@@ -54,3 +57,6 @@ Use at the start of any new project, major feature, or rescue effort.
 - selected skill set
 - initial project artifact map
 - explicit source-of-truth reference
+
+## Unified approval and closure contract
+Read governance/protocol.md. G3 precedes BUILD. TEST is the VERIFY command alias. Independent QA follows developer tests and precedes acceptance. Every role, including the coordinator closing a task, needs its own explicit user-approved scope/revision-bound plan. Append only a planning record before approval; no substantive execution. Canonical progression is PASS/BLOCKED; mandatory nonPASS checks block. After handoff or approved closure, stop.

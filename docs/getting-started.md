@@ -1,3 +1,5 @@
+> REFERENCE/TEMPLATE ONLY. Existing sample rows are not executed work, approvals or gate evidence. Instantiate an approved task record with actual results before use. Canonical control: governance/protocol.md.
+
 # Getting Started
 
 ## Quick start
