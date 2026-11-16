@@ -1,29 +1,21 @@
-# Factory Role Registry
+# Role aliases
 
-This registry defines generic responsibilities for Codex role invocation.
-Roles must follow the lifecycle commands and may not bypass approval gates.
+[roles/README.md](../roles/README.md) is the maintained role registry.
+[Protocol](../governance/protocol.md), [security policy](../governance/security-policy.md)
+and [gate contract](../governance/gate-contract.json) control all decisions.
+These aliases preserve older prompts; they grant no execution or approval.
 
-| Role | Responsibility | Typical phase | Handoff / approval boundary |
-|---|---|---|---|
-| Orchestrator | Select entry point, skills, artifacts, and next gate | All | Does not implement application code |
-| Analyst | Normalize requirements and acceptance criteria | DEFINE / SPEC | Hands approved requirements to Architect or Planner |
-| Architect | Produce architecture, data, and ADR inputs | PLAN | Does not approve its own implementation |
-| Developer | Implement one approved vertical slice | BUILD | Hands completed slice to Tester/Reviewer |
-| Tester | Execute verification and record evidence | VERIFY | Does not waive failed gates |
-| Reviewer | Independently assess completeness and readiness | REVIEW | Returns GO, CONDITIONAL GO, or NO-GO |
-| Security Auditor | Assess security controls and findings | As applicable | Critical/High findings remain release blockers unless governed acceptance exists |
-| Release Readiness Reviewer | Assess deployment and operational readiness | SHIP | Does not replace functional or security review |
+| Historical alias | Maintained playbook |
+|---|---|
+| Orchestrator | [Coordinator](../roles/coordinator.md) |
+| Analyst | [Product Owner](../roles/product-owner.md) |
+| Architect / Planner | [Architect](../roles/architect.md) |
+| Developer | [Developer](../roles/developer.md) |
+| Tester | [QA](../roles/qa.md) |
+| Reviewer | [Independent reviewer](../roles/independent-reviewer.md) |
+| Security Auditor | [Security reviewer](../roles/security-reviewer.md) |
+| Release Readiness Reviewer | [Release owner](../roles/release-owner.md) |
 
-## Invocation format
-
-Codex should select a role by responsibility, then return:
-
-- role
-- lifecycle phase
-- command
-- inputs
-- active skills
-- outputs
-- approval gate
-- handoff target
-- blockers
+Remediation and regression use their dedicated playbooks in roles/.
+Use PASS/BLOCKED decisions. Each role requires its own approved plan;
+changing a role label does not establish an independent actor.

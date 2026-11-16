@@ -4,9 +4,36 @@ Run from the repository root with Python 3.10 or later:
 
 ```sh
 python3 tools/validate_factory.py
-python3 -m unittest discover -s tools -p 'test_factory*.py' -v
+python3 tools/run_factory_tests.py
 git diff --cached --check -- . ":(exclude)archive/**"
 ```
+
+On Windows, use `python` instead of `python3`. Python reads repository text as
+UTF-8 explicitly. The PowerShell entry points delegate to the same canonical
+implementation and propagate nonzero exit codes:
+
+```powershell
+.\scripts\validate-factory.ps1 -Strict
+.\scripts\smoke-test-factory.ps1
+```
+
+All 314 currently archived source blobs contain LF text (verified against Git).
+`.gitattributes` uses `text=auto eol=lf` under archive/: fresh text checkouts and
+staged text stay LF, while binary files remain binary. This also preserves
+manifest hashes when staging older Windows clones that contain CRLF copies.
+For those existing worktrees, verification requires both a
+committed Git blob with the exact manifest hash and a working copy differing
+only by LF-to-CRLF checkout conversion. Content changes, absent Git blobs and
+manifest mismatches fail closed. Exact-byte exports need no Git dependency.
+The validator does not rewrite archives or replace manifest hashes.
+
+The test runner requires each gate, branch and portability suite to exist,
+import and contain tests. A partial or empty suite is BLOCKED even when unittest
+would accept the remaining tests. Direct unittest discovery is useful for
+diagnostics; the runner is the acceptance entry point used by wrappers and CI.
+New historical imports must verify original and staged hashes before commit;
+original CRLF text requires an explicit per-file binary/attribute decision
+rather than silently changing its provenance digest.
 
 The first command checks the canonical contract, selected authority pointers, local Markdown links and archived source SHA256 values. The second runs synthetic positive/negative records for the offline reference gate evaluator. Negative cases include missing/stale approval, scope change, QA failure, missing evidence, Critical/High security blockers, unknown/not-run/scope-mismatch states, self-signoff, missing closure approval, invalid planning append and exception/traceability defects. Test names and assertions in tools/test_factory_gates.py are the exact coverage inventory.
 
@@ -27,3 +54,12 @@ Validation results for the exact final candidate are delivered with the review p
 `python3 tools/validate_branch_record.py --record path/to/record.json` checks declared task naming, default task/release/hotfix/reconciliation paths, full SHA syntax, declared current-base/current-head approval bindings, current-target merge-evidence binding and required PASS checks bound to the declared tested merge SHA. `tools/test_factory_branches.py` supplies synthetic positive/negative cases. It does not inspect Git history, prove actual target freshness or ancestry, authenticate approval/independence, discover undeclared checks, enforce uniqueness, verify tag/artifact/deployment state, or install branch protection. Bootstrap/legacy exceptions and release snapshot paths deliberately remain unsupported/BLOCKED by this minimal evaluator and require separately approved manual review. See the [branch record](templates/branch-record-template.md) and [proposed enforcement checklist](governance/branch-enforcement-checklist.md).
 
 The proposed CI names are not installed check contexts. These local tests do not prove live GitHub enforcement, application behavior or deployment readiness.
+
+## CI candidate
+
+`.github/workflows/factory-validation.yml` runs documentation validation and
+synthetic gate/branch/portability tests on Windows and Ubuntu with Python 3.10
+and 3.14. The workflow uses read-only repository permissions and no deployment
+steps. Its reported matrix job names are `factory-validation (<os>, Python <version>)`.
+These are candidate check contexts until an actual GitHub run is observed;
+no branch-protection settings have been installed or verified by local checks.

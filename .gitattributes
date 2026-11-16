@@ -1,0 +1,3 @@
+# All current archived text blobs are LF. Keep staging and fresh checkouts LF;
+# auto detection preserves binary archives without newline conversion.
+archive/** text=auto eol=lf

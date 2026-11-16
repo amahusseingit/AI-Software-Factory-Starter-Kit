@@ -1,0 +1,39 @@
+**Technical recommendation: PASS for the bounded FAC-002 regression/re-review.** Both initial findings are resolved. No further blocking defects were confirmed.
+
+| Independent check | Result |
+|---|---|
+| Canonical repository validator | PASS, exit 0 |
+| Canonical test runner | 73 tests passed, exit 0 |
+| Current validation and smoke wrappers | PASS, exit 0 |
+| Original partial-suite reproduction | BLOCKED, exit 1 in both PowerShell versions |
+| Empty modules, one empty mandatory module, import failure, failing test | Nonzero exits |
+| Child exit-code propagation | Exit 7 preserved in both PowerShell versions |
+| Legacy CRLF → attributes → cache invalidation → `add -A` → commit | Original LF staged bytes preserved; post-commit validation PASS |
+| Representative binary staging and checkout | Bytes preserved |
+| Future genuine CRLF text with explicit `-text` override | Bytes preserved |
+| All 314 manifest Git blobs | Hashes match; zero contain CR |
+| Whitespace and archive/manifest diffs | Clean |
+
+The runner now checks mandatory suite presence, importability and nonempty contents before execution. Wrapper and CI invocation use it. The revised archive attributes resolve the reproduced staging failure. Binary detection remains heuristic, so the documented original/staged hash comparison and per-file decisions remain necessary for future imports.
+
+Core hashes remained unchanged throughout regression, **17:27:54–17:29:10 UTC, 2026-11-16**. Only the two disclosed developer-evidence files were added.
+
+| Affected file | SHA-256 |
+|---|---|
+| [.gitattributes](</C:/My Stuff/AI/AI Software Factory Starter Kit/.gitattributes>) | `ac0271d7b9b8c0bc2aa26e4edf0d782cf2eed9d7fb4e05c542ee16d716018339` |
+| [CI workflow](</C:/My Stuff/AI/AI Software Factory Starter Kit/.github/workflows/factory-validation.yml>) | `b49dcfc01ace2676872e32a88828c28e5a921f1aa153be743b11b5116ded97ee` |
+| [VALIDATION.md](</C:/My Stuff/AI/AI Software Factory Starter Kit/VALIDATION.md>) | `fbfa9c3f51a689efb1d281c52ada162cc9de698c02f96a8bfcafdf167f2c3dd0` |
+| [Hardening plan](</C:/My Stuff/AI/AI Software Factory Starter Kit/plans/fac-002-hardening.md>) | `d41b1dc552ba2f6f4e29fe0537f5383f55412c1ac1947331dc6ad75be92df78f` |
+| [Smoke wrapper](</C:/My Stuff/AI/AI Software Factory Starter Kit/scripts/smoke-test-factory.ps1>) | `3ec4740983d23017d1250d94062fd49e3aebb9c196a4a646ad846cea66d482f0` |
+| [Canonical runner](</C:/My Stuff/AI/AI Software Factory Starter Kit/tools/run_factory_tests.py>) | `2f307a13653393ca059adcdfc1c14b1d56c0e5cd76c4b1579abc797467a3a656` |
+| [Portability tests](</C:/My Stuff/AI/AI Software Factory Starter Kit/tools/test_factory_portability.py>) | `1ce78274b63e0ae0efefe7b5fadfe335628dd4fd9a052e9b18189a4f73f8aed1` |
+| [Validator](</C:/My Stuff/AI/AI Software Factory Starter Kit/tools/validate_factory.py>) | `3292289252695f7449c3c4d2e3ad2598e9c3ab1a6072d8087ec875ba1928e29d` |
+| [Windows developer evidence](</C:/My Stuff/AI/AI Software Factory Starter Kit/evidence/fac-002-remediation-windows.txt>) | `61d23214ff1fabfdefd10c3828439591450215ece7747bf75125ba86725a9841` |
+| [Linux developer evidence](</C:/My Stuff/AI/AI Software Factory Starter Kit/evidence/fac-002-remediation-linux.txt>) | `35aafd6befdc5caaa125a07ee97a490e8e6f9b04479ae0bc57e0d67be9a39fbc` |
+
+Full 24-file candidate path/hash manifest digest, using sorted compact JSON:
+`6c67b27624a3c3f5e8f4c31f29a69bb715bbe43573224c7f72e7f828d5112848`
+
+Remaining limitations: live GitHub CI and Python 3.10 execution are **NOT_RUN**. Ubuntu execution and revised YAML parsing are attributed developer evidence. Human acceptance, topology approval, publication, merge, deployment and closure remain separate decisions.
+
+No repository edits, commits or publication actions were performed. Independent regression is complete.

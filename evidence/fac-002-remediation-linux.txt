@@ -1,0 +1,20 @@
+Developer observation of Ubuntu WSL validation after the two independent findings were remediated.
+Source: exec session 54793, completion output chunk d96d32 in this chat.
+This file is a result excerpt; complete raw output remains in the tool transcript.
+START_UTC=2026-11-16T17:27:40.8357734Z
+Environment: existing Ubuntu WSL, Python 3.14.4, Git 2.53.0.
+
+Command: python3 -B tools/validate_factory.py
+Observed JSON: {"decision": "PASS", "errors": []}
+LINUX_VALIDATOR_EXIT=0
+
+Command: python3 -B tools/run_factory_tests.py
+Ran 73 tests in 2.935s
+OK
+LINUX_TEST_EXIT=0
+END_UTC=2026-11-16T17:28:23.4613446Z
+
+Separate static check using existing Ubuntu PyYAML BaseLoader parsed the revised workflow.
+Assertions passed: four matrix combinations, contents read permission, expected triggers,
+40-character action commit pins, and the canonical test runner invocation.
+No live GitHub CI run, Python 3.10 run or branch-protection enforcement is claimed.
