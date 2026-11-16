@@ -2,6 +2,11 @@
 
 # START-PROJECT Command
 
+## Activate these skills
+- `skills/orchestration-and-lifecycle-control/SKILL.md`
+- `skills/using-starter-kit/SKILL.md`
+- `skills/spec-driven-delivery/SKILL.md`
+
 Use this command to initialize a new project using the generic starter kit.
 
 ## Required actions

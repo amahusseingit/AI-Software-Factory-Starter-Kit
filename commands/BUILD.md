@@ -2,6 +2,13 @@
 
 # BUILD
 
+## Activate these skills
+- `skills/orchestration-and-lifecycle-control/SKILL.md`
+- `skills/incremental-implementation/SKILL.md`
+- `skills/test-enforcement/SKILL.md`
+- `skills/cross-platform-parity/SKILL.md` when web and mobile are both in scope
+- applicable stack and security skills from `AGENTS.md`
+
 Use this to implement one vertical slice completely.
 
 ## Operator Prompt
