@@ -1,0 +1,30 @@
+**PASS — PR #12 is technically ready to mark ready-for-review.** Fresh release/security inspection found no confirmed CRITICAL, HIGH, MEDIUM or LOW findings in the bounded source-promotion scope.
+
+Reviewed the complete 28-file delta directly from Git objects:
+
+- Head: `1b4a84d128423d7cc8861e08b3ceb15fb231c525`
+- Base: `4df16e0b73b2410daaab3960a0b5a9e846f9971b`
+- Tested integration: `1769a9fbe82dffca4e6a74c4200174d5b14a84b7`
+- Head/integration tree: `2f0938f41418ce4b3ec360af3320ba1982e5733e`
+
+The independent method was source/diff inspection, file hashing, provenance verification and correlation with actual CI logs. Both workflows use pinned actions, read-only contents permissions and disabled credential persistence. No configured secrets, privileged PR trigger, deployment steps or unsafe shell interpolation were found. Provenance validation retains exact-hash checks, constrained CRLF fallback and repository confinement.
+
+All six jobs succeeded in [matrix run 43922672484](https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/actions/runs/43922672484) and [Factory CI run 43922672489](https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/actions/runs/43922672489). I inspected their logs: checkout used the exact integration commit; each of the five test jobs passed 73 tests. All 314 archived-source hashes also matched independently.
+
+**Rollback applicability confirmed for merge-commit promotion.** Read-only inspection of the parent’s disposable rehearsal verified that its reverted index exactly matches prior main, tree `cee0d0ce81cdfb2919d3b6ce0e4b458da75e1667`, with worktree equal to index. This proves source reversal; the 73-test PASS preceded reversal. Squash/rebase requires its own rollback check. Returning to old main also restores its historical tooling limitations. Runtime/database rollback has no deployed target here.
+
+Selected candidate SHA-256 hashes:
+
+| File | SHA-256 |
+|---|---|
+| Factory CI workflow | `090e43792694f96e99f56ee4f9c1b4cdb1845075a1df7748f1677feb017d370f` |
+| Validation workflow | `b49dcfc01ace2676872e32a88828c28e5a921f1aa153be743b11b5116ded97ee` |
+| Validator | `5415cc80fbe2fbcc2312db78d9c8422c4a366d36851b94f99a84ad648ae353aa` |
+| Canonical test runner | `2f307a13653393ca059adcdfc1c14b1d56c0e5cd76c4b1579abc797467a3a656` |
+
+Full 28-file path/hash manifest digest, using sorted compact JSON:
+`a6f8cfe3a6a802e6a3a812a5d31d1a40252fd2bdce6d33adee3679724a296dca`
+
+Remaining boundaries: no scanner, penetration-test, application-security or branch-protection attestation is claimed. Human merge authorization and named release/support ownership remain prerequisites for eventual promotion.
+
+[PR #12](https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/pull/12) remains draft, open and unmerged. I made no repository or GitHub changes and posted no approval. The parent can perform the authorized ready-for-review transition; **merge remains prohibited**.

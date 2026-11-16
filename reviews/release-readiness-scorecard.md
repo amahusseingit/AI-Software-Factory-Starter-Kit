@@ -16,24 +16,29 @@ NOT_RUN items are not converted into PASS by a high average.
 |---|---:|---|---|
 | Functional completeness | 5 | PASS | Reviewed Factory hardening scope; application scope not included |
 | Regression risk | 4 | PASS | All 73 tests passed; targeted failure/provenance regressions retained |
-| Test evidence | 5 | PASS | Fresh local run and six source CI jobs; release PR integration still needed |
+| Test evidence | 5 | PASS | Six PR #12 CI jobs PASS; same integration commit passes local validator and 73 tests |
 | Configuration readiness | 5 | PASS | Both workflows inspected, pinned actions, read-only permissions, no secrets or runtime config delta |
-| Rollback readiness | 3 | NOT_RUN | Previous source SHA and safe revert plan documented; no rehearsal performed |
+| Rollback readiness | 5 | PASS | Isolated source revert rehearsed; restores previous main tree exactly; no runtime/database target |
 | Observability | 4 | PASS | GitHub per-job logs/results and actual local command output |
-| Known issues handling | 3 | UNKNOWN | Initial two P2 defects remediated; fresh release review/security disposition pending |
+| Known issues handling | 5 | PASS | Initial P2 defects remediated; fresh independent 28-file release/security inspection found no confirmed findings |
 
 ## Decision
 
-**BLOCKED for final release/merge. Ready to open the review PR.**
+**PASS for technical release/security readiness and marking PR #12 ready for
+review. BLOCKED for actual merge until explicitly authorized by the user.**
 
 Blocking progression items:
 
-1. Verify current release PR integration check results and tested revision.
-2. Obtain independent release review and explicit security disposition.
-3. Record named decision/support owners and explicit user authorization for
+1. Record named decision/support owners and explicit user authorization for
    the exact merge candidate and target. The current instruction prohibits merge.
-4. Resolve/document whether rollback rehearsal is applicable to this source-only
-   promotion; no unexecuted rehearsal is claimed as evidence.
+
+Resolved since preparation: current integration CI and local checks are PASS;
+source rollback is applicable and successfully rehearsed. Application/runtime
+and database rollback have no target in the requested source-only promotion.
+Fresh independent review is complete: see
+[Carver's final release/security report](fac-003-final-security-release-review.txt).
+Its disposition is PASS on source 1b4a84d, target 4df16e0 and integration 1769a9f.
+No new source commit or generic human approval is inferred from that report.
 
 The source candidate's technical checks PASS. This scorecard grants no merge,
 tag, package publication, deployment or G6 closure approval.

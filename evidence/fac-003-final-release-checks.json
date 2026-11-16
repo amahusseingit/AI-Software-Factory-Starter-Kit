@@ -1,0 +1,77 @@
+{
+  "task": "FAC-003 / PR #12 final release review",
+  "source_commit": "1b4a84d128423d7cc8861e08b3ceb15fb231c525",
+  "target_commit": "4df16e0b73b2410daaab3960a0b5a9e846f9971b",
+  "integration_commit": "1769a9fbe82dffca4e6a74c4200174d5b14a84b7",
+  "source_and_integration_tree": "2f0938f41418ce4b3ec360af3320ba1982e5733e",
+  "ci": {
+    "runs": [
+      43922672484,
+      43922672489
+    ],
+    "jobs": [
+      {
+        "name": "factory-validation (ubuntu-latest, Python 3.14)",
+        "status": "completed",
+        "conclusion": "success",
+        "job_id": 133493772645
+      },
+      {
+        "name": "factory-validation (windows-latest, Python 3.10)",
+        "status": "completed",
+        "conclusion": "success",
+        "job_id": 133493773095
+      },
+      {
+        "name": "factory-validation (windows-latest, Python 3.14)",
+        "status": "completed",
+        "conclusion": "success",
+        "job_id": 133493773152
+      },
+      {
+        "name": "factory-validation (ubuntu-latest, Python 3.10)",
+        "status": "completed",
+        "conclusion": "success",
+        "job_id": 133493773311
+      },
+      {
+        "name": "factory-gate-tests",
+        "status": "completed",
+        "conclusion": "success",
+        "job_id": 133493773330
+      },
+      {
+        "name": "factory-docs",
+        "status": "completed",
+        "conclusion": "success",
+        "job_id": 133493774237
+      }
+    ],
+    "checkout_log_evidence": {
+      "job_id": 133493773330,
+      "ref": "refs/remotes/pull/12/merge",
+      "checked_out_commit": "1769a9fbe82dffca4e6a74c4200174d5b14a84b7",
+      "tests": "Ran 73 tests in 0.690s"
+    }
+  },
+  "local_integration": {
+    "environment": "Windows; Python 3.14.3; Git 2.52.0.windows.1",
+    "started_utc": "2026-11-16T17:55:07.3992025Z",
+    "ended_utc": "2026-11-16T17:55:32.7047115Z",
+    "validator_exit": 0,
+    "acceptance_runner_exit": 0,
+    "tests_run": 73,
+    "tests_failed": 0,
+    "tool_transcript": "exec session 35779, chunks 55ab3f and 228ae4"
+  },
+  "rollback": {
+    "method": "git revert --no-commit -m 1 1769a9fbe82dffca4e6a74c4200174d5b14a84b7",
+    "environment": "isolated disposable shared clone C:/Temp/factory-pr12-review-715826f9e67b4e4a9d65a184d16734ae",
+    "restored_tree": "cee0d0ce81cdfb2919d3b6ce0e4b458da75e1667",
+    "expected_main_tree": "cee0d0ce81cdfb2919d3b6ce0e4b458da75e1667",
+    "result": "PASS",
+    "real_branch_changes": false,
+    "github_merge_performed": false,
+    "scope": "source rollback applicable and rehearsed; no application/database/runtime deployment in release scope"
+  }
+}

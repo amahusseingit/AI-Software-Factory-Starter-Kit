@@ -38,3 +38,19 @@ independent signoff for its own packet or implementation.
 No application, infrastructure, secrets, global settings, repository protections
 or runtime environments are changed. Every later source/target change requires
 fresh affected checks and approval. A final merge decision belongs to the user.
+
+## Authorized final-review iteration
+
+The current user additionally requested final release/security review, rollback
+applicability confirmation and ready-for-review status for PR #12, explicitly
+prohibiting merge. The earlier permission to use an independent reviewer is
+retained. Carver reassesses the exact source/target/integration revision as a
+separate actor; the implementing parent verifies actual CI and rehearses source
+rollback only in a disposable clone. No new application profile is activated.
+
+Additional evidence outputs: evidence/fac-003-final-release-checks.json and the
+independent final review record under reviews/. Update this packet/scorecard and
+append a new log entry, commit/push only the evidence branch, link its immutable
+commit from PR #12 and mark the unchanged release PR ready if checks permit.
+No GitHub approval is submitted using the author's identity, and no source
+branch, main/develop ref, tag or runtime environment is modified.

@@ -5,8 +5,9 @@ Assessment artifact owner: Codex release-readiness assessor in this chat.
 Process authority: [canonical protocol](../governance/protocol.md) and
 [security policy](../governance/security-policy.md).
 
-**Technical checks: PASS. Final release/merge decision: BLOCKED pending the
-release PR's current integration checks and explicit human approval.**
+**Final technical release/security review: PASS. Ready-for-review transition
+authorized. Final merge remains BLOCKED pending explicit human merge approval
+and confirmation of accountable release/support owners.**
 The user's instruction explicitly prohibits merge at this stage.
 
 ## Exact candidate and evidence packet
@@ -16,6 +17,7 @@ The user's instruction explicitly prohibits merge at this stage.
 | Repository | amahusseingit/AI-Software-Factory-Starter-Kit |
 | Release head | develop: 1b4a84d128423d7cc8861e08b3ceb15fb231c525 |
 | Reviewed source tree | 2f0938f41418ce4b3ec360af3320ba1982e5733e |
+| PR #12 tested integration | 1769a9fbe82dffca4e6a74c4200174d5b14a84b7; same tree as source |
 | Target at preparation | main: 4df16e0b73b2410daaab3960a0b5a9e846f9971b |
 | Included delta | Five commits, 28 changed files relative to main |
 | Existing VERSION | unified-1.0.0-draft.1; unchanged; no new tag or version claim |
@@ -52,7 +54,9 @@ generic. A consuming project still needs approved requirements before BUILD.
 | Source CI matrix | [Run 43920607340](https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/actions/runs/43920607340), source 1b4a84d | Four jobs PASS |
 | Source Factory CI | [Run 43920607587](https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/actions/runs/43920607587), source 1b4a84d | Two jobs PASS |
 | Prior independent review | [FAC-002 regression](../reviews/fac-002-independent-regression.txt) | Historical PASS bound to its documented hashes |
-| Release PR integration and approval | To be collected on the new develop-to-main PR | NOT_RUN / pending |
+| Fresh independent release/security review | [Carver final report](../reviews/fac-003-final-security-release-review.txt), exact source/base/integration identities above | PASS; no confirmed severity findings in scope |
+| PR #12 integration CI | [Matrix 43922672484](https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/actions/runs/43922672484), [Factory CI 43922672489](https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/actions/runs/43922672489) | All six jobs PASS |
+| Integration checkout and local tests | [Final integration/rollback evidence](../evidence/fac-003-final-release-checks.json); CI log confirms checkout 1769a9f | Validator PASS; 73 tests PASS |
 
 Exact successful GitHub job names observed on source 1b4a84d:
 
@@ -65,8 +69,10 @@ Exact successful GitHub job names observed on source 1b4a84d:
 
 Each release PR check must succeed on its actual tested integration revision.
 Source successes do not authorize an untested conflict resolution or a moving
-target. This packet does not fabricate a tested release-merge SHA before GitHub
-has created it. Reviewers must bind new decisions to that actual candidate.
+target. GitHub has now created the integration commit above. Its parents are
+the exact target and source; its tree equals the reviewed source tree.
+The factory-gate-tests job log confirms checkout of that integration revision
+and execution of all 73 tests. New decisions bind to those exact identities.
 
 ## Source artifact, environments and configuration
 
@@ -118,10 +124,25 @@ applicable), then rerun checks and obtain separate authorization. Never reset
 or force-push main. A source package can be replaced by the previously approved
 package only through its own publication decision.
 
-Rollback is a written source-history procedure; no release rollback was executed
-or rehearsed here. The repository owner must name the release/merge decision
-owner and support/rollback owner before authorization. No approver signatures
-are manufactured by this assessment.
+Source rollback applies and was rehearsed in a disposable local clone: checkout
+the exact PR integration commit, then run git revert --no-commit -m 1 against
+that commit. The resulting index and worktree restored the previous main tree
+cee0d0ce81cdfb2919d3b6ce0e4b458da75e1667 exactly. The validator and 73 tests
+also passed in that clone before rollback. See the final evidence JSON above.
+No real branch moved, no rollback commit was created and no GitHub merge ran.
+This rehearsal covers merge-commit promotion. A squash/rebase strategy would
+require the corresponding source rollback procedure to be checked separately.
+Restoring the old main also restores its historical Windows-validation and
+tooling limitations. The rehearsal proves exact source reversal, not that the
+older baseline passes the new 73-test runner. Evaluate that tradeoff before any
+real rollback; the successful local suite ran before the isolated revert.
+
+Application/runtime, database, infrastructure and credential rollback have no
+target in this approved Factory-source-only promotion. This applicability
+assessment waives no known vulnerability or required source check. A real
+future rollback must identify the actual released merge/tag/artifact and receive
+its own authorization. The repository owner must confirm the human merge and
+support/rollback owners before merge approval; no signatures are manufactured.
 
 ## Security, findings and remaining gates
 
@@ -133,19 +154,38 @@ self-signoff, missing/stale evidence and security-severity blockers. These are
 contract checks, not authentication, application scanning or penetration tests.
 
 The two known FAC-002 P2 findings were fixed and independently retested on the
-historical reviewed patch. That report is not relabeled as fresh release review
-of the reconciled source. No open Critical/High findings are reported in those
-supplied records; there is no new comprehensive security attestation.
-PT/application tests have no target in this Factory-only source promotion;
-the final reviewer still owns security applicability/disposition for release.
+historical reviewed patch. That earlier report is not substituted for the fresh
+final review. Carver, agent 01a1e55f-69b8-7522-acd2-8c21892f0e6e, independently
+inspected the complete 28-file Git-object delta, file hashes, all 314 archived
+source hashes and actual PR CI logs, and verified the disposable rollback result.
+The final bounded release/security recommendation is PASS, with no confirmed
+CRITICAL, HIGH, MEDIUM or LOW findings in that scope. The source hash-manifest
+digest in the report is a6f8cfe3a6a802e6a3a812a5d31d1a40252fd2bdce6d33adee3679724a296dca.
+
+This is a current manual source/CI/provenance security assessment. No scanner,
+penetration-test, application-security or branch-protection attestation is
+claimed. PT/application tests have no application target in this Factory-only
+source promotion. The explicit source security disposition is PASS; no security
+exception or risk waiver was requested or granted.
 
 | Remaining item | State | Required owner/action |
 |---|---|---|
-| Fresh release PR integration checks | NOT_RUN before PR creation | CI on actual release integration revision |
-| Independent final release review and security disposition | UNKNOWN | Named independent reviewer / security decision owner |
+| Fresh release PR integration checks | PASS | Six current PR #12 jobs on the recorded integration result |
+| Independent final release review and security disposition | PASS | Carver's fresh exact-candidate review; scoped manual assessment |
 | Human merge authorization | NOT_RUN | User must explicitly authorize exact candidate and target |
-| Rollback rehearsal | NOT_RUN | Written plan only; decide applicability before release |
+| Source rollback rehearsal | PASS | Isolated revert restores previous main tree exactly |
 | G6 closure, tag, published release, deployment | Outside current requested execution | Separate authorization if requested later |
 
-Prepare/create-PR authorization is not a waiver of these gates. Current outcome:
-packet ready for review; final release progression remains BLOCKED.
+Prepare/create-PR and ready-for-review authorization are not merge permission.
+Current outcome: packet technically PASS and ready for human review; final
+merge remains blocked by the user's explicit do-not-merge instruction until a
+separate current authorization is received. Named accountable human release
+and support ownership must be confirmed at that decision, not fabricated here.
+
+## Current review authorization
+
+The user subsequently requested: complete the final release and security review,
+confirm rollback applicability, and mark PR #12 ready for review, but do not
+merge it yet. This authorizes the bounded review/status update and supporting
+evidence publication, not merge, deployment or a GitHub self-approval. The
+frozen source and target must remain unchanged through the final status check.
