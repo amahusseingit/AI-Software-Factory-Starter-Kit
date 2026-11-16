@@ -1,0 +1,192 @@
+{
+  "task_id": "fact-005",
+  "observed_utc": "2026-10-19T19:34:50.196417+00:00",
+  "approved_base": "7ed5858e44bafbabf083022397ef97a4bb827dd2",
+  "tested_remote_candidate": "5a47a944efd8b8404cad45f2d305673172237784",
+  "tested_merge": "1d6f7fc29e36d872f7990e3b06241615e617fca1",
+  "runtime_git_tree": "86ae6d5add60bb6b9b22bfe6eae6f33b84c906e0",
+  "scope_hash": "298af44e76995bf2f04e1dfb7cb4571db97a62b090c808172df3056d0c2c9480",
+  "artifacts": [
+    {
+      "path": ".github/workflows/dotnet-ci.yml",
+      "sha256": "4f4f8c1592376e50e9f6cba527426bf6280f3a06708b7c1e29d8ca147e456635",
+      "git_blob": "cb1741f31c6c5e5e4959b1f0e04b1dcfb0288ad3"
+    },
+    {
+      "path": "runtime/dotnet/.gitignore",
+      "sha256": "598aea9cd74cd9bbd0342539118e21dc3191c64218c89860758eb8b3993dfc87",
+      "git_blob": "314d57c9816a58982bb3d07869b5fbf87d2ad9cf"
+    },
+    {
+      "path": "runtime/dotnet/AGENTS.md",
+      "sha256": "e588574e33a6a381537979208170a695ec7bd5a70788f048da427fbfc2bf4d00",
+      "git_blob": "284d2b41ab15439bbf953aa2871e435d67ca6a5c"
+    },
+    {
+      "path": "runtime/dotnet/Directory.Build.props",
+      "sha256": "e12bdb14ecd296e46a21c6faa0d8d6ede284e01c52855c5da2b23b1a1d5f4402",
+      "git_blob": "e5db0cbe4ab306bfc545c64203028cc99bfe496a"
+    },
+    {
+      "path": "runtime/dotnet/Directory.Packages.props",
+      "sha256": "1d82c94051d47c7c851f705c47d025e3da2e50431cb2a25f523945f3bedb86a0",
+      "git_blob": "8f2306f400da44530e2e73f83e547f853b37e89a"
+    },
+    {
+      "path": "runtime/dotnet/Factory.slnx",
+      "sha256": "cd2885ddea71da4165e6d98f8e3538154ecce9742a7c2c51563922b3760ffc03",
+      "git_blob": "5ffe7c70a58d736ffd0ee14960e4ba384e513989"
+    },
+    {
+      "path": "runtime/dotnet/NuGet.Config",
+      "sha256": "288e7ea6a4e6262902d19228109822b09383dfc751d9b182b4eb67b08089c3fc",
+      "git_blob": "2ab0b8eb2431132ad55b76836debce2b4e7fc052"
+    },
+    {
+      "path": "runtime/dotnet/README.md",
+      "sha256": "367a409304db8ecb967141d05bf55caf0720d4c44596d6b162c6d901ed983b9a",
+      "git_blob": "dfd8df4fad3ecbd1916506c711054cb712f4d825"
+    },
+    {
+      "path": "runtime/dotnet/examples/analyze-request.json",
+      "sha256": "f1d1bf564c33a3c081590cb76f867e2c3257bf65bbd04e59aa6b8d347e862c8e",
+      "git_blob": "a2d4a993f8f0d9875b34b1db048e26b78ba30193"
+    },
+    {
+      "path": "runtime/dotnet/global.json",
+      "sha256": "d1bb820bf074027be921b263729d1fba343d34328f0c4b7484d10162287c059e",
+      "git_blob": "98fe74ec314e54eb8678787d3d58fc83abdad96c"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Agents/FactoryAgentService.cs",
+      "sha256": "4a5684b3439f40d2eaba17b89caaaacd6e7d1fa3501c181c8163963f8b7c41bb",
+      "git_blob": "0f9e6127bdc2ce9b69a218875db99950b9024bdc"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Agents/IAgentReviewService.cs",
+      "sha256": "477daad74d5ca4b4853e3f3ce2002c37887ee4be5ef6f5343b7d59be9dd805c3",
+      "git_blob": "dc9f86735b6be9fab1178580da2502e09f7761db"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Analysis/AnalysisService.cs",
+      "sha256": "35bc3cdf3ccaa910c6fbed3aad8e1f5272c85f7837d47238a3dbb66c8543c84e",
+      "git_blob": "c7924b38fcebe139c8344d69705c2c98ca1ee23c"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Analysis/IRuleScanner.cs",
+      "sha256": "20565b3bd552a03e37d5c49c69fde8e0c62953327e8e2679acec1995bf2058ab",
+      "git_blob": "81a9daaa3139c1604d0cbd710d32400f83d4c1c2"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Analysis/RoslynRuleScanner.cs",
+      "sha256": "7a0a94bebc2ac3a52ea24a7fa959c1715c48c99f367348e6c74d4f05a2ae42e6",
+      "git_blob": "0722d5c17eb642bb02811206c64a40c7a8abf202"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Configuration/AIOptions.cs",
+      "sha256": "39db39f0b6377904c75ccf0116ba49dd18017fed04c16317b464aa3527deed2b",
+      "git_blob": "4c20e6fe4aae25db083a5958859f50c6e67b941f"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Configuration/AnalysisOptions.cs",
+      "sha256": "8abd0fc68f7dec839463c866fa51eb48a354557b7cbd33c2d34f89517b3d439b",
+      "git_blob": "9d085557240170ce7f1438c39ae6df298082f747"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Configuration/ProviderRegistration.cs",
+      "sha256": "a859b385a369a90e0e62dbc825972f8915b1122b6124e4daed976d40ea97ffc6",
+      "git_blob": "2d197f2599181fb1cd6d75f9b012e307b919c8aa"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Contracts/AnalysisModels.cs",
+      "sha256": "ddeb1f4222b4db32ecece25ce762e0b82d5d2f34c562fe8466327aebb9398ae5",
+      "git_blob": "984d1e2243587b3b59f084caf7194a544a7b4efa"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Factory.Api.csproj",
+      "sha256": "a6b4b5be5bc9f54131cdc949ab0ef9318700a443c1ba1a4540a8fab98a363b74",
+      "git_blob": "74601905e692a5283c356998098f5eb9c83d99d5"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Program.cs",
+      "sha256": "3c03a7ce2504a6de5edc374c4475d1cd02027deb3d510a622f2d93d06b212501",
+      "git_blob": "dbea9723d3a5b50341f3cb1d384a3a461b98e848"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/Security/LocalHostPolicy.cs",
+      "sha256": "c26ae732d5b73095322593562833744d45362ff58ba1dffc0f9d68d1cfe53371",
+      "git_blob": "7b31e97da82508da86d4f355311ea38f5520ed1a"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/appsettings.json",
+      "sha256": "121c27e6a288a5e4efdd0d23370eb3ed6dee31c5b20359eb934d213d5a9549ca",
+      "git_blob": "00359b557dc658c7fd138ae33a9bb41d22c8ff70"
+    },
+    {
+      "path": "runtime/dotnet/src/Factory.Api/packages.lock.json",
+      "sha256": "fbdc37c3a4f79eb532efc59ee7a7bad14364e166768d51ecb37e990cafa1c2df",
+      "git_blob": "39dde7d236980a9d4b4b92fc4f37bff8c9cda57f"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/AgentTests.cs",
+      "sha256": "561402708dff7d0b4a542530e442f122cdfbc97a90f57d026bd7d958f84f5026",
+      "git_blob": "0fc9a61c15e7f2af83cd79b918bf40568c270913"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/AnalysisServiceTests.cs",
+      "sha256": "2bd326460545bdc09bde83e0fdd3692e6b1a0672eec6b163d69b6be1fd71f116",
+      "git_blob": "399e18210ddc54058a1b09410f2f7f7e0ec76cf1"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/ApiTests.cs",
+      "sha256": "7423a1793da808c186a1044f55c3c97729bcb2d02162f93f0c7083dfd2f2db95",
+      "git_blob": "1a57023c36daf0bc980e4bbd73403c7e21af658f"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/Factory.Tests.csproj",
+      "sha256": "14765b0902c902b23019b572dfb7b6f209b2285c67f53d8fb406d2306f9518c0",
+      "git_blob": "dc200aa4cce721f059e3bbedcfb9388d3efc4fe9"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/HostingTests.cs",
+      "sha256": "62a05795ccb26777a3ee5ad1d43c2a2592c4e564328d9593e7f0ffb8c229e800",
+      "git_blob": "21bc7e0f33b4249507e0534dcc4ce0e59946e067"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/LocalHostPolicyTests.cs",
+      "sha256": "826a29228ef4dc0323db91d266c780fa9d8c39ba58a29297292f1b7db915c947",
+      "git_blob": "6ba6b3ec1bf6f1e8edfa00044b099dddce4e48e3"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/LogCapture.cs",
+      "sha256": "a6d08de802979cc8b072e44c67cd9941c61651f6f8406f8eb98eef4c7d0d4dbf",
+      "git_blob": "f93abfcdfc1ab4aeca38676e2578039966ea2b61"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/ManualTimeProvider.cs",
+      "sha256": "86a1ff34e1717ae5d0c5b5f1cc5fab5ad54fe60d74322d3ed8982c28731c2a8d",
+      "git_blob": "917f9bbc3753ed1b22aeadea166cd7eeb21bc133"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/ProviderTests.cs",
+      "sha256": "fe0128fe3d0b46f624647b8cdc1227f78766e6f6b9a1821c689899aee0c5420e",
+      "git_blob": "17bb88bdb7b154d49dd8e2147de532f7a5c3b5f0"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/RecordingChatClient.cs",
+      "sha256": "9e4e4a6624027b7418f2bf3dfe444dbee8b35110678a0d21c706db03d769425b",
+      "git_blob": "37464c931ee0ac55e5b134700fde5da5eecee354"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/ScannerTests.cs",
+      "sha256": "af99a8906cc77dd0f7c24d1d003c36ad7872c9781f7bc349a48fd4a5949fd73c",
+      "git_blob": "178778f484f90809991e9ed25c77b1b2150f8423"
+    },
+    {
+      "path": "runtime/dotnet/tests/Factory.Tests/packages.lock.json",
+      "sha256": "950410300cd986e72e3365d4dc79e83ff87979a65d5b705d73cf27dd4458acf7",
+      "git_blob": "e025f268aa73f22e50a0c294a5746e998d5d58eb"
+    }
+  ],
+  "limitation": "Final evidence-only output commit is reported in PR/final conversation. Fresh hosted checks must bind its exact head/merge; no independent signoff is implied."
+}

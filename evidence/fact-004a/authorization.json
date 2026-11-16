@@ -1,0 +1,40 @@
+{
+  "task_id": "fact-004",
+  "action": "execute",
+  "role": "coordinator/readiness-preparation",
+  "source": "Current conversation: latest user Approved immediately after FACT-004A-only readiness execution request",
+  "original_message_id": null,
+  "approval_issued_utc": null,
+  "observed_utc": "2026-10-19T18:01:59.130938+00:00",
+  "actor": "requesting user through current conversation; no independently attested GitHub/legal identity",
+  "expiry": "bounded FACT-004A readiness completion",
+  "candidate_revision": "7ed5858e44bafbabf083022397ef97a4bb827dd2",
+  "recorded_scope": {
+    "task": "fact-004",
+    "display_task": "FACT-004A",
+    "role": "coordinator/readiness-preparation",
+    "input_base": "7ed5858e44bafbabf083022397ef97a4bb827dd2",
+    "outputs": [
+      "specs/factory-runtime-phase1.md",
+      "adrs/factory-runtime-phase1.md",
+      "plans/fact-004a-*",
+      "plans/fact-004b-*",
+      "evidence/fact-004a/**",
+      "docs/agent-run-log.md:append-only"
+    ],
+    "excluded": [
+      "runtime implementation",
+      "CI changes",
+      "dotnet restore/build/test",
+      "provider calls",
+      "independent signoff",
+      "merge",
+      "deploy",
+      "close",
+      "remote publication"
+    ]
+  },
+  "scope_hash": "aad62fa92d85e770f1cf8cccb263da3f24366e6f1bfbd65f314eee462fa785dd",
+  "plan_hash": "b4d47bc3acdbeb96f758ce157398892598a546b6206571ec871b7f2505bfff6d",
+  "binding_limitation": "Hashes identify the recorded approved-scope transcription and readiness plan, not a pre-existing signed user document. Source conversation remains authoritative. No acceptance or successor approval inferred."
+}

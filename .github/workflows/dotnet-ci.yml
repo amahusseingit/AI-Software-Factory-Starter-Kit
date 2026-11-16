@@ -1,0 +1,201 @@
+name: Factory .NET CI
+
+on:
+  pull_request:
+    branches: [develop]
+  push:
+    branches: ['task/**']
+
+permissions:
+  contents: read
+
+env:
+  DOTNET_CLI_TELEMETRY_OPTOUT: '1'
+  DOTNET_NOLOGO: '1'
+
+defaults:
+  run:
+    shell: bash
+    working-directory: runtime/dotnet
+
+jobs:
+  dotnet-build:
+    name: dotnet-build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out event revision
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - name: Set up approved SDK
+        uses: actions/setup-dotnet@26b0ec14cb23fa6904739307f278c14f94c95bf1
+        with:
+          dotnet-version: '10.0.402'
+      - name: Record SDK and event revision
+        run: |
+          dotnet --info
+          git rev-parse HEAD
+      - name: Restore locked graph
+        run: dotnet restore Factory.slnx --locked-mode
+      - name: Build Release
+        run: dotnet build Factory.slnx -c Release --no-restore
+
+  dotnet-tests:
+    name: dotnet-tests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out event revision
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - name: Set up approved SDK
+        uses: actions/setup-dotnet@26b0ec14cb23fa6904739307f278c14f94c95bf1
+        with:
+          dotnet-version: '10.0.402'
+      - name: Restore locked graph
+        run: dotnet restore Factory.slnx --locked-mode
+      - name: Build Release
+        run: dotnet build Factory.slnx -c Release --no-restore
+      - name: Run synthetic offline tests
+        run: dotnet test Factory.slnx -c Release --no-build --logger trx --results-directory artifacts/tests
+      - name: Require actual tests without skipped cases
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          files = list(Path('artifacts/tests').glob('*.trx'))
+          assert files, 'No TRX results'
+          total = 0
+          for path in files:
+              root = ET.parse(path).getroot()
+              results = root.findall('.//{*}UnitTestResult')
+              assert results and all(r.get('outcome') == 'Passed' for r in results), 'Missing, failed or skipped tests'
+              total += len(results)
+          print(f'Passed tests: {total}')
+          PY
+      - name: Retain test evidence
+        if: always()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        with:
+          name: dotnet-test-evidence
+          path: runtime/dotnet/artifacts/tests/*.trx
+          if-no-files-found: error
+          retention-days: 14
+
+  dotnet-format:
+    name: dotnet-format
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out event revision
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - name: Set up approved SDK
+        uses: actions/setup-dotnet@26b0ec14cb23fa6904739307f278c14f94c95bf1
+        with:
+          dotnet-version: '10.0.402'
+      - name: Restore locked graph
+        run: dotnet restore Factory.slnx --locked-mode
+      - name: Verify formatting
+        run: dotnet format Factory.slnx --verify-no-changes --no-restore
+
+  dotnet-security:
+    name: dotnet-security
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      SCAN_BASE: ${{ github.event.pull_request.base.sha || '7ed5858e44bafbabf083022397ef97a4bb827dd2' }}
+    steps:
+      - name: Check out complete event history
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Set up approved SDK
+        uses: actions/setup-dotnet@26b0ec14cb23fa6904739307f278c14f94c95bf1
+        with:
+          dotnet-version: '10.0.402'
+      - name: Install digest-verified scanners
+        run: |
+          python3 - <<'PY'
+          import hashlib, os, tarfile, urllib.request
+          from pathlib import Path
+          base = Path(os.environ['RUNNER_TEMP']) / 'factory-security'
+          tools = [
+              ('gitleaks', 'https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz', '551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb'),
+              ('codeql', 'https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.27.2/codeql-bundle-linux64.tar.gz', 'f002864be6dd8d5d7bdb123aaf7291ec8e291012bd9f70b6d2362f730db52aeb'),
+          ]
+          base.mkdir(parents=True, exist_ok=True)
+          for name, url, expected in tools:
+              archive = base / (name + '.tar.gz')
+              digest = hashlib.sha256()
+              with urllib.request.urlopen(url, timeout=60) as source, archive.open('wb') as target:
+                  while block := source.read(1024 * 1024):
+                      target.write(block)
+                      digest.update(block)
+              assert digest.hexdigest() == expected, name + ' digest mismatch'
+              destination = base / name
+              destination.mkdir(exist_ok=True)
+              with tarfile.open(archive) as contents:
+                  contents.extractall(destination, filter='data')
+          with open(os.environ['GITHUB_PATH'], 'a') as path:
+              path.write(str(base / 'gitleaks') + '\n')
+              path.write(str(base / 'codeql' / 'codeql') + '\n')
+          PY
+      - name: Restore locked graph
+        run: dotnet restore Factory.slnx --locked-mode
+      - name: Audit resolved dependencies
+        run: |
+          mkdir -p artifacts/security
+          dotnet list Factory.slnx package --include-transitive --format json > artifacts/security/packages.json
+          dotnet list Factory.slnx package --vulnerable --include-transitive --format json > artifacts/security/vulnerabilities.json
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('artifacts/security/vulnerabilities.json').read_text())
+          assert data.get('projects') and not data.get('problems'), 'Audit incomplete'
+          packages = [p for project in data['projects'] for framework in project.get('frameworks', []) for group in ('topLevelPackages', 'transitivePackages') for p in framework.get(group, [])]
+          vulnerable = [p['id'] for p in packages if p.get('vulnerabilities')]
+          assert not vulnerable, 'Unresolved vulnerable packages: ' + ', '.join(vulnerable)
+          print('Dependency audit completed without reported vulnerabilities')
+          PY
+      - name: Scan task history for secrets
+        if: ${{ !cancelled() }}
+        run: |
+          mkdir -p artifacts/security
+          gitleaks version
+          gitleaks git --redact=100 --ignore-gitleaks-allow --no-banner --timeout 120 --report-format json --report-path artifacts/security/gitleaks.json --log-opts="${SCAN_BASE}..HEAD" "$GITHUB_WORKSPACE"
+      - name: Trace clean C# build
+        if: ${{ !cancelled() }}
+        run: |
+          codeql version --format=json
+          codeql database create artifacts/codeql-db --language=csharp --source-root=. --command='dotnet build Factory.slnx -c Release --no-restore --no-incremental' --overwrite
+      - name: Run C# security-extended queries
+        if: ${{ !cancelled() }}
+        run: |
+          mkdir -p artifacts/security
+          codeql database analyze artifacts/codeql-db codeql/csharp-queries:codeql-suites/csharp-security-extended.qls --format=sarif-latest --output=artifacts/security/codeql.sarif --threads=2 --ram=4096
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('artifacts/security/codeql.sarif').read_text())
+          assert data.get('runs'), 'Missing CodeQL analysis'
+          for run in data['runs']:
+              assert all(i.get('executionSuccessful', True) for i in run.get('invocations', [])), 'Incomplete CodeQL analysis'
+          count = sum(len(run.get('results', [])) for run in data['runs'])
+          print(f'CodeQL findings requiring disposition: {count}')
+          assert count == 0, 'Unresolved CodeQL findings'
+          PY
+      - name: Retain sanitized security results
+        if: always()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        with:
+          name: dotnet-security-evidence
+          path: |
+            runtime/dotnet/artifacts/security/*.json
+            runtime/dotnet/artifacts/security/*.sarif
+          if-no-files-found: error
+          retention-days: 14

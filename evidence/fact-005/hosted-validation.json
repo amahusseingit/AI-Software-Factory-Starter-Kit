@@ -1,0 +1,138 @@
+{
+  "task_id": "fact-005",
+  "actor": "Codex coordinator observing developer CI",
+  "observed_utc": "2026-10-19T19:33:21.253376+00:00",
+  "repository": "amahusseingit/AI-Software-Factory-Starter-Kit",
+  "candidate_revision": "5a47a944efd8b8404cad45f2d305673172237784",
+  "base_revision": "7ed5858e44bafbabf083022397ef97a4bb827dd2",
+  "tested_merge_revision": "1d6f7fc29e36d872f7990e3b06241615e617fca1",
+  "pr_url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/pull/8",
+  "source_tree": "b6d1656817e5b76e0d7bc64b1631940b9f9f3dea",
+  "local_content_equivalent_commit": "1897c84e45d2fd3bf7407e6f67d2e2699e705131",
+  "method": "Read GitHub Actions jobs/logs and artifact metadata; checkout merge SHA verified in raw logs",
+  "producer": "GitHub Actions: Factory .NET CI and Factory CI",
+  "jobs": [
+    {
+      "name": "dotnet-tests",
+      "job_id": 118262251853,
+      "state": "PASS",
+      "started_at": "2026-10-19T19:30:42Z",
+      "completed_at": "2026-10-19T19:31:17Z",
+      "url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/actions/runs/39311583003/job/118262251853"
+    },
+    {
+      "name": "dotnet-build",
+      "job_id": 118262252213,
+      "state": "PASS",
+      "started_at": "2026-10-19T19:30:42Z",
+      "completed_at": "2026-10-19T19:31:06Z",
+      "url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/actions/runs/39311583003/job/118262252213"
+    },
+    {
+      "name": "dotnet-security",
+      "job_id": 118262252369,
+      "state": "PASS",
+      "started_at": "2026-10-19T19:30:42Z",
+      "completed_at": "2026-10-19T19:32:12Z",
+      "url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/actions/runs/39311583003/job/118262252369"
+    },
+    {
+      "name": "dotnet-format",
+      "job_id": 118262252655,
+      "state": "PASS",
+      "started_at": "2026-10-19T19:30:42Z",
+      "completed_at": "2026-10-19T19:31:10Z",
+      "url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/actions/runs/39311583003/job/118262252655"
+    },
+    {
+      "name": "factory-docs",
+      "job_id": 118262258748,
+      "state": "PASS",
+      "started_at": "2026-10-19T19:30:43Z",
+      "completed_at": "2026-10-19T19:30:50Z",
+      "url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/actions/runs/39311582942/job/118262258748"
+    },
+    {
+      "name": "factory-gate-tests",
+      "job_id": 118262259297,
+      "state": "PASS",
+      "started_at": "2026-10-19T19:30:43Z",
+      "completed_at": "2026-10-19T19:30:49Z",
+      "url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/actions/runs/39311582942/job/118262259297"
+    }
+  ],
+  "tests": {
+    "passed": 104,
+    "failed": 0,
+    "skipped": 0,
+    "total": 104
+  },
+  "build": {
+    "warnings": 0,
+    "errors": 0
+  },
+  "security_automation": {
+    "reported_dependency_vulnerabilities": 0,
+    "gitleaks_findings": 0,
+    "codeql_security_extended_findings": 0
+  },
+  "raw_capture": {
+    "path": "raw/hosted-capture.json.gz",
+    "sha256": "d20653155ca56e4f9f9a7b642f8131708e1aa2cc9eacc414f69d98ca27a47630",
+    "uncompressed_sha256": "60739ba7bd016edc0cd65ead535590545d6b93ff094d8bc872cd6aa38fdbd43a"
+  },
+  "raw_log_hashes": [
+    {
+      "job_id": 118259905135,
+      "sha256": "d1c80e3b9254ff38e2b696cd0e9bc9faa91010af0a89d9bdbd2681328a54e9a2",
+      "characters": 26591
+    },
+    {
+      "job_id": 118259905532,
+      "sha256": "ec422cdf51652f511c0f32e22fb88a29b75a2b96b7150aa38272b2492c0cc957",
+      "characters": 80984
+    },
+    {
+      "job_id": 118259906180,
+      "sha256": "c84303704df40ef161c958d516745db024d0f5e03d240d64e797347e5afb740c",
+      "characters": 25016
+    },
+    {
+      "job_id": 118262251853,
+      "sha256": "aec3f13619c03f6230902ac4d5b2e5d95af0c8074da566c32a8f1a2145ddf051",
+      "characters": 27029
+    },
+    {
+      "job_id": 118262252369,
+      "sha256": "69ebdad9bbfb999e5e9cebdb3ec1998d45c12ac3e64c65e55f6d9516ef76963e",
+      "characters": 84281
+    },
+    {
+      "job_id": 118262252213,
+      "sha256": "be4bbd06e774b3321b685ef21a2a1534b00186be31b7a4c915eacec5fa9d9940",
+      "characters": 28195
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 12216116236,
+      "name": "dotnet-test-evidence",
+      "digest": "sha256:dc5fa305ea9d82cbbcf389f8f9a286b884038425c7b578270713ada368478523",
+      "url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/actions/runs/39311583003/artifacts/12216116236",
+      "expires_at": "2026-11-02T19:31:13Z"
+    },
+    {
+      "id": 12215811831,
+      "name": "dotnet-security-evidence",
+      "digest": "sha256:486cb03749fdad95797642d8fd9cbdedb0dea70f7fd75d836f3b89928d5b6aa6",
+      "url": "https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/actions/runs/39311583003/artifacts/12215811831",
+      "expires_at": "2026-11-02T19:32:06Z"
+    }
+  ],
+  "independent_qa": "NOT_RUN",
+  "independent_security_review": "NOT_RUN",
+  "independent_review": "NOT_RUN",
+  "human_acceptance": "PENDING",
+  "acceptance_decision": "BLOCKED",
+  "limitation": "Snapshot binds this exact first published candidate and tested merge. A later evidence-only handoff commit must have its own hosted checks observed; no PASS is transferred by branch name."
+}

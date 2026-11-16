@@ -1,0 +1,77 @@
+{
+  "task_id": "fact-004",
+  "run_id": "fact-004a-readiness-20261019",
+  "actor": "Codex readiness executor",
+  "independent_reviewer": null,
+  "repository": "amahusseingit/AI-Software-Factory-Starter-Kit",
+  "branch": "task/fact-004-a-dotnet-runtime-readiness",
+  "base_sha": "7ed5858e44bafbabf083022397ef97a4bb827dd2",
+  "candidate_binding": "Exact readiness artifact hashes in output-manifest.json; no runtime candidate",
+  "environment": {
+    "environment_id": "ccarenv_b64_Y2NhcmVudl80MDZiMzllN2RhMzQ4MTkxYjYwZGYzNzlhNWNlOTkzYw",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "python": "3.12.14",
+    "git": "git version 2.52.0",
+    "dotnet": "NOT_INSTALLED"
+  },
+  "checks": [
+    {
+      "name": "factory-docs",
+      "command": [
+        "python3",
+        "tools/validate_factory.py"
+      ],
+      "started_utc": "2026-10-19T18:02:55.438231+00:00",
+      "ended_utc": "2026-10-19T18:02:55.514189+00:00",
+      "exit_code": 0,
+      "state": "PASS",
+      "scope": "documentation and synthetic Factory evaluator checks only",
+      "raw_output": "raw/factory-docs.txt",
+      "sha256": "0c4ca5f5c3a8efad208a59bce77d8e7d7672a670519b6d51cfb57ed02623e5ee"
+    },
+    {
+      "name": "factory-gate-tests",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools",
+        "-p",
+        "test_factory*.py",
+        "-v"
+      ],
+      "started_utc": "2026-10-19T18:02:55.514755+00:00",
+      "ended_utc": "2026-10-19T18:02:55.593447+00:00",
+      "exit_code": 0,
+      "state": "PASS",
+      "scope": "documentation and synthetic Factory evaluator checks only",
+      "raw_output": "raw/factory-gate-tests.txt",
+      "sha256": "5459f11f3ba28a39f98eead8bca8f3092de35f70211b47b125a81821cf193e39"
+    },
+    {
+      "name": "whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "started_utc": "2026-10-19T18:02:55.593810+00:00",
+      "ended_utc": "2026-10-19T18:02:55.597170+00:00",
+      "exit_code": 0,
+      "state": "PASS",
+      "scope": "documentation and synthetic Factory evaluator checks only",
+      "raw_output": "raw/whitespace.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "application_restore": "NOT_RUN",
+  "application_build": "NOT_RUN",
+  "application_tests": "NOT_RUN",
+  "independent_qa": "NOT_RUN",
+  "independent_review": "NOT_RUN",
+  "independent_security": "NOT_RUN",
+  "gate_decision": "BLOCKED"
+}

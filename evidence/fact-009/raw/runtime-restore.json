@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/workspace/.factory-tools/dotnet/dotnet",
+    "restore",
+    "Factory.slnx",
+    "--locked-mode"
+  ],
+  "start": "2026-10-20T02:45:44.810266+00:00",
+  "end": "2026-10-20T02:45:45.903790+00:00",
+  "exit_code": 1,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

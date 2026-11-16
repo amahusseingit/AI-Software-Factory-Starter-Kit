@@ -1,0 +1,518 @@
+{
+  "observed_utc": "2026-10-19T18:42:11.380462+00:00",
+  "method": "Resolved dotnet package inventory and local restored nuspec license inspection; NuGet reported vulnerabilities parsed from JSON",
+  "package_count": 63,
+  "licenses": [
+    {
+      "id": "Google.Protobuf",
+      "version": "3.30.2",
+      "license": "BSD-3-Clause",
+      "license_type": "expression",
+      "nuspec_sha256": "1b064db9a0dfcd047cc107c442dab9c53670f78217cc8b7bff33c6e4cd643470",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Agents.AI",
+      "version": "1.25.0",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "57b2b137646e8abae1be121f7a024358d80f50037fd7eb5c8f0b5ccbb31331db",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Agents.AI.Abstractions",
+      "version": "1.25.0",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "6d90530ffcb0320bb2a3932fcc6f3937efa204a6d877a52123fb3826a486941b",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.AspNetCore.Mvc.Testing",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "f2d0ce1c45716dc32fadf0aa048f8c7482ed561d53ca82f7862600a9c7cdcd79",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.AspNetCore.TestHost",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "3af08a2ee6c6cbd6bfcc4a6d875eec8ed6b1369d5960dd4589cd49879f7f7c51",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.CodeAnalysis.Analyzers",
+      "version": "5.9.0-1.26328.17",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "eb1300b6e4682da068f5c573cec828b34f059d00a1c0fe320a3edc8c922fc09e",
+      "prerelease": true
+    },
+    {
+      "id": "Microsoft.CodeAnalysis.CSharp",
+      "version": "5.9.0",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "cdb47f1a6d4dc3a22615deecc1f920c1fcb6dfb4ed27313ab1e3b1ccdf9405de",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.CodeAnalysis.Common",
+      "version": "5.9.0",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "eebeb51bc61715d495498efafff6f7077cbe53d4c7deed2988d9ed0cc902d2b3",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.CodeCoverage",
+      "version": "17.14.1",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "e8a419e9a7d1045db037afaea25cee698e035acf29e21805ef501bef317d5b5b",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.AI",
+      "version": "10.11.0",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "203cb77ccea3e891a74c57cd637c04cf43cdffde41016245a38816457500b130",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.AI.Abstractions",
+      "version": "10.11.0",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "a1905fb3a7b802b2fe94379612df717f70e071bb1fbe0e08a725e9f98709998b",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.AI.Evaluation",
+      "version": "10.10.0",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "59fcce741a688d856b365bb6b4ea204f398cdd956be301181a28551eeda2b28c",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.AI.OpenAI",
+      "version": "10.11.0",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "32cab5acd1aab6d272550a120a9e30611ffc9d51314ce278d8d8cae7dfe691c5",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Caching.Abstractions",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "8af6a9870dc7ece4db9018c6f31d7d1337d5c69943d72a70e99cbb8e65068dd4",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Compliance.Abstractions",
+      "version": "10.10.0",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "b01e8a8c01ef24e944cbeae378a216ecf8e15b0567c658048ff0396dd462e1e5",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Configuration",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "e4967350b756395033fe08ab827cdac2cb2144a0cd1bf77a44731884f6984f0c",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Configuration.Abstractions",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "314facae64103f772925be66661866440ebdc87818d14150522460a4ebdb06c6",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Configuration.Binder",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "acb9686218062f4b17e3020004c27caf54f86c115c5d620cd7d124667a41ffff",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Configuration.CommandLine",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "1ab79d801c0f11504776f5518e78bf988d89ab4d68894347f57227b92dc88417",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "feea0b599cd84cf5a2477e5fc3c02c2eff5dbc8ab6db92ece1079d0e5183693e",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Configuration.FileExtensions",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "beb8e368577d981b995f47bc3695ace828664b0727d599879c0efbd497e68d9a",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Configuration.Json",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "8f857d2a11483a46d2aa38b1c87b9a09cf248560d383399bb416dc5eda803ded",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Configuration.UserSecrets",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "bcabf0dcfcbb3802273857980d52ee03891edc062b7126e2d88e388d419654c9",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.DependencyInjection",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "39f0d9c0d603553c7d8045e6b8efb370ad21dafd12b98c18bd6964a9d9a09534",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "ec1c51eb90a4226aa13870d456ccd34b6e80658ec314547ceb79e47ad3249069",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.DependencyModel",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "2e969b1ec3c23b9fb72ec9bcc7425e1840a4c1a00d1db82571002fe711a732ff",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Diagnostics",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "3da8bf7799ef96be1f61d28e6e24341ff44a118e6fc07bb36eaa11b567273927",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Diagnostics.Abstractions",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "b95e6ea1107ce70ad3a9edbdc9acbf25375da04f3b5419c91a779bf1238da64b",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.FileProviders.Abstractions",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "aba3fca0a4996799cd1d7fee727d1cb4b414ba9b317b6f6c62bd5816f40d2978",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.FileProviders.Physical",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "8a18baf7e216b651db571ca7d38f844f9f50666f79505f909dc29a10b8821385",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.FileSystemGlobbing",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "9a20fe5aad794d92abaf55d33ff71dfbb58a07c8fe5a0d5b8fc1ab278d348005",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Hosting",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "7b245a966ea4b474e4942e8478b2d4df59973c28187d8b305e01c19df8938d10",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Hosting.Abstractions",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "7e4e00cf603d2466dd86c0fe93f8a077d4e6a129b6948f7aff3dd9ab3ecbd446",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Logging",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "9c2c22321a3fb1b48a754c40d9af7cb3a443bf2cf13550c550aca5a527ff37db",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Logging.Abstractions",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "5cf07bdbf6c071a75f07908369d7d078a04ca012af8df71728ff748a1fd818e9",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Logging.Configuration",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "c337f20c454506a22f927c43ead55396f5d8cff376e66b3c83315227dd0d731a",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Logging.Console",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "7f3dc7ced3ed20a842c7cb66d8a8584c893883042a54806af3a47c69ce5529a6",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Logging.Debug",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "734c05aa4c9d0f6e491810408d559e85f5138e665268c5b780947cb402262a58",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Logging.EventLog",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "176f85e8c0f9507509fd104bda4c044986fedae6da5213a0b15f4542488b0b3e",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Logging.EventSource",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "9874f2418f14bb4744cd722b48612d12361f22b9eddf6e4e60526eede2a572ae",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.ObjectPool",
+      "version": "10.0.12",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "166448768ea82a757d70be980cb99c4a02c449cd07d2cd6bce60b460d2aad84c",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Options",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "a41380a2ce7eebbc668ef6635b0a452a3c72ef618892996422545df4345bc46b",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Options.ConfigurationExtensions",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "1dde1090a100c2a30a370645516612804963998ec0bc19eeb4f3b5b50ffb58a2",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.Primitives",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "e82aab032c88deebaeb36aaf0f98504500b199b445b08158850a9fcc4bfccda0",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.Extensions.VectorData.Abstractions",
+      "version": "10.10.0",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "5b86bd9ab717eff7d91b57048c7fa554bf0702f9a065ea24ad946f5bd03d729c",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.ML.Tokenizers",
+      "version": "2.0.0",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "c7bd322f3b6bd752bb91372cf576f84361f24e46b1d72650323060341d1dca2e",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.NET.Test.Sdk",
+      "version": "17.14.1",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "4be5fe2a9a8685231d30a32509fc10c97057d377b9ea22c33a7a3ac017cfce69",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.TestPlatform.ObjectModel",
+      "version": "17.14.1",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "46d770701d691e3617a59d7a0ffbd7b07bfe727a945648db3a629401d6a07ea1",
+      "prerelease": false
+    },
+    {
+      "id": "Microsoft.TestPlatform.TestHost",
+      "version": "17.14.1",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "2988ea729e27c2ddbe49e8f1be039124580cc18be40c2be4cb120d4078068bb3",
+      "prerelease": false
+    },
+    {
+      "id": "Newtonsoft.Json",
+      "version": "13.0.3",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "64aeffca22289eeb3bd32cbe72722ac878d2eadcee9f8885f17daa2e8357c518",
+      "prerelease": false
+    },
+    {
+      "id": "OpenAI",
+      "version": "2.14.0",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "6b46004bb802710d139e25651432831dbf61a33bbcf4045205afafa07273ec5d",
+      "prerelease": false
+    },
+    {
+      "id": "System.ClientModel",
+      "version": "1.15.0",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "81dac7cf86afc51e5e0e88b7f59fbc78f2b94ebfbcdccab9dcbc1b77aa6f4f90",
+      "prerelease": false
+    },
+    {
+      "id": "System.Diagnostics.EventLog",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "143e1d07bab6d1b246ffe50eed5bb43e5e5d9c0b90f94ad1ac55f06e615398bf",
+      "prerelease": false
+    },
+    {
+      "id": "System.Memory.Data",
+      "version": "10.0.9",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "f7819d0f069b4fee10421d28ac2f8ee7ed0edaefd124590b42c98afc61430eae",
+      "prerelease": false
+    },
+    {
+      "id": "System.Numerics.Tensors",
+      "version": "10.0.13",
+      "license": "MIT",
+      "license_type": "expression",
+      "nuspec_sha256": "12a4339af138cc2e3a62fc9cd30eee7703ad60ead3881b8ac99e6dc2aa807a68",
+      "prerelease": false
+    },
+    {
+      "id": "xunit",
+      "version": "2.9.3",
+      "license": "Apache-2.0",
+      "license_type": "expression",
+      "nuspec_sha256": "8f3373c5260b2acec2874a280640e0fbb9ac538d754880d7abaa4473c3497d25",
+      "prerelease": false
+    },
+    {
+      "id": "xunit.abstractions",
+      "version": "2.0.3",
+      "license": null,
+      "license_type": null,
+      "nuspec_sha256": "e59191df9e3047dd953b695c886597786ac2771f66897baa40877f643da9f7b1",
+      "prerelease": false
+    },
+    {
+      "id": "xunit.analyzers",
+      "version": "1.18.0",
+      "license": "Apache-2.0",
+      "license_type": "expression",
+      "nuspec_sha256": "270ffb0dce41126154f16bad2ee025da605185fb5308247877745e5eef97689e",
+      "prerelease": false
+    },
+    {
+      "id": "xunit.assert",
+      "version": "2.9.3",
+      "license": "Apache-2.0",
+      "license_type": "expression",
+      "nuspec_sha256": "e3f99045088c262b14a62dd93cf025912e9e653f5ce1d77e7f858238e0bcb508",
+      "prerelease": false
+    },
+    {
+      "id": "xunit.core",
+      "version": "2.9.3",
+      "license": "Apache-2.0",
+      "license_type": "expression",
+      "nuspec_sha256": "08c844d40924a386d7600e2523c57f1a2a1d6a77c03b8c0001501831944a0691",
+      "prerelease": false
+    },
+    {
+      "id": "xunit.extensibility.core",
+      "version": "2.9.3",
+      "license": "Apache-2.0",
+      "license_type": "expression",
+      "nuspec_sha256": "0c5886e9320c6dd828e50048c27cf355314fe20e2d8d4026b4a3a9fe42d4a359",
+      "prerelease": false
+    },
+    {
+      "id": "xunit.extensibility.execution",
+      "version": "2.9.3",
+      "license": "Apache-2.0",
+      "license_type": "expression",
+      "nuspec_sha256": "9c5498549b5200b65ba0c7e0d4597c269c6bbb2e374ea8f1c28d76dc3f3a0bdd",
+      "prerelease": false
+    },
+    {
+      "id": "xunit.runner.visualstudio",
+      "version": "3.1.4",
+      "license": "Apache-2.0",
+      "license_type": "expression",
+      "nuspec_sha256": "5cb4620571521ee8627f8d81c3341aee015bccee0e2054caa08bbe43f7351436",
+      "prerelease": false
+    }
+  ],
+  "vulnerability_reported_package_count": 0,
+  "vulnerability_report_projects": 2,
+  "vulnerability_source": [
+    "https://api.nuget.org/v3/index.json"
+  ],
+  "complete_license_legal_approval": false,
+  "independent_security_review": "NOT_RUN"
+}
