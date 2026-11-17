@@ -1,0 +1,3 @@
+  Determining projects to restore...
+  Restored /workspace/factory-dotnet10/runtime/dotnet/src/Factory.Api/Factory.Api.csproj (in 5.35 sec).
+  Restored /workspace/factory-dotnet10/runtime/dotnet/tests/Factory.Tests/Factory.Tests.csproj (in 5.36 sec).

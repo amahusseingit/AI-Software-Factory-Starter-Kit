@@ -1,0 +1,29 @@
+# FACT-005 developer handoff
+
+Task: fact-005. Input develop SHA: `7ed5858e44bafbabf083022397ef97a4bb827dd2`. Branch: `task/fact-005-integrate-dotnet-runtime`. User execution and draft-PR authority are recorded in [execution plan](fact-005-execution.md) and evidence/fact-005/authorization.json. Approved readiness source `685cf8784fff62b862a13552f02c7773d3115dae` was carried unchanged by genuine cherry-pick. No main/develop write, merge, deployment, closure or independent signoff is authorized.
+
+## Implemented scope
+
+The optional runtime under runtime/dotnet adds single-file C#14 Roslyn analysis with original spans/digest/config provenance, actual MAF analyst and critic over injected IChatClient, default-disabled AI, service consent, bounded advisory outputs/deadline, explicit endpoint-bound HTTPS provider policy, no tools, loopback HTTP API, request limits/concurrency and immutable BLOCKED decisions. Production sources and developer tests were delegated to separate implementation/test-author agents; both remain developer work, not independent QA.
+
+Synthetic tests cover scanner boundaries/provenance, service consent and failures, MAF fake-provider sequencing/cancellation/deadlines, API validation/concurrency/isolation, loopback startup/request policy, outbound mock transport and secret-safe errors/logs. Test cases in source are not passing evidence until executed.
+
+The added workflow proposes dotnet-build, dotnet-tests, dotnet-format and dotnet-security. Jobs use pinned actions/SDK/scanner digests, contents:read, no privileged trigger, no real model credentials and no deployment. Security checks include NuGet transitive audit, redacted gitleaks and C# CodeQL security-extended. SARIF and TRX are retained; missing findings disposition/test results block success.
+
+## Actual evidence and current limitations
+
+Evidence is under evidence/fact-005. Restore-01/02/03 failed during sandbox mutex initialization before package resolution. Restore-04 succeeded after supported command-level escalation. The exact approved package graph restored and produced lockfiles. Resolved inventory contains 63 packages; parsed NuGet audit reported zero vulnerable packages. License metadata includes MIT/Apache-2.0/BSD-3-Clause, plus xunit.abstractions 2.0.3's legacy license URL that needs provenance review; no legal/security approval is invented. The disclosed Roslyn prerelease analyzer remains in the approved graph.
+
+The first direct Release build failed with one ambiguous BadHttpRequestException reference (raw build-direct-01.txt). The qualified type correction built successfully with zero warnings/errors (build-01). That local result binds its recorded source digest only. Format-apply-01 succeeded; a later restricted-sandbox formatter failed connecting its build-host pipe (format-apply-02). Subsequent elevated verification attempts were cancelled at the platform permission request before launch; they are not application passes or test failures. Final verification ran through the independently authorized GitHub-hosted CI publication path; local IPC permission is still not represented as resolved.
+
+Gitleaks staged scan found no leaks in the scanned staged diff (gitleaks-staged-01). Draft PR https://github.com/amahusseingit/AI-Software-Factory-Starter-Kit/pull/8 is open into develop. Remote source candidate `5a47a944efd8b8404cad45f2d305673172237784` has tree `b6d1656817e5b76e0d7bc64b1631940b9f9f3dea`, verified identical to genuine local commit `1897c84e45d2fd3bf7407e6f67d2e2699e705131`. Connector publication created a genuine child of the approved upstream base; the local cherry-pick history is source provenance, not falsely claimed remote ancestry.
+
+Both task-head and PR merge-result runs succeeded. The PR run checked out actual merge revision `1d6f7fc29e36d872f7990e3b06241615e617fca1` against approved develop `7ed5858e44bafbabf083022397ef97a4bb827dd2`. Its dotnet-build, dotnet-tests, dotnet-format, dotnet-security, factory-docs and factory-gate-tests jobs all completed successfully. Results: 104 application tests passed, zero failed/skipped; Release build zero warnings/errors; NuGet reported zero vulnerable packages; gitleaks zero findings; CodeQL C# security-extended zero findings. Raw logs, checkout SHA proof, job times, artifact digests and immutable snapshot bindings are retained in [hosted validation](../evidence/fact-005/hosted-validation.json) and its lossless raw capture. The six successful jobs are developer automation, not independent QA/security/review.
+
+The evidence-only handoff update creates a new remote output revision; final hosted checks on that exact new head/merge must be observed and linked in the PR/final conversation. This record does not transfer a PASS by branch name. The runtime/workflow source content is unchanged by the handoff update. Local application tests/CodeQL remain NOT_RUN locally; hosted execution is the actual verification evidence.
+
+## Current stop boundary
+
+Developer scope is implemented and draft publication/hosted checks are evidenced. [Traceability](fact-005-traceability.md) distinguishes developer test results from unresolved independent acceptance. No successor independent QA/security/reviewer role has executed or been impersonated. Overall acceptance progression remains BLOCKED pending separately approved, named independent roles and the exact output-specific human decision. Local permission limitations, legacy license provenance review and non-enterprise hosting limitations remain disclosed; no risk acceptance is invented.
+
+No merge, deployment, close, production use or automatic next slice. Review the exact draft candidate and approve the next independent role plan. The full enterprise roadmap is not complete; [roadmap](fact-005-roadmap.md) records the remaining capabilities without authorizing their implementation.

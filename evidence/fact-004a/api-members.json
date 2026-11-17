@@ -1,0 +1,35 @@
+{
+  "method": "Published XML member documentation inspection, no reflection or assembly execution",
+  "members": [
+    {
+      "package": "Microsoft.Extensions.AI.OpenAI",
+      "version": "10.11.0",
+      "member": "M:Microsoft.Extensions.AI.OpenAIClientExtensions.AsIChatClient(OpenAI.Chat.ChatClient)",
+      "xml": "<member name=\"M:Microsoft.Extensions.AI.OpenAIClientExtensions.AsIChatClient(OpenAI.Chat.ChatClient)\">\n            <summary>Gets an <see cref=\"T:Microsoft.Extensions.AI.IChatClient\" /> for use with this <see cref=\"T:OpenAI.Chat.ChatClient\" />.</summary>\n            <param name=\"chatClient\">The client.</param>\n            <returns>An <see cref=\"T:Microsoft.Extensions.AI.IChatClient\" /> that can be used to converse via the <see cref=\"T:OpenAI.Chat.ChatClient\" />.</returns>\n            <exception cref=\"T:System.ArgumentNullException\"><paramref name=\"chatClient\" /> is <see langword=\"null\" />.</exception>\n        </member>\n        "
+    },
+    {
+      "package": "Microsoft.Agents.AI",
+      "version": "1.25.0",
+      "member": "M:Microsoft.Extensions.AI.ChatClientExtensions.AsAIAgent(Microsoft.Extensions.AI.IChatClient,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Extensions.AI.AITool},Microsoft.Extensions.Logging.ILoggerFactory,System.IServiceProvider)",
+      "xml": "<member name=\"M:Microsoft.Extensions.AI.ChatClientExtensions.AsAIAgent(Microsoft.Extensions.AI.IChatClient,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Extensions.AI.AITool},Microsoft.Extensions.Logging.ILoggerFactory,System.IServiceProvider)\">\n            <summary>\n            Creates a new <see cref=\"T:Microsoft.Agents.AI.ChatClientAgent\" /> instance.\n            </summary>\n            <inheritdoc cref=\"M:Microsoft.Agents.AI.ChatClientAgent.#ctor(Microsoft.Extensions.AI.IChatClient,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Extensions.AI.AITool},Microsoft.Extensions.Logging.ILoggerFactory,System.IServiceProvider)\" />\n            <returns>A new <see cref=\"T:Microsoft.Agents.AI.ChatClientAgent\" /> instance.</returns>\n        </member>\n        "
+    },
+    {
+      "package": "Microsoft.Agents.AI.Abstractions",
+      "version": "1.25.0",
+      "member": "P:Microsoft.Agents.AI.AgentResponse.Text",
+      "xml": "<member name=\"P:Microsoft.Agents.AI.AgentResponse.Text\">\n            <summary>\n            Gets the concatenated text content of all messages in this response.\n            </summary>\n            <value>\n            A string containing the combined text from all <see cref=\"T:Microsoft.Extensions.AI.TextContent\" /> instances\n            across all messages in <see cref=\"P:Microsoft.Agents.AI.AgentResponse.Messages\" />, or an empty string if no text content is present.\n            </value>\n            <remarks>\n            This property provides a convenient way to access the textual response without needing to\n            iterate through individual messages and content items. Non-text content is ignored.\n            </remarks>\n        </member>\n        "
+    },
+    {
+      "package": "Microsoft.Agents.AI.Abstractions",
+      "version": "1.25.0",
+      "member": "M:Microsoft.Agents.AI.AIAgent.RunAsync(System.String,Microsoft.Agents.AI.AgentSession,Microsoft.Agents.AI.AgentRunOptions,System.Threading.CancellationToken)",
+      "xml": "<member name=\"M:Microsoft.Agents.AI.AIAgent.RunAsync(System.String,Microsoft.Agents.AI.AgentSession,Microsoft.Agents.AI.AgentRunOptions,System.Threading.CancellationToken)\">\n            <summary>\n            Runs the agent with a text message from the user.\n            </summary>\n            <param name=\"message\">The user message to send to the agent.</param>\n            <param name=\"session\">\n            The conversation session to use for this invocation. If <see langword=\"null\" />, a new session will be created.\n            The session will be updated with the input message and any response messages generated during invocation.\n            </param>\n            <param name=\"options\">Optional configuration parameters for controlling the agent's invocation behavior.</param>\n            <param name=\"cancellationToken\">The <see cref=\"T:System.Threading.CancellationToken\" /> to monitor for cancellation requests. The default is <see cref=\"P:System.Threading.CancellationToken.None\" />.</param>\n            <returns>A task that represents the asynchronous operation. The task result contains an <see cref=\"T:Microsoft.Agents.AI.AgentResponse\" /> with the agent's output.</returns>\n            <exception cref=\"T:System.ArgumentException\"><paramref name=\"message\" /> is <see langword=\"null\" />, empty, or contains only whitespace.</exception>\n            <remarks>\n            The provided text will be wrapped in a <see cref=\"T:Microsoft.Extensions.AI.ChatMessage\" /> with the <see cref=\"P:Microsoft.Extensions.AI.ChatRole.User\" /> role\n            before being sent to the agent. This is a convenience method for simple text-based interactions.\n            </remarks>\n        </member>\n        "
+    },
+    {
+      "package": "OpenAI",
+      "version": "2.14.0",
+      "member": "M:OpenAI.OpenAIClient.#ctor(System.ClientModel.ApiKeyCredential,OpenAI.OpenAIClientOptions)",
+      "xml": "<member name=\"M:OpenAI.OpenAIClient.#ctor(System.ClientModel.ApiKeyCredential,OpenAI.OpenAIClientOptions)\">\n            <summary> Initializes a new instance of <see cref=\"T:OpenAI.OpenAIClient\" />. </summary>\n            <param name=\"credential\"> The <see cref=\"T:System.ClientModel.ApiKeyCredential\" /> to authenticate with the service. </param>\n            <param name=\"options\"> The options to configure the client. </param>\n            <exception cref=\"T:System.ArgumentNullException\"> <paramref name=\"credential\" /> is null. </exception>\n        </member>\n        "
+    }
+  ]
+}

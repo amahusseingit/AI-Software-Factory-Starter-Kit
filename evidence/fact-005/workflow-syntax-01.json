@@ -1,0 +1,30 @@
+{
+  "task_id": "fact-005",
+  "run_id": "workflow-syntax-01",
+  "actor": "Codex root developer self-check",
+  "independent_reviewer": null,
+  "repository": "amahusseingit/AI-Software-Factory-Starter-Kit",
+  "branch": "task/fact-005-integrate-dotnet-runtime",
+  "approved_base": "7ed5858e44bafbabf083022397ef97a4bb827dd2",
+  "git_head_before_check": "e7f1a1f8410e9a384ebbf683a88d4e485c7a85d5",
+  "source_artifact_set_digest": "d7b2d2effbb67f4c9da030d630ab2f63a18aaf70f4c8bc7bdcccae429d46e6d5",
+  "source_files": [
+    {
+      "path": ".github/workflows/dotnet-ci.yml",
+      "sha256": "4f4f8c1592376e50e9f6cba527426bf6280f3a06708b7c1e29d8ca147e456635"
+    }
+  ],
+  "command": [
+    "python3",
+    "/tmp/fact005_workflow_syntax.py"
+  ],
+  "cwd": "/workspace/factory-dotnet10",
+  "started_utc": "2026-10-19T18:12:30.801578+00:00",
+  "ended_utc": "2026-10-19T18:12:30.872184+00:00",
+  "exit_code": 0,
+  "command_state": "PASS",
+  "interpretation": "Command exit only; semantic results must be separately inspected. Not independent acceptance.",
+  "raw_output": "evidence/fact-005/raw/workflow-syntax-01.txt",
+  "raw_sha256": "e3741270727a0d107de3d4345586bc675b28e541563e8d73f868450d551fc5bd",
+  "environment_id": "ccarenv_b64_Y2NhcmVudl80MDZiMzllN2RhMzQ4MTkxYjYwZGYzNzlhNWNlOTkzYw"
+}
